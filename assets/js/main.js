@@ -1,157 +1,343 @@
-// Main JavaScript for AImagination Studio Portfolio
+/**
+ * AImagination Studio Portfolio - Main JavaScript Entry Point
+ * 
+ * Modern, modular JavaScript architecture for better maintainability.
+ * This file serves as the main entry point and coordinates all modules.
+ */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize the application
+    console.log('🚀 AImagination Studio Portfolio - Initializing...');
+    
+    // Initialize core functionality
     init();
+    
+    console.log('✅ Portfolio initialized successfully');
 });
 
 function init() {
-    // Add loaded class to language cards for animation
-    animateLanguageCards();
+    // Core modules initialize themselves via their own DOMContentLoaded listeners
+    // This function handles any global initialization that needs to happen after modules load
     
-    // Set up language detection and redirection
-    setupLanguageDetection();
+    // Enhanced animations and interactions
+    setupEnhancedAnimations();
     
-    // Add click tracking for analytics
+    // Analytics and tracking (lightweight version)
     setupAnalytics();
     
-    // Add keyboard navigation
-    setupKeyboardNavigation();
+    // Enhanced keyboard navigation
+    setupEnhancedKeyboardNavigation();
+    
+    // Performance optimizations
+    setupPerformanceOptimizations();
+    
+    // Accessibility enhancements
+    setupAccessibilityEnhancements();
+    
+    // Page-specific initialization
+    initializePageSpecificFeatures();
 }
 
-function animateLanguageCards() {
-    const cards = document.querySelectorAll('.language-card');
-    
-    // Add loaded class with delay for staggered animation
-    cards.forEach((card, index) => {
-        setTimeout(() => {
-            card.classList.add('loaded');
-        }, 100 * (index + 1));
-    });
-}
-
-function setupLanguageDetection() {
-    // Get user's preferred language from browser
-    const userLang = navigator.language || navigator.userLanguage;
-    const langCode = userLang.substring(0, 2).toLowerCase();
-    
-    // Store language preference
-    localStorage.setItem('preferredLanguage', langCode);
-    
-    // Add language info to body for CSS targeting
-    document.body.setAttribute('data-user-lang', langCode);
-    
-    // Highlight preferred language card if it exists
-    highlightPreferredLanguage(langCode);
-}
-
-function highlightPreferredLanguage(langCode) {
-    const langMap = {
-        'en': 'en/',
-        'es': 'es/',
-        'de': 'de/'
+function setupEnhancedAnimations() {
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
     };
     
-    if (langMap[langCode]) {
-        const preferredCard = document.querySelector(`a[href="${langMap[langCode]}"]`);
-        if (preferredCard) {
-            preferredCard.classList.add('preferred-language');
-            
-            // Add subtle highlight style
-            preferredCard.style.border = '2px solid rgba(255, 215, 0, 0.6)';
-            preferredCard.style.boxShadow = '0 8px 32px rgba(255, 215, 0, 0.2)';
-        }
-    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // Observe elements with animation classes
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        observer.observe(el);
+    });
+    
+    // Language cards hover effects
+    document.querySelectorAll('.language-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
 }
 
 function setupAnalytics() {
-    const languageCards = document.querySelectorAll('.language-card');
-    const socialLinks = document.querySelectorAll('.social-links a');
+    // Initialize analytics manager
+    window.analyticsManager = {
+        trackEvent: function(category, action, label, metadata = {}) {
+            // Store event for batch sending
+            const event = {
+                category,
+                action,
+                label,
+                metadata,
+                timestamp: Date.now(),
+                url: window.location.href,
+                userAgent: navigator.userAgent
+            };
+            
+            // Store in localStorage for now (will be sent to analytics service)
+            try {
+                const events = JSON.parse(localStorage.getItem('analyticsEvents') || '[]');
+                events.push(event);
+                
+                // Keep only last 100 events
+                if (events.length > 100) {
+                    events.splice(0, events.length - 100);
+                }
+                
+                localStorage.setItem('analyticsEvents', JSON.stringify(events));
+                console.log('📊 Analytics event tracked:', event);
+            } catch (e) {
+                console.warn('Failed to store analytics event:', e);
+            }
+        }
+    };
     
-    // Track language selection
-    languageCards.forEach(card => {
-        card.addEventListener('click', function(e) {
-            const language = this.querySelector('h3').textContent;
-            trackEvent('Language Selection', 'Click', language);
-        });
-    });
+    // Track page load
+    window.analyticsManager.trackEvent('Page', 'Load', document.title);
     
-    // Track social media clicks
-    socialLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            const platform = this.getAttribute('aria-label');
-            trackEvent('Social Media', 'Click', platform);
-        });
+    // Track page engagement
+    let engagementStartTime = Date.now();
+    let isEngaged = true;
+    
+    // Track when user becomes inactive
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden && isEngaged) {
+            const engagementTime = Date.now() - engagementStartTime;
+            window.analyticsManager.trackEvent('Engagement', 'Page Time', 'Seconds', {
+                duration: Math.round(engagementTime / 1000)
+            });
+            isEngaged = false;
+        } else if (!document.hidden && !isEngaged) {
+            engagementStartTime = Date.now();
+            isEngaged = true;
+        }
     });
 }
 
-function trackEvent(category, action, label) {
-    // Google Analytics 4 event tracking (when GA is implemented)
-    if (typeof gtag !== 'undefined') {
-        gtag('event', action, {
-            event_category: category,
-            event_label: label
+function setupEnhancedKeyboardNavigation() {
+    // Enhanced focus management
+    let isTabbing = false;
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+            isTabbing = true;
+            document.body.classList.add('using-keyboard');
+        }
+    });
+    
+    document.addEventListener('mousedown', () => {
+        isTabbing = false;
+        document.body.classList.remove('using-keyboard');
+    });
+    
+    // Enhanced focus indicators
+    const focusableElements = document.querySelectorAll(
+        'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    
+    focusableElements.forEach(element => {
+        element.addEventListener('focus', () => {
+            if (isTabbing) {
+                element.classList.add('keyboard-focused');
+            }
         });
-    }
-    
-    // Console log for development
-    console.log(`Analytics: ${category} - ${action} - ${label}`);
-}
-
-function setupKeyboardNavigation() {
-    const cards = document.querySelectorAll('.language-card');
-    
-    // Make cards focusable and add keyboard navigation
-    cards.forEach((card, index) => {
-        card.setAttribute('tabindex', '0');
         
-        card.addEventListener('keydown', function(e) {
-            switch(e.key) {
-                case 'Enter':
-                case ' ':
-                    e.preventDefault();
-                    this.click();
-                    break;
-                case 'ArrowRight':
-                case 'ArrowDown':
-                    e.preventDefault();
-                    focusNextCard(index, cards);
-                    break;
-                case 'ArrowLeft':
-                case 'ArrowUp':
-                    e.preventDefault();
-                    focusPreviousCard(index, cards);
-                    break;
+        element.addEventListener('blur', () => {
+            element.classList.remove('keyboard-focused');
+        });
+    });
+}
+
+function setupPerformanceOptimizations() {
+    // Preload critical resources
+    const criticalResources = [
+        '../assets/css/channels.css',
+        '../assets/js/channels.js'
+    ];
+    
+    criticalResources.forEach(resource => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = resource.endsWith('.css') ? 'style' : 'script';
+        link.href = resource;
+        document.head.appendChild(link);
+    });
+    
+    // Lazy load images
+    const images = document.querySelectorAll('img[data-src]');
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+                imageObserver.unobserve(img);
             }
         });
     });
+    
+    images.forEach(img => imageObserver.observe(img));
+    
+    // Monitor performance
+    if ('performance' in window) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                const loadTime = perfData.loadEventEnd - perfData.loadEventStart;
+                
+                if (window.analyticsManager) {
+                    window.analyticsManager.trackEvent('Performance', 'Page Load Time', 'Milliseconds', {
+                        loadTime: Math.round(loadTime)
+                    });
+                }
+            }, 0);
+        });
+    }
 }
 
-function focusNextCard(currentIndex, cards) {
-    const nextIndex = (currentIndex + 1) % cards.length;
-    cards[nextIndex].focus();
+function setupAccessibilityEnhancements() {
+    // Announce page load to screen readers
+    const announcement = document.createElement('div');
+    announcement.setAttribute('aria-live', 'polite');
+    announcement.setAttribute('aria-atomic', 'true');
+    announcement.className = 'sr-only';
+    announcement.textContent = `${document.title} page loaded`;
+    document.body.appendChild(announcement);
+    
+    // Remove announcement after screen readers have processed it
+    setTimeout(() => {
+        if (announcement.parentNode) {
+            announcement.parentNode.removeChild(announcement);
+        }
+    }, 1000);
+    
+    // Enhanced focus management for modals and dropdowns
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            // Close any open dropdowns or modals
+            const openDropdowns = document.querySelectorAll('.show');
+            openDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('show');
+            });
+            
+            // Return focus to appropriate element
+            const activeElement = document.activeElement;
+            if (activeElement && activeElement.getAttribute('aria-expanded') === 'true') {
+                activeElement.setAttribute('aria-expanded', 'false');
+            }
+        }
+    });
 }
 
-function focusPreviousCard(currentIndex, cards) {
-    const prevIndex = currentIndex === 0 ? cards.length - 1 : currentIndex - 1;
-    cards[prevIndex].focus();
+function initializePageSpecificFeatures() {
+    // Initialize features specific to the current page
+    const currentPage = getCurrentPageType();
+    
+    switch (currentPage) {
+        case 'home':
+            initializeHomePage();
+            break;
+        case 'language':
+            initializeLanguagePage();
+            break;
+        case 'channel':
+            initializeChannelPage();
+            break;
+        default:
+            console.log('No specific initialization for page type:', currentPage);
+    }
+}
+
+function getCurrentPageType() {
+    const path = window.location.pathname;
+    
+    if (path === '/' || path.endsWith('index.html')) {
+        return 'home';
+    } else if (path.includes('/en/') || path.includes('/es/') || path.includes('/de/')) {
+        return 'language';
+    } else if (path.includes('/channels/')) {
+        return 'channel';
+    }
+    
+    return 'unknown';
+}
+
+function initializeHomePage() {
+    console.log('🏠 Initializing home page features');
+    
+    // Add any home page specific functionality here
+    // For example: hero animations, language card interactions, etc.
+}
+
+function initializeLanguagePage() {
+    console.log('🌐 Initializing language page features');
+    
+    // Add language page specific functionality here
+    // For example: channel listings, video grids, etc.
+}
+
+function initializeChannelPage() {
+    console.log('📺 Initializing channel page features');
+    
+    // Add channel page specific functionality here
+    // For example: video players, playlist management, etc.
 }
 
 // Utility functions
-function getLanguageFromUrl() {
-    const path = window.location.pathname;
-    const langMatch = path.match(/\/(en|es|de)\//);
-    return langMatch ? langMatch[1] : null;
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
 }
 
-function setLanguage(langCode) {
-    localStorage.setItem('currentLanguage', langCode);
-    document.documentElement.setAttribute('lang', langCode);
+function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+        const args = arguments;
+        const context = this;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    };
 }
 
-// Export functions for potential use in other scripts
-window.AImagination = {
-    trackEvent,
-    getLanguageFromUrl,
-    setLanguage
-}; 
+// Global error handling
+window.addEventListener('error', (e) => {
+    console.error('JavaScript error:', e.error);
+    
+    if (window.analyticsManager) {
+        window.analyticsManager.trackEvent('Error', 'JavaScript', e.message, {
+            filename: e.filename,
+            lineno: e.lineno,
+            colno: e.colno
+        });
+    }
+});
+
+// Global unhandled promise rejection handling
+window.addEventListener('unhandledrejection', (e) => {
+    console.error('Unhandled promise rejection:', e.reason);
+    
+    if (window.analyticsManager) {
+        window.analyticsManager.trackEvent('Error', 'Promise Rejection', e.reason?.message || 'Unknown');
+    }
+}); 
