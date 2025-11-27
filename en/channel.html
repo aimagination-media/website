@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AImagination Studio - Channel</title>
+    <meta name="description" content="Channel Content">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/channels.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Sidebar -->
+    <nav class="top-sidebar" id="topSidebar">
+        <div class="sidebar-content">
+            <a href="index.html" class="sidebar-brand">
+                <div class="brand-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
+                </div>
+                <span class="brand-text">AImagination Studio</span>
+            </a>
+
+            <div class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="index.html#about" class="nav-item">
+                    <span class="nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="16" x2="12" y2="12" />
+                            <line x1="12" y1="8" x2="12.01" y2="8" />
+                        </svg>
+                    </span>
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="index.html#channels" class="nav-item active">
+                    <span class="nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
+                            <polyline points="17 2 12 7 7 2" />
+                        </svg>
+                    </span>
+                    <span class="nav-text">Channels</span>
+                </a>
+            </div>
+
+            <div class="sidebar-actions">
+                <div class="language-picker" id="languagePicker">
+                    <button class="language-toggle" id="languageToggle" aria-label="Select Language"
+                        aria-expanded="false">
+                        <span class="current-language">
+                            <span class="language-flag-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="2" y1="12" x2="22" y2="12" />
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                </svg>
+                            </span>
+                            <span class="language-name">English</span>
+                        </span>
+                        <span class="dropdown-arrow">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <div class="language-option" data-lang="en" onclick="window.location.href='../en/'">
+                            <span class="language-flag">🇺🇸</span>
+                            <div class="language-info">
+                                <span class="language-name">English</span>
+                            </div>
+                            <span class="language-badge">Current</span>
+                        </div>
+                        <div class="language-option" data-lang="es" onclick="window.location.href='../es/'">
+                            <span class="language-flag">🇪🇸</span>
+                            <div class="language-info">
+                                <span class="language-name">Español</span>
+                            </div>
+                        </div>
+                        <div class="language-option" data-lang="de" onclick="window.location.href='../de/'">
+                            <span class="language-flag">🇩🇪</span>
+                            <div class="language-info">
+                                <span class="language-name">Deutsch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero channel-hero" id="channelHero">
+            <div class="logo">
+                <h1 id="channelTitle">Loading Channel...</h1>
+                <p id="channelDescription">Please wait...</p>
+            </div>
+        </header>
+
+        <main class="channel-content">
+            <section class="playlists-section">
+                <h2>Playlists</h2>
+                <div class="playlists-grid" id="playlistsGrid">
+                    <!-- Playlists will be loaded dynamically -->
+                </div>
+            </section>
+
+            <section class="all-videos-section">
+                <h2>All Videos</h2>
+                <div class="videos-grid" id="channelVideos">
+                    <!-- Videos will be loaded dynamically -->
+                    <div class="video-placeholder">
+                        <div class="placeholder-thumbnail"></div>
+                        <div class="placeholder-info">
+                            <div class="placeholder-title"></div>
+                            <div class="placeholder-meta"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <!-- Social links -->
+            </div>
+            <p>&copy; 2025 AImagination Studio. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../assets/js/modules/navigation.js"></script>
+    <script src="../assets/js/modules/language-picker.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/channels.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.initChannelDetail) {
+                window.initChannelDetail();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,120 +1,115 @@
 /* Channels page specific styles */
 
-/* Language Navigation */
-.language-nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-#languageSelector {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
-    color: white;
-    padding: 8px 12px;
-    font-size: 14px;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
-}
-
-#languageSelector option {
-    background: #333;
-    color: white;
-}
+/* Remove old language nav styles as we use the top sidebar now */
 
 /* Channels Showcase */
 .channels-showcase {
-    padding: 40px 0;
+    padding: 100px 0 60px;
+    /* Added top padding for fixed header */
 }
 
 .featured-section h2 {
     text-align: center;
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    font-weight: 600;
+    color: var(--text-main);
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-3xl);
+    font-weight: 700;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .channels-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-bottom: 80px;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-4xl);
 }
 
 .channel-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
-    padding: 30px;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    background: var(--bg-card);
+    backdrop-filter: var(--blur-md);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    transition: var(--transition);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .channel-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-    background: rgba(255, 255, 255, 1);
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    background: var(--bg-card-hover);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .channel-header {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: var(--space-xl);
+    flex: 1;
 }
 
 .channel-icon {
-    font-size: 3rem;
-    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-lg);
+    color: var(--accent);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    transition: var(--transition);
+}
+
+.channel-card:hover .channel-icon {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .channel-card h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 10px;
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: var(--space-sm);
 }
 
 .channel-description {
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.5;
+    color: var(--text-muted);
+    font-size: var(--text-base);
+    line-height: 1.6;
 }
 
 .channel-stats {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
-    padding: 15px 0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    margin: var(--space-xl) 0;
+    padding: var(--space-md) 0;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
 }
 
 .video-count {
     font-weight: 600;
-    color: #4a5568;
 }
 
 .last-updated {
-    font-size: 0.9rem;
-    color: #718096;
+    opacity: 0.8;
 }
 
 .channel-actions {
     display: flex;
-    gap: 12px;
+    gap: var(--space-md);
     justify-content: center;
 }
 
 .btn {
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-lg);
     text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    transition: var(--transition);
     border: none;
     cursor: pointer;
     display: inline-flex;
@@ -123,66 +118,79 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: var(--accent);
+    color: var(--text-main);
+    box-shadow: 0 4px 15px var(--accent-glow);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 8px 25px var(--accent-glow);
+    filter: brightness(1.1);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #667eea;
-    border: 2px solid #667eea;
+    color: var(--text-main);
+    border: 1px solid var(--border-light);
 }
 
 .btn-secondary:hover {
-    background: #667eea;
-    color: white;
+    background: var(--bg-card-hover);
+    border-color: var(--text-muted);
     transform: translateY(-2px);
 }
 
 /* Recent Videos Section */
 .recent-videos {
-    margin-top: 60px;
+    margin-top: var(--space-4xl);
 }
 
 .recent-videos h2 {
     text-align: center;
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    font-weight: 500;
+    color: var(--text-main);
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-2xl);
+    font-weight: 700;
 }
 
 .videos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    gap: var(--space-xl);
 }
 
 /* Video Placeholders */
 .video-placeholder {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
+    background: var(--bg-card);
+    border-radius: var(--radius-xl);
     overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border: 1px solid var(--border-light);
 }
 
 .video-placeholder:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    background: var(--bg-card-hover);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent);
 }
 
 .placeholder-thumbnail {
     width: 100%;
-    height: 180px;
-    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    height: 200px;
+    background: rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.placeholder-thumbnail svg {
+    width: 48px;
+    height: 48px;
 }
 
 .placeholder-thumbnail::before {
@@ -192,24 +200,29 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
-    animation: shimmer 1.5s infinite;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {
-    0% { left: -100%; }
-    100% { left: 100%; }
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
 }
 
 .placeholder-info {
-    padding: 20px;
+    padding: var(--space-lg);
 }
 
 .placeholder-title {
-    height: 20px;
-    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-    border-radius: 4px;
-    margin-bottom: 12px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-md);
     position: relative;
     overflow: hidden;
 }
@@ -221,15 +234,15 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
-    animation: shimmer 1.5s infinite 0.2s;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 2s infinite 0.2s;
 }
 
 .placeholder-meta {
-    height: 14px;
-    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-    border-radius: 4px;
-    width: 70%;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-sm);
+    width: 60%;
     position: relative;
     overflow: hidden;
 }
@@ -241,73 +254,59 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
-    animation: shimmer 1.5s infinite 0.4s;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 2s infinite 0.4s;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .language-nav {
-        position: static;
-        text-align: center;
-        margin-top: 20px;
+    .channels-showcase {
+        padding-top: 80px;
     }
-    
+
     .featured-section h2 {
-        font-size: 2rem;
-        margin-bottom: 30px;
+        font-size: var(--text-3xl);
     }
-    
+
     .channels-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
-        margin-bottom: 60px;
+        gap: var(--space-lg);
     }
-    
-    .channel-card {
-        padding: 25px 20px;
-    }
-    
+
     .channel-actions {
         flex-direction: column;
-        gap: 10px;
     }
-    
+
     .btn {
         width: 100%;
-    }
-    
-    .videos-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .channel-card {
-        padding: 20px 15px;
+        padding: var(--space-xl);
     }
-    
-    .channel-icon {
-        font-size: 2.5rem;
-    }
-    
-    .channel-card h3 {
-        font-size: 1.5rem;
-    }
-    
-    .channel-stats {
-        flex-direction: column;
-        gap: 8px;
-        text-align: center;
+
+    .channel-icon svg {
+        width: 40px;
+        height: 40px;
     }
 }
 
 /* Animation for loading */
 .channel-card {
     animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
 }
 
-.channel-card:nth-child(1) { animation-delay: 0.1s; }
-.channel-card:nth-child(2) { animation-delay: 0.2s; }
-.channel-card:nth-child(3) { animation-delay: 0.3s; } 
+.channel-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.channel-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.channel-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
