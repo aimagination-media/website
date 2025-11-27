@@ -4,9 +4,13 @@ import json
 import datetime
 import re
 
+import urllib.request
+import urllib.error
+
 # Configuration
 VAULT_PATH = '/mnt/ssd4k/Obsidian/Youtube/md_vault'
 OUTPUT_PATH = 'assets/data/content.json'
+CACHE_PATH = 'assets/data/playlist_cache.json'
 
 # Mappings for UI display
 CHANNEL_INFO = {
@@ -26,6 +30,30 @@ CHANNEL_INFO = {
         'de': {'title': 'Hörbücher', 'description': 'Höre fesselnde Geschichten und Bildungsinhalte'}
     }
 }
+
+def load_cache():
+    if os.path.exists(CACHE_PATH):
+        try:
+            with open(CACHE_PATH, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except:
+            return {}
+    return {}
+
+def save_cache(cache):
+    os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
+    with open(CACHE_PATH, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, indent=2, ensure_ascii=False)
+
+def fetch_playlist_title(playlist_id):
+    url = f"https://www.youtube.com/oembed?url=https://www.youtube.com/playlist?list={playlist_id}&format=json"
+    try:
+        with urllib.request.urlopen(url) as response:
+            data = json.loads(response.read().decode())
+            return data.get('title')
+    except Exception as e:
+        print(f"Failed to fetch title for playlist {playlist_id}: {e}")
+        return None
 
 def parse_frontmatter(content):
     """
@@ -51,6 +79,9 @@ def scan_vault():
         'es': {},
         'de': {}
     }
+    
+    playlist_cache = load_cache()
+    cache_updated = False
     
     # Initialize structure
     for lang in data:
@@ -128,27 +159,50 @@ def scan_vault():
                 video = {
                     'title': meta.get('title', 'Untitled'),
                     'video_id': meta['video_id'],
-                    'thumbnail': f"https://img.youtube.com/vi/{meta['video_id']}/maxresdefault.jpg", # Default YT thumb
+                    'thumbnail': f"https://img.youtube.com/vi/{meta['video_id']}/hqdefault.jpg", # hqdefault is more reliable than maxres
                     'duration': meta.get('video_duration', '00:00'),
                     'published_at': str(publish_date) if publish_date else 'TBA',
                     'state': state,
                     'release_date': str(publish_date) if publish_date else None,
                     'serie': meta.get('serie', 'na'),
-                    'sub_serie': meta.get('sub_serie', 'na')
+                    'sub_serie': meta.get('sub_serie', 'na'),
+                    'playlist_id': meta.get('playlist_id')
                 }
                 
                 # Add to Channel Videos
                 data[lang][channel]['videos'].append(video)
                 
-                # Add to Playlists (Series)
-                serie = meta.get('serie')
-                if serie and serie.lower() != 'na':
-                    if serie not in data[lang][channel]['playlists']:
-                        data[lang][channel]['playlists'][serie] = []
-                    data[lang][channel]['playlists'][serie].append(video)
+                # Add to Playlists
+                playlist_id = meta.get('playlist_id')
+                playlist_title = meta.get('playlist') or meta.get('serie') # Fallback to serie for title if needed
+
+                if playlist_id:
+                    # Auto-fetch title if missing
+                    if not playlist_title or playlist_title.lower() == 'na':
+                        if playlist_id in playlist_cache:
+                            playlist_title = playlist_cache[playlist_id]
+                        else:
+                            print(f"Fetching title for playlist: {playlist_id}")
+                            fetched_title = fetch_playlist_title(playlist_id)
+                            if fetched_title:
+                                playlist_title = fetched_title
+                                playlist_cache[playlist_id] = fetched_title
+                                cache_updated = True
+                    
+                    if playlist_id not in data[lang][channel]['playlists']:
+                        data[lang][channel]['playlists'][playlist_id] = {
+                            'id': playlist_id,
+                            'title': playlist_title or 'Untitled Playlist',
+                            'videos': []
+                        }
+                    data[lang][channel]['playlists'][playlist_id]['videos'].append(video)
                     
             except Exception as e:
                 print(f"Error processing file {file_path}: {e}")
+
+    # Save cache if updated
+    if cache_updated:
+        save_cache(playlist_cache)
 
     # Sort videos by date
     for lang in data:
@@ -158,9 +212,9 @@ def scan_vault():
                 key=lambda x: x['published_at'] if x['published_at'] != 'TBA' else '9999-99-99', 
                 reverse=True
             )
-            # Sort playlists
-            for playlist in data[lang][channel]['playlists']:
-                data[lang][channel]['playlists'][playlist].sort(
+            # Sort playlists videos
+            for playlist_id in data[lang][channel]['playlists']:
+                data[lang][channel]['playlists'][playlist_id]['videos'].sort(
                     key=lambda x: x['published_at'] if x['published_at'] != 'TBA' else '9999-99-99'
                 )
 
