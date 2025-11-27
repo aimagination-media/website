@@ -798,7 +798,32 @@ footer p {
     -webkit-backdrop-filter: var(--blur-md);
     border-bottom: 1px solid var(--border-light);
     z-index: 1000;
-    transition: var(--transition);
+}
+
+.nav-group {
+    margin: var(--space-sm) 0;
+}
+
+.nav-group-label {
+    padding: 0 var(--space-md);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.nav-item.sub-item {
+    padding-left: var(--space-lg);
+    font-size: 0.95rem;
+}
+
+.nav-divider {
+    height: 1px;
+    background: var(--border-light);
+    margin: var(--space-sm) var(--space-md);
+    opacity: 0.5;
 }
 
 .sidebar-content {

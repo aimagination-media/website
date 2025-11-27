@@ -303,10 +303,110 @@
     animation-delay: 0.1s;
 }
 
-.channel-card:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
 .channel-card:nth-child(3) {
     animation-delay: 0.3s;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    margin-bottom: var(--space-xl);
+    padding: var(--space-sm) 0;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs li {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: '/';
+    margin-left: var(--space-sm);
+    color: var(--text-dim);
+}
+
+.breadcrumbs a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.breadcrumbs a:hover {
+    color: var(--accent);
+}
+
+.breadcrumbs li[aria-current="page"] {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+/* Explore Section */
+.explore-section {
+    margin-top: var(--space-4xl);
+    padding-top: var(--space-2xl);
+    border-top: 1px solid var(--border-light);
+}
+
+.explore-section h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-xl);
+    color: var(--text-main);
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+}
+
+.explore-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.explore-card:hover {
+    background: var(--bg-card-hover);
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+}
+
+.explore-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+}
+
+.explore-info h4 {
+    color: var(--text-main);
+    font-size: var(--text-base);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.explore-info span {
+    color: var(--text-muted);
+    font-size: var(--text-xs);
 }
