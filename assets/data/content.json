@@ -28098,7 +28098,7 @@
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_short_de"
         },
         {
@@ -29580,7 +29580,7 @@
           "release_date": "2025-10-05 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -29593,7 +29593,7 @@
           "release_date": "2025-10-03 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -29606,7 +29606,7 @@
           "release_date": "2025-10-01 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -29619,7 +29619,7 @@
           "release_date": "2025-09-29 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -29632,7 +29632,7 @@
           "release_date": "2025-09-27 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -29645,7 +29645,7 @@
           "release_date": "2025-09-25 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -29658,7 +29658,7 @@
           "release_date": "2025-09-23 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -29671,7 +29671,7 @@
           "release_date": "2025-09-21 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -29684,7 +29684,7 @@
           "release_date": "2025-09-19 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -29697,7 +29697,7 @@
           "release_date": "2025-09-17 12:00:00",
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
           "video_type": "book_4k_de"
         },
         {
@@ -30420,6 +30420,155 @@
               "sub_serie": "na",
               "playlist_id": "PLQ2FMhj-JCSTnPSVUWgEaEwd_3Jt3lkpN",
               "video_type": "book_4k_de"
+            }
+          ]
+        },
+        "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk": {
+          "id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+          "title": "Der Architekt der Zeit: Ein Vermächtnis enthüllt",
+          "videos": [
+            {
+              "title": "Kapitel 1 - Die zeitverwitterte Schriftrolle",
+              "video_id": "jsQUsTuKa-M",
+              "thumbnail": "https://img.youtube.com/vi/jsQUsTuKa-M/hqdefault.jpg",
+              "duration": 386.48,
+              "published_at": "2025-09-17 12:00:00",
+              "state": "published",
+              "release_date": "2025-09-17 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "Kapitel 2 - Kryptische Symbole, entschlüsselt",
+              "video_id": "QTejmYzNN5c",
+              "thumbnail": "https://img.youtube.com/vi/QTejmYzNN5c/hqdefault.jpg",
+              "duration": 369.65,
+              "published_at": "2025-09-19 12:00:00",
+              "state": "published",
+              "release_date": "2025-09-19 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "Kapitel 3 - Die Suche nach der Zeit",
+              "video_id": "C22rUv9qFFc",
+              "thumbnail": "https://img.youtube.com/vi/C22rUv9qFFc/hqdefault.jpg",
+              "duration": 371.4,
+              "published_at": "2025-09-21 12:00:00",
+              "state": "published",
+              "release_date": "2025-09-21 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "Kapitel 4 - Echos von Rom",
+              "video_id": "-HpzDPUXSuQ",
+              "thumbnail": "https://img.youtube.com/vi/-HpzDPUXSuQ/hqdefault.jpg",
+              "duration": 375.23,
+              "published_at": "2025-09-23 12:00:00",
+              "state": "published",
+              "release_date": "2025-09-23 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "Kapitel 5 - Geflüster des Nils",
+              "video_id": "0GdKalq_2mM",
+              "thumbnail": "https://img.youtube.com/vi/0GdKalq_2mM/hqdefault.jpg",
+              "duration": 376.03,
+              "published_at": "2025-09-25 12:00:00",
+              "state": "published",
+              "release_date": "2025-09-25 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "Kapitel 6 - Geschichten des Drachen",
+              "video_id": "Jh2xaYJUDIg",
+              "thumbnail": "https://img.youtube.com/vi/Jh2xaYJUDIg/hqdefault.jpg",
+              "duration": 388.22,
+              "published_at": "2025-09-27 12:00:00",
+              "state": "published",
+              "release_date": "2025-09-27 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "Kapitel 7 - Schatten der Maya",
+              "video_id": "svmBzA_kkZY",
+              "thumbnail": "https://img.youtube.com/vi/svmBzA_kkZY/hqdefault.jpg",
+              "duration": 365.13,
+              "published_at": "2025-09-29 12:00:00",
+              "state": "published",
+              "release_date": "2025-09-29 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "Kapitel 8 - Melodien des Ganges",
+              "video_id": "K_tt-R_cHX4",
+              "thumbnail": "https://img.youtube.com/vi/K_tt-R_cHX4/hqdefault.jpg",
+              "duration": 380.38,
+              "published_at": "2025-10-01 12:00:00",
+              "state": "published",
+              "release_date": "2025-10-01 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "Kapitel 9 - Echos der Wüste",
+              "video_id": "hKRDR79VEyc",
+              "thumbnail": "https://img.youtube.com/vi/hKRDR79VEyc/hqdefault.jpg",
+              "duration": 364.2,
+              "published_at": "2025-10-03 12:00:00",
+              "state": "published",
+              "release_date": "2025-10-03 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "Kapitel 10 - Flüstern des Olymp",
+              "video_id": "fuOgr0KXP7Y",
+              "thumbnail": "https://img.youtube.com/vi/fuOgr0KXP7Y/hqdefault.jpg",
+              "duration": 348.7,
+              "published_at": "2025-10-05 12:00:00",
+              "state": "published",
+              "release_date": "2025-10-05 12:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_4k_de"
+            },
+            {
+              "title": "The Architect of Time: A Legacy Unveiled - Promotion",
+              "video_id": "na",
+              "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "tts_paid",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSTgfiNHK4UcA0bQyZUxhHfk",
+              "video_type": "book_short_de"
             }
           ]
         },

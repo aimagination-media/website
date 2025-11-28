@@ -40,6 +40,23 @@ CHANNEL_INFO = {
     }
 }
 
+# Optional: Override channel names per language (takes precedence over CHANNEL_INFO titles)
+# Use this to customize how channels appear for specific languages
+# Format: 'channel_key': {'en': 'Name', 'es': 'Nombre', 'de': 'Name'}
+CHANNEL_NAME_MAPPING = {
+    # Example: Uncomment and customize as needed
+    # 'audiobook': {
+    #     'en': 'Imagination Station',
+    #     'es': 'Estación de Imaginación',
+    #     'de': 'Fantasiestation'
+    # },
+    # 'gallery': {
+    #     'en': 'AI Vivid Dreams',
+    #     'es': 'Sueños Vívidos de IA', 
+    #     'de': 'KI Lebendige Träume'
+    # }
+}
+
 def load_cache():
     if os.path.exists(CACHE_PATH):
         try:
@@ -134,8 +151,14 @@ def scan_vault():
                     continue
                     
                 # Determine Channel Display Name
+                # Priority: frontmatter channel_public_name > CHANNEL_NAME_MAPPING > CHANNEL_INFO > fallback
                 channel_key = meta['channel'].lower()
-                channel_display_name = meta.get('channel_public_name') or CHANNEL_INFO.get(channel_key, {}).get(lang, {}).get('title') or channel_key.capitalize()
+                channel_display_name = (
+                    meta.get('channel_public_name') or 
+                    CHANNEL_NAME_MAPPING.get(channel_key, {}).get(lang) or
+                    CHANNEL_INFO.get(channel_key, {}).get(lang, {}).get('title') or 
+                    channel_key.capitalize()
+                )
 
                 if channel_key not in data[lang]:
                     # Create channel entry if it doesn't exist
