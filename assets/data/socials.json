@@ -1,0 +1,137 @@
+{
+    "patreon": {
+        "title": "Support Us",
+        "items": [
+            {
+                "platform": "patreon",
+                "handle": "AImagination Media",
+                "description": {
+                    "en": "Support our work and get exclusive benefits! Help us continue creating content.",
+                    "es": "¡Apoya nuestro trabajo y obtén beneficios exclusivos! Ayúdanos a seguir creando contenido.",
+                    "de": "Unterstütze unsere Arbeit und erhalte exklusive Vorteile! Hilf uns, weiterhin Inhalte zu erstellen."
+                },
+                "url": "https://www.patreon.com/c/AImaginationMedia/membership",
+                "cta": {
+                    "en": "Become a Member",
+                    "es": "Hazte Miembro",
+                    "de": "Mitglied werden"
+                },
+                "featured": true
+            }
+        ]
+    },
+    "youtube": {
+        "title": "YouTube Channels",
+        "items": [
+            {
+                "platform": "youtube",
+                "handle": "AImagination Studio",
+                "description": {
+                    "en": "The main hub for all our creative AI content.",
+                    "es": "El centro principal de todo nuestro contenido creativo de IA.",
+                    "de": "Die Hauptzentrale für all unsere kreativen KI-Inhalte."
+                },
+                "url": "https://www.youtube.com/@AImaginationStudio",
+                "id": "aimagination_studio"
+            },
+            {
+                "platform": "youtube",
+                "handle": "Mathematics",
+                "description": {
+                    "en": "In-depth math tutorials and visualizations.",
+                    "es": "Tutoriales de matemáticas en profundidad y visualizaciones.",
+                    "de": "Ausführliche Mathe-Tutorials und Visualisierungen."
+                },
+                "url": "https://www.youtube.com/@AImaginationMath",
+                "id": "mathematics"
+            },
+            {
+                "platform": "youtube",
+                "handle": "Chemistry",
+                "description": {
+                    "en": "Exploring chemical reactions.",
+                    "es": "Explorando reacciones químicas.",
+                    "de": "Chemische Reaktionen erforschen."
+                },
+                "url": "https://www.youtube.com/@AImaginationChem",
+                "id": "chemistry"
+            }
+        ]
+    },
+    "instagram": {
+        "title": "Instagram",
+        "items": [
+            {
+                "platform": "instagram",
+                "handle": "@aimagination_en",
+                "description": {
+                    "en": "Follow us for daily AI-generated content and updates.",
+                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
+                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
+                },
+                "url": "https://www.instagram.com/aimagination_en/",
+                "language": "en"
+            },
+            {
+                "platform": "instagram",
+                "handle": "@aimagination_es",
+                "description": {
+                    "en": "Follow us for daily AI-generated content and updates.",
+                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
+                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
+                },
+                "url": "https://www.instagram.com/aimagination_es/",
+                "language": "es"
+            },
+            {
+                "platform": "instagram",
+                "handle": "@aimagination_de",
+                "description": {
+                    "en": "Follow us for daily AI-generated content and updates.",
+                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
+                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
+                },
+                "url": "https://www.instagram.com/aimagination_de/",
+                "language": "de"
+            }
+        ]
+    },
+    "tiktok": {
+        "title": "TikTok",
+        "items": [
+            {
+                "platform": "tiktok",
+                "handle": "@aimagination_en",
+                "description": {
+                    "en": "Short-form AI content, tips, and creative experiments.",
+                    "es": "Contenido de IA en formato corto, consejos y experimentos creativos.",
+                    "de": "Kurzform-KI-Inhalte, Tipps und kreative Experimente."
+                },
+                "url": "https://www.tiktok.com/@aimagination_en",
+                "language": "en"
+            },
+            {
+                "platform": "tiktok",
+                "handle": "@aimagination_es",
+                "description": {
+                    "en": "Short-form AI content, tips, and creative experiments.",
+                    "es": "Contenido de IA en formato corto, consejos y experimentos creativos.",
+                    "de": "Kurzform-KI-Inhalte, Tipps und kreative Experimente."
+                },
+                "url": "https://www.tiktok.com/@aimagination_es",
+                "language": "es"
+            },
+            {
+                "platform": "tiktok",
+                "handle": "@aimagination_de",
+                "description": {
+                    "en": "Short-form AI content, tips, and creative experiments.",
+                    "es": "Contenido de IA en formato corto, consejos y experimentos creativos.",
+                    "de": "Kurzform-KI-Inhalte, Tipps und kreative Experimente."
+                },
+                "url": "https://www.tiktok.com/@aimagination_de",
+                "language": "de"
+            }
+        ]
+    }
+}

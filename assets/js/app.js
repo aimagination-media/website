@@ -1,11 +1,14 @@
 const API_KEY = ''; // Not used for now as we use pre-generated JSON
 const DATA_URL = 'assets/data/content.json';
+const SOCIALS_URL = 'assets/data/socials.json';
 
 let allVideos = [];
 let allPlaylists = [];
+let socialsData = {};
 let fuse; // Search instance
 let currentLanguage = 'en';
 let currentView = 'videos';
+let currentVideoType = 'all'; // 'all', '4k', 'shorts'
 
 // DOM Elements
 const videoGrid = document.getElementById('videoGrid');
@@ -18,6 +21,7 @@ const socialsSection = document.getElementById('socialsSection');
 const socialsGrid = document.getElementById('socialsGrid');
 const languageSelect = document.getElementById('languageSelect');
 const filterBar = document.getElementById('filterBar');
+const videoTypeFilters = document.getElementById('videoTypeFilters');
 
 // 1. Fetch & Normalize Data
 const translations = {
@@ -37,7 +41,11 @@ const translations = {
         instagramTitle: "Instagram",
         tiktokTitle: "TikTok",
         subscribe: "Subscribe",
-        follow: "Follow"
+        follow: "Follow",
+        patreonTitle: "Support Us",
+        videos4k: "4K Videos",
+        shorts: "Shorts",
+        allVideos: "All Videos"
     },
     es: {
         featured: "Listas Destacadas",
@@ -55,7 +63,11 @@ const translations = {
         instagramTitle: "Instagram",
         tiktokTitle: "TikTok",
         subscribe: "Suscribirse",
-        follow: "Seguir"
+        follow: "Seguir",
+        patreonTitle: "Apóyanos",
+        videos4k: "Videos 4K",
+        shorts: "Shorts",
+        allVideos: "Todos los Videos"
     },
     de: {
         featured: "Vorgestellte Playlists",
@@ -73,7 +85,11 @@ const translations = {
         instagramTitle: "Instagram",
         tiktokTitle: "TikTok",
         subscribe: "Abonnieren",
-        follow: "Folgen"
+        follow: "Folgen",
+        patreonTitle: "Unterstütze uns",
+        videos4k: "4K-Videos",
+        shorts: "Shorts",
+        allVideos: "Alle Videos"
     }
 };
 
@@ -134,10 +150,16 @@ async function initPortfolio() {
             </div>
         `;
 
-        const response = await fetch(DATA_URL);
-        if (!response.ok) throw new Error('Failed to load content data');
+        // Fetch Content and Socials
+        const [contentResponse, socialsResponse] = await Promise.all([
+            fetch(DATA_URL),
+            fetch(SOCIALS_URL)
+        ]);
 
-        const data = await response.json();
+        if (!contentResponse.ok) throw new Error('Failed to load content data');
+
+        const data = await contentResponse.json();
+        socialsData = socialsResponse.ok ? await socialsResponse.json() : {};
 
         allVideos = [];
         allPlaylists = [];
@@ -162,6 +184,7 @@ async function initPortfolio() {
                             language: lang,
                             serie: video.serie,
                             playlistId: video.playlist_id,
+                            videoType: video.video_type,
                             searchStr: `${video.title} ${channelName} ${lang} ${video.serie || ''}`
                         });
                     }
@@ -209,6 +232,7 @@ async function initPortfolio() {
         setupFilters();
         setupLanguageSelector();
         setupViewToggle();
+        setupVideoTypeFilters();
 
         // Initial Render
         refreshContent();
@@ -227,11 +251,20 @@ async function initPortfolio() {
 function refreshContent() {
     if (currentView === 'videos') {
         // Filter by Language
-        const langVideos = currentLanguage === 'all' ? allVideos : allVideos.filter(v => v.language === currentLanguage);
+        let langVideos = currentLanguage === 'all' ? allVideos : allVideos.filter(v => v.language === currentLanguage);
+
+        // Filter by Video Type
+        if (currentVideoType === '4k') {
+            langVideos = langVideos.filter(v => v.videoType && v.videoType.includes('4k'));
+        } else if (currentVideoType === 'shorts') {
+            langVideos = langVideos.filter(v => v.videoType && v.videoType.includes('short'));
+        }
+
         const langPlaylists = currentLanguage === 'all' ? allPlaylists : allPlaylists.filter(p => p.language === currentLanguage);
 
         // Update Filters
         updateChannelFilters(langVideos);
+        updateVideoTypeFilters();
 
         // Render
         renderPlaylists(langPlaylists);
@@ -274,6 +307,28 @@ function updateChannelFilters(videos) {
         btn.textContent = channelName;
         btn.dataset.channel = channelName;
         channelFilters.appendChild(btn);
+    });
+}
+
+function updateVideoTypeFilters() {
+    if (!videoTypeFilters) return;
+
+    const t = translations[currentLanguage] || translations['en'];
+
+    videoTypeFilters.innerHTML = '';
+
+    const types = [
+        { value: 'all', label: t.allVideos },
+        { value: '4k', label: t.videos4k },
+        { value: 'shorts', label: t.shorts }
+    ];
+
+    types.forEach(type => {
+        const btn = document.createElement('button');
+        btn.className = `chip ${currentVideoType === type.value ? 'active' : ''}`;
+        btn.textContent = type.label;
+        btn.dataset.videoType = type.value;
+        videoTypeFilters.appendChild(btn);
     });
 }
 
@@ -347,7 +402,7 @@ function renderGrid(videos, isFiltered = false) {
                     <span class="video-date">${dateStr}</span>
                 </div>
                 <h3 class="card-title">${video.title}</h3>
-                ${video.serie ? `<div class="series-meta">Series: ${video.serie}</div>` : ''}
+                ${video.playlistId && video.serie && video.serie !== 'na' ? `<div class="series-meta">Playlist: ${video.serie}</div>` : ''}
             </div>
         `;
         videoGrid.appendChild(card);
@@ -356,81 +411,134 @@ function renderGrid(videos, isFiltered = false) {
 
 function renderSocials() {
     socialsGrid.innerHTML = '';
+
+    const container = document.createElement('div');
+    container.className = 'socials-container';
+
     const t = translations[currentLanguage] || translations['en'];
 
     // Icons
     const icons = {
-        patreon: '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>',
+        patreon: '<path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1z"></path><circle cx="12" cy="15" r="1.5" fill="currentColor"/><path d="M7 14h2m3 0h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
         youtube: '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>',
         instagram: '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>',
         tiktok: '<path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>'
     };
 
-    // 1. Patreon (Featured)
-    const items = [
-        {
-            platform: 'patreon',
-            handle: 'AImagination Media',
-            desc: 'Support our work and get exclusive benefits!',
-            url: 'https://www.patreon.com/c/AImaginationMedia/membership',
-            featured: true,
-            accent: 'patreon'
-        }
-    ];
+    const createHeader = (sectionTitle, type) => {
+        const header = document.createElement('h3');
+        header.className = 'social-group-header';
+        header.innerHTML = `
+            <span class="icon-wrapper icon-${type}">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                    ${icons[type]}
+                </svg>
+            </span>
+            ${sectionTitle}
+        `;
+        return header;
+    };
 
-    // 2. YouTube
-    const ytItems = [
-        { handle: 'AImagination Studio', desc: 'The main hub for all our creative AI content.', url: '#', accent: 'youtube' },
-        { handle: 'Mathematics', desc: 'In-depth math tutorials and visualizations.', url: '#', accent: 'youtube' },
-        { handle: 'Chemistry', desc: 'Exploring chemical reactions.', url: '#', accent: 'youtube' }
-    ];
-    ytItems.forEach(i => items.push({ ...i, platform: 'youtube' }));
-
-    // 3. Instagram
-    const instaItems = [
-        { handle: '@aimagination_en', url: 'https://www.instagram.com/aimagination_en/', accent: 'instagram' },
-        { handle: '@aimagination_es', url: 'https://www.instagram.com/aimagination_es/', accent: 'instagram' },
-        { handle: '@aimagination_de', url: 'https://www.instagram.com/aimagination_de/', accent: 'instagram' }
-    ];
-    instaItems.forEach(i => items.push({ ...i, platform: 'instagram' }));
-
-    // 4. TikTok
-    const tiktokItems = [
-        { handle: '@aimagination_en', url: 'https://www.tiktok.com/@aimagination_en', accent: 'tiktok' },
-        { handle: '@aimagination_es', url: 'https://www.tiktok.com/@aimagination_es', accent: 'tiktok' },
-        { handle: '@aimagination_de', url: 'https://www.tiktok.com/@aimagination_de', accent: 'tiktok' }
-    ];
-    tiktokItems.forEach(i => items.push({ ...i, platform: 'tiktok' }));
-
-    // Render
-    items.forEach(item => {
+    const createCard = (item, type) => {
         const card = document.createElement('a');
         card.href = item.url;
         card.target = '_blank';
-        card.className = `social-card ${item.featured ? 'featured' : ''}`;
+        card.className = `social-card card-${type}`;
 
-        // Banner
+        // Create Banner (like video thumbnail)
         const banner = document.createElement('div');
-        banner.className = `social-banner banner-${item.platform}`;
+        banner.className = 'social-banner';
         banner.innerHTML = `
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                ${icons[item.platform]}
+                ${icons[type]}
             </svg>
         `;
 
-        // Content
+        // Create Card Content (like video card content)
         const content = document.createElement('div');
         content.className = 'card-content';
-        content.innerHTML = `
-            <span class="social-platform-tag tag-${item.platform}">${item.platform}</span>
-            <div class="social-handle">${item.handle}</div>
-            ${item.desc ? `<div class="social-desc">${item.desc}</div>` : ''}
-        `;
+
+        // Card Meta (platform tag + language if applicable)
+        const meta = document.createElement('div');
+        meta.className = 'card-meta';
+
+        const platformTag = document.createElement('span');
+        platformTag.className = `social-platform-tag tag-${type}`;
+        platformTag.textContent = type.toUpperCase();
+        meta.appendChild(platformTag);
+
+        if (item.language) {
+            const langBadge = document.createElement('span');
+            langBadge.className = 'lang-badge';
+            langBadge.textContent = item.language.toUpperCase();
+            meta.appendChild(langBadge);
+        }
+
+        content.appendChild(meta);
+
+        // Handle (like video title)
+        const handle = document.createElement('h3');
+        handle.className = 'social-handle';
+        handle.textContent = item.handle;
+        content.appendChild(handle);
+
+        // Description (if available)
+        if (item.description) {
+            const desc = document.createElement('p');
+            desc.className = 'social-desc';
+            const descText = typeof item.description === 'object' ? item.description[currentLanguage] || item.description.en : item.description;
+            desc.textContent = descText;
+            content.appendChild(desc);
+        }
+
+        // CTA for Patreon
+        if (type === 'patreon' && item.cta) {
+            const cta = document.createElement('div');
+            cta.className = 'social-cta';
+            const ctaText = typeof item.cta === 'object' ? item.cta[currentLanguage] || item.cta.en : item.cta;
+            cta.textContent = `→ ${ctaText}`;
+            content.appendChild(cta);
+        }
 
         card.appendChild(banner);
         card.appendChild(content);
-        socialsGrid.appendChild(card);
-    });
+        return card;
+    };
+
+    // Render all sections and cards directly in container grid
+    // Patreon Section
+    if (socialsData.patreon && socialsData.patreon.items.length > 0) {
+        container.appendChild(createHeader(t.patreonTitle || "Support Us", 'patreon'));
+        socialsData.patreon.items.forEach(item => {
+            container.appendChild(createCard(item, 'patreon'));
+        });
+    }
+
+    // YouTube Section
+    if (socialsData.youtube && socialsData.youtube.items.length > 0) {
+        container.appendChild(createHeader(t.youtubeTitle, 'youtube'));
+        socialsData.youtube.items.forEach(item => {
+            container.appendChild(createCard(item, 'youtube'));
+        });
+    }
+
+    // Instagram Section
+    if (socialsData.instagram && socialsData.instagram.items.length > 0) {
+        container.appendChild(createHeader(t.instagramTitle, 'instagram'));
+        socialsData.instagram.items.forEach(item => {
+            container.appendChild(createCard(item, 'instagram'));
+        });
+    }
+
+    // TikTok Section
+    if (socialsData.tiktok && socialsData.tiktok.items.length > 0) {
+        container.appendChild(createHeader(t.tiktokTitle, 'tiktok'));
+        socialsData.tiktok.items.forEach(item => {
+            container.appendChild(createCard(item, 'tiktok'));
+        });
+    }
+
+    socialsGrid.appendChild(container);
 }
 
 // 4. Filter Logic
@@ -547,6 +655,20 @@ function setupViewToggle() {
             currentView = btn.dataset.view;
             refreshContent();
         });
+    });
+}
+
+function setupVideoTypeFilters() {
+    if (!videoTypeFilters) return;
+
+    videoTypeFilters.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('chip')) return;
+
+        const selectedType = e.target.dataset.videoType;
+        if (!selectedType) return;
+
+        currentVideoType = selectedType;
+        refreshContent();
     });
 }
 

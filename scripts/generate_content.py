@@ -188,7 +188,8 @@ def scan_vault():
                     'release_date': str(publish_date) if publish_date else None,
                     'serie': meta.get('serie', 'na'),
                     'sub_serie': meta.get('sub_serie', 'na'),
-                    'playlist_id': meta.get('playlist_id')
+                    'playlist_id': meta.get('playlist_id'),
+                    'video_type': meta.get('video_type', 'unknown')
                 }
                 
                 # Add to Channel Videos

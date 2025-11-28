@@ -274,6 +274,18 @@ lite-youtube {
     color: var(--text-muted);
 }
 
+.lang-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     .glass-header {
@@ -592,29 +604,29 @@ lite-youtube {
     color: var(--primary);
 }
 
-/* --- Grouped Socials Grid --- */
+/* --- Card-Based Socials Layout --- */
 .socials-container {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
     padding: 0 5%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
-.social-group h3 {
+.social-group-header {
+    grid-column: 1 / -1;
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
     display: flex;
     align-items: center;
     gap: 12px;
+    color: var(--text-main);
 }
 
-.social-group-grid {
-    display: grid;
-    /* Reduced min-width to allow 3 columns on standard tablets/desktops */
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.5rem;
+.social-group-header:first-child {
+    margin-top: 0;
 }
 
 /* YouTube Card Specifics */
@@ -757,7 +769,7 @@ lite-youtube {
     background: var(--primary);
 }
 
-/* Social Card Styles (Bento Grid Version) */
+/* Social Card Styles - Similar to Video Cards */
 .social-card {
     background: var(--surface);
     border-radius: var(--radius);
@@ -771,17 +783,15 @@ lite-youtube {
     position: relative;
     height: 100%;
     text-decoration: none;
-    /* Ensure links don't have underlines */
 }
 
 .social-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
-    border-color: rgba(168, 85, 247, 0.3);
     z-index: 2;
 }
 
-/* Social Banner (Replaces Thumbnail) */
+/* Social Banner (Replaces Thumbnail) - Like Video Thumbnail */
 .social-banner {
     aspect-ratio: 16 / 9;
     width: 100%;
@@ -800,23 +810,49 @@ lite-youtube {
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
 }
 
-/* Platform Gradients */
-.banner-patreon {
+/* Platform-Specific Card Styles */
+.social-card.card-patreon {
+    grid-column: span 2;
+}
+
+.social-card.card-patreon .social-banner {
     background: linear-gradient(135deg, #FF424D, #F96854);
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
 }
 
-.banner-youtube {
+.social-card.card-patreon:hover {
+    border-color: rgba(255, 66, 77, 0.5);
+}
+
+.social-card.card-youtube .social-banner {
     background: linear-gradient(135deg, #FF0000, #282828);
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
 }
 
-.banner-instagram {
+.social-card.card-youtube:hover {
+    border-color: rgba(255, 0, 0, 0.5);
+}
+
+.social-card.card-instagram .social-banner {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
 }
 
-.banner-tiktok {
+.social-card.card-instagram:hover {
+    border-color: rgba(225, 48, 108, 0.5);
+}
+
+.social-card.card-tiktok .social-banner {
     background: linear-gradient(135deg, #000000, #25F4EE, #FE2C55);
     background-size: 200% 200%;
     animation: gradientMove 5s ease infinite;
+}
+
+.social-card.card-tiktok:hover {
+    border-color: rgba(254, 44, 85, 0.5);
 }
 
 @keyframes gradientMove {
@@ -833,34 +869,19 @@ lite-youtube {
     }
 }
 
-/* Featured Card (Patreon) */
-.social-card.featured {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.social-card.featured .social-banner {
-    flex-grow: 1;
-    /* Take up available space */
-    height: auto;
-}
-
-.social-card.featured .social-banner svg {
-    width: 96px;
-    height: 96px;
-}
-
-.social-card.featured .card-title {
-    font-size: 1.5rem;
-}
-
-/* Card Content Reuse */
+/* Social Card Content - Reuses Video Card Patterns */
 .social-card .card-content {
     padding: 1.25rem;
-    flex-grow: 0;
-    /* Content doesn't need to grow as much as banner in featured */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
+}
+
+.social-card .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
 }
 
 .social-platform-tag {
@@ -871,8 +892,6 @@ lite-youtube {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: 0.5rem;
-    align-self: flex-start;
 }
 
 .tag-patreon {
@@ -897,22 +916,44 @@ lite-youtube {
 
 .social-handle {
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text-main);
-    margin-bottom: 0.25rem;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
 }
 
 .social-desc {
     font-size: 0.9rem;
     color: var(--text-muted);
     line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-/* Mobile Adjustments */
+.social-cta {
+    margin-top: auto;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Mobile Adjustments for Social Cards */
 @media (max-width: 768px) {
-    .social-card.featured {
+    .socials-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .social-card.card-patreon {
         grid-column: span 1;
-        grid-row: span 1;
+    }
+
+    .social-group-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -932,4 +973,37 @@ lite-youtube {
         flex: 1;
         justify-content: center;
     }
+}
+
+
+/* --- Icon Wrappers for Section Headers --- */
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+}
+
+.icon-patreon {
+    color: #FF424D;
+    background: rgba(255, 66, 77, 0.1);
+}
+
+.icon-youtube {
+    color: #FF0000;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.icon-instagram {
+    color: #E1306C;
+    background: rgba(225, 48, 108, 0.1);
+}
+
+.icon-tiktok {
+    color: #FE2C55;
+    background: rgba(254, 44, 85, 0.1);
 }
