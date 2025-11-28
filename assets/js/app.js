@@ -20,13 +20,117 @@ const languageSelect = document.getElementById('languageSelect');
 const filterBar = document.getElementById('filterBar');
 
 // 1. Fetch & Normalize Data
+const translations = {
+    en: {
+        featured: "Featured Playlists",
+        latest: "Latest Uploads",
+        socials: "Community & Socials",
+        videosBtn: "Videos",
+        socialsBtn: "Socials",
+        searchPlaceholder: "Search across channels...",
+        all: "All",
+        searchResults: "Search Results",
+        playlist: "Playlist",
+        loading: "Loading content...",
+        noVideos: "No videos found.",
+        youtubeTitle: "YouTube Channels",
+        instagramTitle: "Instagram",
+        tiktokTitle: "TikTok",
+        subscribe: "Subscribe",
+        follow: "Follow"
+    },
+    es: {
+        featured: "Listas Destacadas",
+        latest: "Últimos Videos",
+        socials: "Comunidad y Redes",
+        videosBtn: "Videos",
+        socialsBtn: "Redes",
+        searchPlaceholder: "Buscar en los canales...",
+        all: "Todos",
+        searchResults: "Resultados de Búsqueda",
+        playlist: "Lista",
+        loading: "Cargando contenido...",
+        noVideos: "No se encontraron videos.",
+        youtubeTitle: "Canales de YouTube",
+        instagramTitle: "Instagram",
+        tiktokTitle: "TikTok",
+        subscribe: "Suscribirse",
+        follow: "Seguir"
+    },
+    de: {
+        featured: "Vorgestellte Playlists",
+        latest: "Neueste Uploads",
+        socials: "Community & Soziales",
+        videosBtn: "Videos",
+        socialsBtn: "Soziales",
+        searchPlaceholder: "Kanäle durchsuchen...",
+        all: "Alle",
+        searchResults: "Suchergebnisse",
+        playlist: "Playlist",
+        loading: "Inhalt wird geladen...",
+        noVideos: "Keine Videos gefunden.",
+        youtubeTitle: "YouTube Kanäle",
+        instagramTitle: "Instagram",
+        tiktokTitle: "TikTok",
+        subscribe: "Abonnieren",
+        follow: "Folgen"
+    }
+};
+
+function detectLanguage() {
+    const storedLang = localStorage.getItem('preferredLanguage');
+    if (storedLang) return storedLang;
+
+    const browserLang = navigator.language.slice(0, 2);
+    if (['es', 'de'].includes(browserLang)) return browserLang;
+
+    return 'en';
+}
+
+function updateUIText() {
+    const t = translations[currentLanguage] || translations['en'];
+
+    // Static Elements
+    const featuredTitle = document.getElementById('featuredTitle');
+    if (featuredTitle) featuredTitle.textContent = t.featured;
+
+    const latestTitle = document.getElementById('latestTitle');
+    if (latestTitle) latestTitle.textContent = t.latest;
+
+    const socialsTitle = document.getElementById('socialsTitle');
+    if (socialsTitle) socialsTitle.textContent = t.socials;
+
+    const videosBtnText = document.getElementById('videosBtnText');
+    if (videosBtnText) videosBtnText.textContent = t.videosBtn;
+
+    const socialsBtnText = document.getElementById('socialsBtnText');
+    if (socialsBtnText) socialsBtnText.textContent = t.socialsBtn;
+
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) searchInput.placeholder = t.searchPlaceholder;
+
+    // Update "All" filter chip if it exists
+    const allChip = document.querySelector('.chip[data-channel="all"]');
+    if (allChip) allChip.textContent = t.all;
+
+    // Update Language Picker Label
+    const langLabel = document.querySelector('#langBtn span');
+    const langNames = { en: 'English', es: 'Español', de: 'Deutsch', all: 'All Languages' };
+    if (langLabel) langLabel.textContent = langNames[currentLanguage] || 'English';
+}
+
 async function initPortfolio() {
     try {
+        // Detect and set language
+        currentLanguage = detectLanguage();
+        updateUIText();
+
         // Show loading state
+        const t = translations[currentLanguage] || translations['en'];
         videoGrid.innerHTML = `
             <div class="loading-state">
                 <div class="loading-spinner"></div>
-                <p>Loading content...</p>
+                <p>${t.loading}</p>
             </div>
         `;
 
@@ -153,7 +257,8 @@ function updateChannelFilters(videos) {
 
     const allBtn = document.createElement('button');
     allBtn.className = 'chip active';
-    allBtn.textContent = 'All';
+    const t = translations[currentLanguage] || translations['en'];
+    allBtn.textContent = t.all;
     allBtn.dataset.channel = 'all';
 
     channelFilters.innerHTML = '';
@@ -220,7 +325,7 @@ function renderGrid(videos, isFiltered = false) {
     if (videos.length === 0) {
         videoGrid.innerHTML = `
             <div class="loading-state">
-                <p>No videos found.</p>
+                <p>${(translations[currentLanguage] || translations['en']).noVideos}</p>
             </div>
         `;
         return;
@@ -251,88 +356,81 @@ function renderGrid(videos, isFiltered = false) {
 
 function renderSocials() {
     socialsGrid.innerHTML = '';
+    const t = translations[currentLanguage] || translations['en'];
 
-    // Create Container
-    const container = document.createElement('div');
-    container.className = 'socials-container';
-
-    // Data Structure
-    const socialData = {
-        youtube: {
-            title: 'YouTube Channels',
-            icon: '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>',
-            items: [
-                { handle: 'AImagination Studio', desc: 'The main hub for all our creative AI content.', url: '#', lang: 'all', accent: 'gallery' },
-                { handle: 'Mathematics', desc: 'In-depth math tutorials and visualizations.', url: '#', lang: 'all', accent: 'math' },
-                { handle: 'Chemistry', desc: 'Exploring chemical reactions and molecular structures.', url: '#', lang: 'all', accent: 'chemistry' }
-            ]
-        },
-        instagram: {
-            title: 'Instagram',
-            icon: '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>',
-            items: [
-                { handle: '@aimagination_en', url: 'https://www.instagram.com/aimagination_en/', lang: 'en', accent: 'gallery' },
-                { handle: '@aimagination_es', url: 'https://www.instagram.com/aimagination_es/', lang: 'es', accent: 'gallery' },
-                { handle: '@aimagination_de', url: 'https://www.instagram.com/aimagination_de/', lang: 'de', accent: 'gallery' }
-            ]
-        },
-        tiktok: {
-            title: 'TikTok',
-            icon: '<path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>',
-            items: [
-                { handle: '@aimagination_en', url: 'https://www.tiktok.com/@aimagination_en', lang: 'en', accent: 'gallery' },
-                { handle: '@aimagination_es', url: 'https://www.tiktok.com/@aimagination_es', lang: 'es', accent: 'gallery' },
-                { handle: '@aimagination_de', url: 'https://www.tiktok.com/@aimagination_de', lang: 'de', accent: 'gallery' }
-            ]
-        }
+    // Icons
+    const icons = {
+        patreon: '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>',
+        youtube: '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>',
+        instagram: '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>',
+        tiktok: '<path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>'
     };
 
-    // Render Groups
-    Object.keys(socialData).forEach(key => {
-        const group = socialData[key];
+    // 1. Patreon (Featured)
+    const items = [
+        {
+            platform: 'patreon',
+            handle: 'AImagination Media',
+            desc: 'Support our work and get exclusive benefits!',
+            url: 'https://www.patreon.com/c/AImaginationMedia/membership',
+            featured: true,
+            accent: 'patreon'
+        }
+    ];
 
-        // Filter items based on current language (unless item is 'all')
-        const filteredItems = group.items.filter(item => item.lang === 'all' || item.lang === currentLanguage || currentLanguage === 'all');
+    // 2. YouTube
+    const ytItems = [
+        { handle: 'AImagination Studio', desc: 'The main hub for all our creative AI content.', url: '#', accent: 'youtube' },
+        { handle: 'Mathematics', desc: 'In-depth math tutorials and visualizations.', url: '#', accent: 'youtube' },
+        { handle: 'Chemistry', desc: 'Exploring chemical reactions.', url: '#', accent: 'youtube' }
+    ];
+    ytItems.forEach(i => items.push({ ...i, platform: 'youtube' }));
 
-        if (filteredItems.length === 0) return;
+    // 3. Instagram
+    const instaItems = [
+        { handle: '@aimagination_en', url: 'https://www.instagram.com/aimagination_en/', accent: 'instagram' },
+        { handle: '@aimagination_es', url: 'https://www.instagram.com/aimagination_es/', accent: 'instagram' },
+        { handle: '@aimagination_de', url: 'https://www.instagram.com/aimagination_de/', accent: 'instagram' }
+    ];
+    instaItems.forEach(i => items.push({ ...i, platform: 'instagram' }));
 
-        const groupSection = document.createElement('div');
-        groupSection.className = 'social-group';
+    // 4. TikTok
+    const tiktokItems = [
+        { handle: '@aimagination_en', url: 'https://www.tiktok.com/@aimagination_en', accent: 'tiktok' },
+        { handle: '@aimagination_es', url: 'https://www.tiktok.com/@aimagination_es', accent: 'tiktok' },
+        { handle: '@aimagination_de', url: 'https://www.tiktok.com/@aimagination_de', accent: 'tiktok' }
+    ];
+    tiktokItems.forEach(i => items.push({ ...i, platform: 'tiktok' }));
 
-        groupSection.innerHTML = `
-            <h3>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    ${group.icon}
-                </svg>
-                ${group.title}
-            </h3>
-            <div class="social-group-grid">
-                ${filteredItems.map(item => `
-                    <a href="${item.url}" target="_blank" class="social-card accent-${item.accent} ${key === 'youtube' ? 'youtube-card' : ''}">
-                        ${key !== 'youtube' ? `
-                        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            ${group.icon}
-                        </svg>` : `
-                        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                             ${group.icon}
-                        </svg>
-                        `}
-                        
-                        <div class="${key === 'youtube' ? 'social-info' : ''}">
-                            <div class="social-handle">${item.handle}</div>
-                            ${item.desc ? `<div class="social-desc">${item.desc}</div>` : ''}
-                            ${key !== 'youtube' ? `<div class="social-platform">${group.title}</div>` : ''}
-                        </div>
-                        
-                        <div class="social-link">${key === 'youtube' ? 'Subscribe' : 'Follow'}</div>
-                    </a>
-                `).join('')}
-            </div>
+    // Render
+    items.forEach(item => {
+        const card = document.createElement('a');
+        card.href = item.url;
+        card.target = '_blank';
+        card.className = `social-card ${item.featured ? 'featured' : ''}`;
+
+        // Banner
+        const banner = document.createElement('div');
+        banner.className = `social-banner banner-${item.platform}`;
+        banner.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                ${icons[item.platform]}
+            </svg>
         `;
-        container.appendChild(groupSection);
-    });
 
-    socialsGrid.appendChild(container);
+        // Content
+        const content = document.createElement('div');
+        content.className = 'card-content';
+        content.innerHTML = `
+            <span class="social-platform-tag tag-${item.platform}">${item.platform}</span>
+            <div class="social-handle">${item.handle}</div>
+            ${item.desc ? `<div class="social-desc">${item.desc}</div>` : ''}
+        `;
+
+        card.appendChild(banner);
+        card.appendChild(content);
+        socialsGrid.appendChild(card);
+    });
 }
 
 // 4. Filter Logic
@@ -344,7 +442,8 @@ function filterByPlaylist(playlistId, playlistTitle) {
     const langVideos = currentLanguage === 'all' ? allVideos : allVideos.filter(v => v.language === currentLanguage);
     const filtered = langVideos.filter(v => v.playlistId === playlistId);
 
-    latestSection.querySelector('h2').textContent = `Playlist: ${playlistTitle}`;
+    const t = translations[currentLanguage] || translations['en'];
+    latestSection.querySelector('h2').textContent = `${t.playlist}: ${playlistTitle}`;
     renderGrid(filtered, true);
 }
 
@@ -353,10 +452,11 @@ function setupSearch() {
         const query = e.target.value;
         document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
         document.querySelector('[data-channel="all"]').classList.add('active');
-        latestSection.querySelector('h2').textContent = 'Search Results';
+        const t = translations[currentLanguage] || translations['en'];
+        latestSection.querySelector('h2').textContent = t.searchResults;
 
         if (!query) {
-            latestSection.querySelector('h2').textContent = 'Latest Uploads';
+            latestSection.querySelector('h2').textContent = t.latest;
             refreshContent(); // Reset to current language view
             return;
         }
@@ -385,8 +485,10 @@ function setupFilters() {
         const langVideos = currentLanguage === 'all' ? allVideos : allVideos.filter(v => v.language === currentLanguage);
         const langPlaylists = currentLanguage === 'all' ? allPlaylists : allPlaylists.filter(p => p.language === currentLanguage);
 
+        const t = translations[currentLanguage] || translations['en'];
+
         if (selectedChannel === 'all') {
-            latestSection.querySelector('h2').textContent = 'Latest Uploads';
+            latestSection.querySelector('h2').textContent = t.latest;
             renderPlaylists(langPlaylists);
             renderGrid(langVideos);
         } else {
@@ -429,10 +531,7 @@ function setupLanguageSelector() {
             currentLanguage = value;
 
             // Update UI
-            label.textContent = value === 'all' ? 'All Languages' : text;
-            options.forEach(o => o.classList.remove('active'));
-            opt.classList.add('active');
-            dropdown.classList.remove('show');
+            updateUIText(); // Update all static text
 
             refreshContent();
         });

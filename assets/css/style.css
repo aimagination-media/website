@@ -612,18 +612,22 @@ lite-youtube {
 
 .social-group-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    /* Reduced min-width to allow 3 columns on standard tablets/desktops */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1.5rem;
 }
 
 /* YouTube Card Specifics */
+/* YouTube Card Specifics */
 .youtube-card {
-    grid-column: 1 / -1;
-    /* Full width */
+    grid-column: auto;
+    /* Ensure it flows in grid */
     display: flex;
+    flex-direction: column;
+    /* Stack vertically like other cards */
     align-items: center;
-    text-align: left;
-    gap: 2rem;
+    text-align: center;
+    gap: 1rem;
 }
 
 .youtube-card .social-icon {
@@ -635,6 +639,10 @@ lite-youtube {
 
 .youtube-card .social-info {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content */
 }
 
 .youtube-card .social-desc {
@@ -643,10 +651,10 @@ lite-youtube {
     margin-top: 0.5rem;
 }
 
+/* Mobile adjustments not strictly needed if we use the same grid, 
+   but keeping a check just in case */
 @media (max-width: 768px) {
     .youtube-card {
-        flex-direction: column;
-        text-align: center;
         gap: 1rem;
     }
 }
@@ -749,61 +757,166 @@ lite-youtube {
     background: var(--primary);
 }
 
-/* Social Card Styles */
+/* Social Card Styles (Bento Grid Version) */
 .social-card {
     background: var(--surface);
     border-radius: var(--radius);
-    padding: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+        border-color 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+    text-decoration: none;
+    /* Ensure links don't have underlines */
 }
 
 .social-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary);
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
+    border-color: rgba(168, 85, 247, 0.3);
+    z-index: 2;
 }
 
-.social-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 1rem;
-    color: var(--primary);
+/* Social Banner (Replaces Thumbnail) */
+.social-banner {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-banner svg {
+    width: 64px;
+    height: 64px;
+    color: white;
+    z-index: 1;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+}
+
+/* Platform Gradients */
+.banner-patreon {
+    background: linear-gradient(135deg, #FF424D, #F96854);
+}
+
+.banner-youtube {
+    background: linear-gradient(135deg, #FF0000, #282828);
+}
+
+.banner-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.banner-tiktok {
+    background: linear-gradient(135deg, #000000, #25F4EE, #FE2C55);
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Featured Card (Patreon) */
+.social-card.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.social-card.featured .social-banner {
+    flex-grow: 1;
+    /* Take up available space */
+    height: auto;
+}
+
+.social-card.featured .social-banner svg {
+    width: 96px;
+    height: 96px;
+}
+
+.social-card.featured .card-title {
+    font-size: 1.5rem;
+}
+
+/* Card Content Reuse */
+.social-card .card-content {
+    padding: 1.25rem;
+    flex-grow: 0;
+    /* Content doesn't need to grow as much as banner in featured */
+    display: flex;
+    flex-direction: column;
+}
+
+.social-platform-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+    align-self: flex-start;
+}
+
+.tag-patreon {
+    color: #FF424D;
+    background: rgba(255, 66, 77, 0.1);
+}
+
+.tag-youtube {
+    color: #FF0000;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.tag-instagram {
+    color: #E1306C;
+    background: rgba(225, 48, 108, 0.1);
+}
+
+.tag-tiktok {
+    color: #FE2C55;
+    background: rgba(254, 44, 85, 0.1);
 }
 
 .social-handle {
     font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 0.25rem;
     color: var(--text-main);
+    margin-bottom: 0.25rem;
 }
 
-.social-platform {
+.social-desc {
     font-size: 0.9rem;
     color: var(--text-muted);
-    margin-bottom: 1rem;
-    text-transform: capitalize;
+    line-height: 1.4;
 }
 
-.social-link {
-    margin-top: auto;
-    background: var(--surface-hover);
-    color: var(--text-main);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .social-card.featured {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }
 
-.social-link:hover {
-    background: var(--primary);
-    color: white;
-}
+
 
 @media (max-width: 768px) {
     .controls-section {
