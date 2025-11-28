@@ -4,14 +4,20 @@ const DATA_URL = 'assets/data/content.json';
 let allVideos = [];
 let allPlaylists = [];
 let fuse; // Search instance
+let currentLanguage = 'en';
+let currentView = 'videos';
 
 // DOM Elements
 const videoGrid = document.getElementById('videoGrid');
-const seriesSwimlane = document.getElementById('seriesSwimlane'); // Keeping ID for CSS compat
+const seriesSwimlane = document.getElementById('seriesSwimlane');
 const searchInput = document.getElementById('searchInput');
 const channelFilters = document.getElementById('channelFilters');
 const seriesSection = document.getElementById('seriesSection');
 const latestSection = document.getElementById('latestSection');
+const socialsSection = document.getElementById('socialsSection');
+const socialsGrid = document.getElementById('socialsGrid');
+const languageSelect = document.getElementById('languageSelect');
+const filterBar = document.getElementById('filterBar');
 
 // 1. Fetch & Normalize Data
 async function initPortfolio() {
@@ -36,6 +42,7 @@ async function initPortfolio() {
             Object.keys(data[lang]).forEach(channelKey => {
                 const channel = data[lang][channelKey];
                 const channelName = channel.title;
+                const channelColor = channel.color || '#71717a';
 
                 // Process Videos
                 channel.videos.forEach(video => {
@@ -47,8 +54,9 @@ async function initPortfolio() {
                             date: video.published_at,
                             channelName: channelName,
                             channelId: channelKey,
+                            channelColor: channelColor,
                             language: lang,
-                            serie: video.serie, // Keeping for legacy search/display if needed
+                            serie: video.serie,
                             playlistId: video.playlist_id,
                             searchStr: `${video.title} ${channelName} ${lang} ${video.serie || ''}`
                         });
@@ -60,11 +68,9 @@ async function initPortfolio() {
                     Object.keys(channel.playlists).forEach(playlistId => {
                         const playlistData = channel.playlists[playlistId];
                         const playlistVideos = playlistData ? playlistData.videos : undefined;
-                        // Only include playlists with published videos
                         const publishedVideos = playlistVideos ? playlistVideos.filter(v => v.state === 'published') : [];
 
                         if (publishedVideos.length > 0) {
-                            // Find a thumbnail (use the first video's)
                             const thumb = publishedVideos[0].thumbnail || `https://img.youtube.com/vi/${publishedVideos[0].video_id}/hqdefault.jpg`;
 
                             allPlaylists.push({
@@ -72,11 +78,12 @@ async function initPortfolio() {
                                 title: playlistData.title,
                                 channelName: channelName,
                                 channelId: channelKey,
+                                channelColor: channelColor,
                                 videoCount: publishedVideos.length,
                                 thumbnail: thumb,
                                 videos: publishedVideos,
                                 language: lang,
-                                playlistId: playlistData.id // Redundant but consistent
+                                playlistId: playlistData.id
                             });
                         }
                     });
@@ -93,13 +100,14 @@ async function initPortfolio() {
             threshold: 0.3
         });
 
-        // Initial Render
-        renderPlaylists(allPlaylists);
-        renderGrid(allVideos);
-
         // Setup Event Listeners
         setupSearch();
         setupFilters();
+        setupLanguageSelector();
+        setupViewToggle();
+
+        // Initial Render
+        refreshContent();
 
     } catch (error) {
         console.error("Init Error:", error);
@@ -112,22 +120,67 @@ async function initPortfolio() {
     }
 }
 
+function refreshContent() {
+    if (currentView === 'videos') {
+        // Filter by Language
+        const langVideos = currentLanguage === 'all' ? allVideos : allVideos.filter(v => v.language === currentLanguage);
+        const langPlaylists = currentLanguage === 'all' ? allPlaylists : allPlaylists.filter(p => p.language === currentLanguage);
+
+        // Update Filters
+        updateChannelFilters(langVideos);
+
+        // Render
+        renderPlaylists(langPlaylists);
+        renderGrid(langVideos);
+
+        seriesSection.style.display = langPlaylists.length > 0 ? 'block' : 'none';
+        latestSection.style.display = 'block';
+        filterBar.style.display = 'block';
+        socialsSection.style.display = 'none';
+    } else {
+        // Socials View
+        seriesSection.style.display = 'none';
+        latestSection.style.display = 'none';
+        filterBar.style.display = 'none';
+        socialsSection.style.display = 'block';
+        renderSocials();
+    }
+}
+
+function updateChannelFilters(videos) {
+    const channels = new Set();
+    videos.forEach(v => channels.add(v.channelName));
+
+    const allBtn = document.createElement('button');
+    allBtn.className = 'chip active';
+    allBtn.textContent = 'All';
+    allBtn.dataset.channel = 'all';
+
+    channelFilters.innerHTML = '';
+    channelFilters.appendChild(allBtn);
+
+    // Map channel names to IDs for accent classes
+    const channelMap = {};
+    videos.forEach(v => channelMap[v.channelName] = v.channelId);
+
+    Array.from(channels).sort().forEach(channelName => {
+        const btn = document.createElement('button');
+        btn.className = `chip accent-${channelMap[channelName]}`;
+        btn.textContent = channelName;
+        btn.dataset.channel = channelName;
+        channelFilters.appendChild(btn);
+    });
+}
+
 // 2. Render Playlist Swimlane
 function renderPlaylists(playlistList) {
     seriesSwimlane.innerHTML = '';
 
-    if (playlistList.length === 0) {
-        seriesSection.style.display = 'none';
-        return;
-    }
-    seriesSection.style.display = 'block';
-
     playlistList.forEach(playlist => {
         const card = document.createElement('div');
-        card.className = 'series-card'; // Reuse existing CSS class
-        // Clicking the card filters the grid
+        card.className = `series-card accent-${playlist.channelId}`;
+
         card.onclick = (e) => {
-            // Prevent filter if clicking the external link
             if (e.target.closest('.series-link')) return;
             filterByPlaylist(playlist.id, playlist.title);
         };
@@ -174,11 +227,9 @@ function renderGrid(videos, isFiltered = false) {
     }
 
     videos.forEach((video, index) => {
-        // Feature first 2 videos ONLY if we are showing the main "Latest Uploads" list (not filtered)
         const isFeatured = (!isFiltered && index < 2) ? 'featured' : '';
-
         const card = document.createElement('article');
-        card.className = `video-card ${isFeatured}`;
+        card.className = `video-card ${isFeatured} accent-${video.channelId}`;
 
         const dateObj = new Date(video.date);
         const dateStr = dateObj.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
@@ -198,35 +249,115 @@ function renderGrid(videos, isFiltered = false) {
     });
 }
 
+function renderSocials() {
+    socialsGrid.innerHTML = '';
+
+    // Create Container
+    const container = document.createElement('div');
+    container.className = 'socials-container';
+
+    // Data Structure
+    const socialData = {
+        youtube: {
+            title: 'YouTube Channels',
+            icon: '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>',
+            items: [
+                { handle: 'AImagination Studio', desc: 'The main hub for all our creative AI content.', url: '#', lang: 'all', accent: 'gallery' },
+                { handle: 'Mathematics', desc: 'In-depth math tutorials and visualizations.', url: '#', lang: 'all', accent: 'math' },
+                { handle: 'Chemistry', desc: 'Exploring chemical reactions and molecular structures.', url: '#', lang: 'all', accent: 'chemistry' }
+            ]
+        },
+        instagram: {
+            title: 'Instagram',
+            icon: '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>',
+            items: [
+                { handle: '@aimagination_en', url: '#', lang: 'en', accent: 'gallery' },
+                { handle: '@aimagination_es', url: '#', lang: 'es', accent: 'gallery' },
+                { handle: '@aimagination_de', url: '#', lang: 'de', accent: 'gallery' }
+            ]
+        },
+        tiktok: {
+            title: 'TikTok',
+            icon: '<path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>',
+            items: [
+                { handle: '@aimagination_en', url: '#', lang: 'en', accent: 'gallery' },
+                { handle: '@aimagination_es', url: '#', lang: 'es', accent: 'gallery' },
+                { handle: '@aimagination_de', url: '#', lang: 'de', accent: 'gallery' }
+            ]
+        }
+    };
+
+    // Render Groups
+    Object.keys(socialData).forEach(key => {
+        const group = socialData[key];
+
+        // Filter items based on current language (unless item is 'all')
+        const filteredItems = group.items.filter(item => item.lang === 'all' || item.lang === currentLanguage || currentLanguage === 'all');
+
+        if (filteredItems.length === 0) return;
+
+        const groupSection = document.createElement('div');
+        groupSection.className = 'social-group';
+
+        groupSection.innerHTML = `
+            <h3>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    ${group.icon}
+                </svg>
+                ${group.title}
+            </h3>
+            <div class="social-group-grid">
+                ${filteredItems.map(item => `
+                    <a href="${item.url}" target="_blank" class="social-card accent-${item.accent} ${key === 'youtube' ? 'youtube-card' : ''}">
+                        ${key !== 'youtube' ? `
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            ${group.icon}
+                        </svg>` : `
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                             ${group.icon}
+                        </svg>
+                        `}
+                        
+                        <div class="${key === 'youtube' ? 'social-info' : ''}">
+                            <div class="social-handle">${item.handle}</div>
+                            ${item.desc ? `<div class="social-desc">${item.desc}</div>` : ''}
+                            ${key !== 'youtube' ? `<div class="social-platform">${group.title}</div>` : ''}
+                        </div>
+                        
+                        <div class="social-link">${key === 'youtube' ? 'Subscribe' : 'Follow'}</div>
+                    </a>
+                `).join('')}
+            </div>
+        `;
+        container.appendChild(groupSection);
+    });
+
+    socialsGrid.appendChild(container);
+}
+
 // 4. Filter Logic
 function filterByPlaylist(playlistId, playlistTitle) {
-    // Update UI to show we are filtered
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-
-    // Scroll to grid
     latestSection.scrollIntoView({ behavior: 'smooth' });
 
-    // Filter videos
-    const filtered = allVideos.filter(v => v.playlistId === playlistId);
+    // Filter from current language set
+    const langVideos = currentLanguage === 'all' ? allVideos : allVideos.filter(v => v.language === currentLanguage);
+    const filtered = langVideos.filter(v => v.playlistId === playlistId);
 
-    // Update Section Title
     latestSection.querySelector('h2').textContent = `Playlist: ${playlistTitle}`;
-
-    renderGrid(filtered, true); // true = disable featured layout for filtered view
+    renderGrid(filtered, true);
 }
 
 function setupSearch() {
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value;
-
-        // Reset UI
         document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
         document.querySelector('[data-channel="all"]').classList.add('active');
         latestSection.querySelector('h2').textContent = 'Search Results';
 
         if (!query) {
             latestSection.querySelector('h2').textContent = 'Latest Uploads';
-            renderGrid(allVideos);
+            refreshContent(); // Reset to current language view
             return;
         }
 
@@ -243,21 +374,6 @@ function setupSearch() {
 }
 
 function setupFilters() {
-    const channels = new Set();
-    allVideos.forEach(v => channels.add(v.channelName));
-
-    const allBtn = channelFilters.querySelector('[data-channel="all"]');
-    channelFilters.innerHTML = '';
-    channelFilters.appendChild(allBtn);
-
-    channels.forEach(channelName => {
-        const btn = document.createElement('button');
-        btn.className = 'chip';
-        btn.textContent = channelName;
-        btn.dataset.channel = channelName;
-        channelFilters.appendChild(btn);
-    });
-
     channelFilters.addEventListener('click', (e) => {
         if (!e.target.classList.contains('chip')) return;
 
@@ -266,22 +382,72 @@ function setupFilters() {
         searchInput.value = '';
 
         const selectedChannel = e.target.dataset.channel;
+        const langVideos = currentLanguage === 'all' ? allVideos : allVideos.filter(v => v.language === currentLanguage);
+        const langPlaylists = currentLanguage === 'all' ? allPlaylists : allPlaylists.filter(p => p.language === currentLanguage);
 
         if (selectedChannel === 'all') {
             latestSection.querySelector('h2').textContent = 'Latest Uploads';
-            renderPlaylists(allPlaylists); // Show all playlists
-            renderGrid(allVideos);
+            renderPlaylists(langPlaylists);
+            renderGrid(langVideos);
         } else {
             latestSection.querySelector('h2').textContent = `${selectedChannel} Videos`;
 
-            // Filter Playlists
-            const filteredPlaylists = allPlaylists.filter(s => s.channelName === selectedChannel);
+            const filteredPlaylists = langPlaylists.filter(s => s.channelName === selectedChannel);
             renderPlaylists(filteredPlaylists);
 
-            // Filter Videos
-            const filteredVideos = allVideos.filter(v => v.channelName === selectedChannel);
+            const filteredVideos = langVideos.filter(v => v.channelName === selectedChannel);
             renderGrid(filteredVideos, true);
         }
+    });
+}
+
+function setupLanguageSelector() {
+    const btn = document.getElementById('langBtn');
+    const dropdown = document.getElementById('langDropdown');
+    const options = document.querySelectorAll('.lang-option');
+    const label = btn.querySelector('span');
+
+    // Toggle Dropdown
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle('show');
+    });
+
+    // Close on outside click
+    document.addEventListener('click', () => {
+        dropdown.classList.remove('show');
+    });
+
+    // Handle Selection
+    options.forEach(opt => {
+        opt.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const value = opt.dataset.value;
+            const text = opt.textContent.trim();
+
+            // Update State
+            currentLanguage = value;
+
+            // Update UI
+            label.textContent = value === 'all' ? 'All Languages' : text;
+            options.forEach(o => o.classList.remove('active'));
+            opt.classList.add('active');
+            dropdown.classList.remove('show');
+
+            refreshContent();
+        });
+    });
+}
+
+function setupViewToggle() {
+    const btns = document.querySelectorAll('.toggle-btn');
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentView = btn.dataset.view;
+            refreshContent();
+        });
     });
 }
 

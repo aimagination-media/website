@@ -15,19 +15,28 @@ CACHE_PATH = 'assets/data/playlist_cache.json'
 # Mappings for UI display
 CHANNEL_INFO = {
     'math': {
+        'color': '#3b82f6', # Blue
         'en': {'title': 'Mathematics', 'description': 'Master math concepts from basics to advanced topics'},
         'es': {'title': 'Matemáticas', 'description': 'Domina conceptos matemáticos desde lo básico hasta temas avanzados'},
         'de': {'title': 'Mathematik', 'description': 'Meistere mathematische Konzepte von den Grundlagen bis zu fortgeschrittenen Themen'}
     },
     'chemistry': {
+        'color': '#10b981', # Emerald
         'en': {'title': 'Chemistry', 'description': 'Explore the fascinating world of chemical reactions'},
         'es': {'title': 'Química', 'description': 'Explora el fascinante mundo de las reacciones químicas'},
         'de': {'title': 'Chemie', 'description': 'Entdecke die faszinierende Welt der chemischen Reaktionen'}
     },
     'audiobook': {
+        'color': '#f59e0b', # Amber
         'en': {'title': 'Audiobooks', 'description': 'Listen to engaging stories and educational content'},
         'es': {'title': 'Audiolibros', 'description': 'Escucha historias cautivadoras y contenido educativo'},
         'de': {'title': 'Hörbücher', 'description': 'Höre fesselnde Geschichten und Bildungsinhalte'}
+    },
+    'gallery': {
+        'color': '#ec4899', # Pink
+        'en': {'title': 'AI Vivid Dreams', 'description': 'Journey into the boundless imagination of AI art'},
+        'es': {'title': 'Sueños Vívidos de IA', 'description': 'Viaje a la imaginación ilimitada del arte de la IA'},
+        'de': {'title': 'KI Lebendige Träume', 'description': 'Reise in die grenzenlose Fantasie der KI-Kunst'}
     }
 }
 
@@ -89,6 +98,7 @@ def scan_vault():
             data[lang][channel] = {
                 'title': CHANNEL_INFO[channel][lang]['title'],
                 'description': CHANNEL_INFO[channel][lang]['description'],
+                'color': CHANNEL_INFO[channel]['color'],
                 'videos': [],
                 'playlists': {}
             }
@@ -123,15 +133,27 @@ def scan_vault():
                 if lang not in data:
                     continue
                     
-                channel = meta['channel'].lower()
-                if channel not in data[lang]:
-                    # Create channel entry if it doesn't exist (fallback)
-                    data[lang][channel] = {
-                        'title': channel.capitalize(),
-                        'description': '',
+                # Determine Channel Display Name
+                channel_key = meta['channel'].lower()
+                channel_display_name = meta.get('channel_public_name') or CHANNEL_INFO.get(channel_key, {}).get(lang, {}).get('title') or channel_key.capitalize()
+
+                if channel_key not in data[lang]:
+                    # Create channel entry if it doesn't exist
+                    # Try to get info from CHANNEL_INFO, fallback to defaults
+                    info = CHANNEL_INFO.get(channel_key, {})
+                    lang_info = info.get(lang, {})
+                    
+                    data[lang][channel_key] = {
+                        'title': channel_display_name,
+                        'description': lang_info.get('description', ''),
+                        'color': info.get('color', '#71717a'), # Default Zinc
                         'videos': [],
                         'playlists': {}
                     }
+                else:
+                    # Update title if public name is present (priority)
+                    if meta.get('channel_public_name'):
+                        data[lang][channel_key]['title'] = meta['channel_public_name']
                 
                 # Process State and Date
                 state = meta.get('state', 'draft')
@@ -170,7 +192,7 @@ def scan_vault():
                 }
                 
                 # Add to Channel Videos
-                data[lang][channel]['videos'].append(video)
+                data[lang][channel_key]['videos'].append(video)
                 
                 # Add to Playlists
                 playlist_id = meta.get('playlist_id')
@@ -189,13 +211,13 @@ def scan_vault():
                                 playlist_cache[playlist_id] = fetched_title
                                 cache_updated = True
                     
-                    if playlist_id not in data[lang][channel]['playlists']:
-                        data[lang][channel]['playlists'][playlist_id] = {
+                    if playlist_id not in data[lang][channel_key]['playlists']:
+                        data[lang][channel_key]['playlists'][playlist_id] = {
                             'id': playlist_id,
                             'title': playlist_title or 'Untitled Playlist',
                             'videos': []
                         }
-                    data[lang][channel]['playlists'][playlist_id]['videos'].append(video)
+                    data[lang][channel_key]['playlists'][playlist_id]['videos'].append(video)
                     
             except Exception as e:
                 print(f"Error processing file {file_path}: {e}")
