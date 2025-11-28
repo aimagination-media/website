@@ -486,7 +486,8 @@ function renderSocials() {
         // Handle (like video title)
         const handle = document.createElement('h3');
         handle.className = 'social-handle';
-        handle.textContent = item.handle;
+        const handleText = typeof item.handle === 'object' ? item.handle[currentLanguage] || item.handle.en : item.handle;
+        handle.textContent = handleText;
         content.appendChild(handle);
 
         // Description (if available)

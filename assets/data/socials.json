@@ -25,36 +25,51 @@
         "items": [
             {
                 "platform": "youtube",
-                "handle": "AImagination Studio",
-                "description": {
-                    "en": "The main hub for all our creative AI content.",
-                    "es": "El centro principal de todo nuestro contenido creativo de IA.",
-                    "de": "Die Hauptzentrale für all unsere kreativen KI-Inhalte."
+                "channel_dev_id": "ai_gallery",
+                "multi_lang_channel": "false",
+                "language": "English",
+                "handle": {
+                    "en": "AI Vivid Dreams",
+                    "es": "Visiones de IA",
+                    "de": "KI-Visionen"
                 },
-                "url": "https://www.youtube.com/@AImaginationStudio",
-                "id": "aimagination_studio"
+                "description": {
+                    "en": "Immerse yourself in a world of imagination, art, and sound — all created with cutting-edge AI.",
+                    "es": "Sumérgete en un mundo de imaginación, arte y sonido, todo creado con IA de última generación.",
+                    "de": "Tauche ein in eine Welt der Fantasie, Kunst und Klänge – alles erschaffen mit modernster KI."
+                },
+                "url": "https://www.youtube.com/channel/UCzx4ArnQeTqLHNOYJv7h_cQ",
+                "id": "ai_vivid_dreams"
             },
             {
                 "platform": "youtube",
-                "handle": "Mathematics",
-                "description": {
-                    "en": "In-depth math tutorials and visualizations.",
-                    "es": "Tutoriales de matemáticas en profundidad y visualizaciones.",
-                    "de": "Ausführliche Mathe-Tutorials und Visualisierungen."
-                },
-                "url": "https://www.youtube.com/@AImaginationMath",
-                "id": "mathematics"
+                "channel_dev_id": "Stories",
+                "handle": "Imagination Station",
+                "multi_lang_channel": "true",
+                "language": "English",
+                "description": "For readers that crave a story of the imagination of AI, narrated and visually synced for you to read along.",
+                "url": "https://www.youtube.com/channel/UCUwGW5fJRTTauKtzIPonPzA",
+                "id": "imagination_station_en"
             },
             {
                 "platform": "youtube",
-                "handle": "Chemistry",
-                "description": {
-                    "en": "Exploring chemical reactions.",
-                    "es": "Explorando reacciones químicas.",
-                    "de": "Chemische Reaktionen erforschen."
-                },
-                "url": "https://www.youtube.com/@AImaginationChem",
-                "id": "chemistry"
+                "channel_dev_id": "Stories",
+                "handle": "Libros Vivos",
+                "multi_lang_channel": "true",
+                "language": "Spanish",
+                "description": "Para lectores que anhelan una historia de la imaginación de la IA, narrada y sincronizada visualmente para que sigas la lectura.",
+                "url": "https://www.youtube.com/channel/UCdPgBzyq5Z7o0owzw3rsdsg",
+                "id": "imagination_station_es"
+            },
+            {
+                "platform": "youtube",
+                "channel_dev_id": "Stories",
+                "handle": "Bücher Leben",
+                "multi_lang_channel": "true",
+                "language": "German",
+                "description": "Für Leser, die sich nach einer Geschichte aus der Vorstellungskraft der KI sehnen – erzählt und visuell synchronisiert zum Mitlesen.",
+                "url": "https://www.youtube.com/channel/UCvDczi3G2Sa04mZfIb9Enqw",
+                "id": "imagination_station_de"
             }
         ]
     },
