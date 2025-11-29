@@ -621,19 +621,37 @@ lite-youtube {
     margin: 0 auto;
 }
 
-.social-group-header {
-    grid-column: 1 / -1;
-    font-size: 1.5rem;
+/* Section wrapper for each social platform */
+.social-section {
+    margin-bottom: 2.5rem;
+}
+
+.social-section:last-child {
     margin-bottom: 0;
-    margin-top: 1.5rem;
+}
+
+/* Section header - no longer in grid */
+.social-group-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 12px;
     color: var(--text-main);
 }
 
-.social-group-header:first-child {
-    margin-top: 0;
+/* Independent grid for cards within each section */
+.social-section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    grid-auto-flow: dense;
+}
+
+/* Override bento-grid for socials container to stack sections vertically */
+#socialsGrid.bento-grid {
+    display: block;
+    padding: 0 5%;
 }
 
 /* YouTube Card Specifics */
@@ -760,11 +778,36 @@ lite-youtube {
     --primary-glow: rgba(236, 72, 153, 0.4);
 }
 
+/* Social Accents */
+.accent-patreon {
+    --primary: #FF424D;
+    --primary-glow: rgba(255, 66, 77, 0.4);
+}
+
+.accent-youtube {
+    --primary: #FF0000;
+    --primary-glow: rgba(255, 0, 0, 0.4);
+}
+
+.accent-instagram {
+    --primary: #E1306C;
+    --primary-glow: rgba(225, 48, 108, 0.4);
+}
+
+.accent-tiktok {
+    --primary: #00F2EA;
+    --primary-glow: rgba(0, 242, 234, 0.4);
+}
+
 /* Apply accent to specific elements within the scoped container */
 .accent-math .channel-tag,
 .accent-chemistry .channel-tag,
 .accent-audiobook .channel-tag,
-.accent-gallery .channel-tag {
+.accent-gallery .channel-tag,
+.accent-patreon .channel-tag,
+.accent-youtube .channel-tag,
+.accent-instagram .channel-tag,
+.accent-tiktok .channel-tag {
     color: var(--primary);
     background: color-mix(in srgb, var(--primary), transparent 90%);
 }
@@ -955,12 +998,12 @@ lite-youtube {
         padding: 0 1rem;
     }
 
-    .social-card.card-patreon {
-        grid-column: span 1;
+    .social-section-grid {
+        grid-template-columns: 1fr;
     }
 
-    .social-group-grid {
-        grid-template-columns: 1fr;
+    .social-card.card-patreon {
+        grid-column: span 1;
     }
 }
 

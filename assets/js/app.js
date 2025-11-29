@@ -418,15 +418,11 @@ function renderGrid(videos, isFiltered = false) {
 
 function renderSocials() {
     socialsGrid.innerHTML = '';
-
-    const container = document.createElement('div');
-    container.className = 'socials-container';
-
     const t = translations[currentLanguage] || translations['en'];
 
     // Icons
     const icons = {
-        patreon: '<svg viewBox="0 0 470 470" fill="currentColor" stroke="currentColor" stroke-width="8"><g><path d="m257.044,354.256c13.729,0 25.517-4.526 34.088-13.086 11.183-11.206 15.419-27.645 11.976-46.348-3.259-17.702-13.119-35.517-27.766-50.163-18.106-18.106-41.428-28.916-62.386-28.916-13.74,0-25.534,4.531-34.108,13.105-11.155,11.156-15.4,27.609-11.955,46.33 3.259,17.702 13.12,35.517 27.766,50.163 18.106,18.106 41.428,28.915 62.385,28.915zm-72.141-108.747l19.542,19.542c1.465,1.465 3.384,2.197 5.304,2.197 1.919,0 3.839-0.732 5.304-2.197 2.929-2.929 2.929-7.678 0-10.606l-19.547-19.547c4.898-2.734 10.809-4.154 17.451-4.154 17.067,0 36.424,9.167 51.778,24.522 12.519,12.518 20.907,27.531 23.621,42.272 1.928,10.472 0.76,19.771-3.257,26.953l-48.833-48.833c-2.929-2.929-7.677-2.93-10.607,0-2.929,2.929-2.929,7.678 0,10.606l48.838,48.838c-4.898,2.734-10.81,4.154-17.452,4.154-17.067,0-36.424-9.167-51.778-24.522-12.519-12.518-20.907-27.53-23.62-42.272-1.929-10.471-0.762-19.771 3.256-26.953z"/><path d="M397.5,60h-24.145L359.776,5.681C358.941,2.342,355.941,0,352.5,0h-235c-3.441,0-6.441,2.342-7.276,5.681L96.645,60H72.5   c-4.143,0-7.5,3.358-7.5,7.5v40c0,4.142,3.357,7.5,7.5,7.5h8.107l13.156,155.685c0.331,3.913,3.608,6.869,7.465,6.869   c0.212,0,0.426-0.009,0.641-0.027c4.127-0.349,7.19-3.977,6.842-8.104L101.154,180h267.693L351.1,390H118.9l-7.663-90.685   c-0.35-4.128-3.984-7.202-8.105-6.842c-4.127,0.349-7.19,3.977-6.842,8.104l13.736,162.553c0.328,3.884,3.576,6.869,7.474,6.869   h235c3.897,0,7.146-2.985,7.474-6.869L389.393,115h8.107c4.143,0,7.5-3.358,7.5-7.5v-40C405,63.358,401.643,60,397.5,60z    M124.393,455l-4.225-50h229.665l-4.225,50H124.393z M370.114,165H99.886l-4.225-50h278.678L370.114,165z M390,100h-7.631   C382.363,100,80,100,80,100V75h22.344c0.106,0.002,0.216,0.002,0.324,0H337.5c4.143,0,7.5-3.358,7.5-7.5s-3.357-7.5-7.5-7.5   H112.105l11.25-45h223.289l13.579,54.319C361.059,72.658,364.059,75,367.5,75H390V100z"/></g></svg>',
+        patreon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>',
         youtube: '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>',
         instagram: '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>',
         tiktok: '<path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>'
@@ -434,7 +430,7 @@ function renderSocials() {
 
     const createHeader = (sectionTitle, type) => {
         const header = document.createElement('h3');
-        header.className = 'social-group-header';
+        header.className = `social-group-header accent-${type}`;
         header.innerHTML = `
             <span class="icon-wrapper icon-${type}">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
@@ -450,7 +446,7 @@ function renderSocials() {
         const card = document.createElement('a');
         card.href = item.url;
         card.target = '_blank';
-        card.className = `social-card card-${type}`;
+        card.className = `social-card card-${type} accent-${type}`;
 
         // Create Banner (like video thumbnail)
         const banner = document.createElement('div');
@@ -513,40 +509,47 @@ function renderSocials() {
         return card;
     };
 
-    // Render all sections and cards directly in container grid
+    // Helper to create section wrapper with independent grid
+    const createSectionWrapper = (sectionTitle, type, items) => {
+        const section = document.createElement('div');
+        section.className = 'social-section';
+
+        // Add header
+        section.appendChild(createHeader(sectionTitle, type));
+
+        // Create grid container for cards
+        const grid = document.createElement('div');
+        grid.className = 'social-section-grid';
+
+        // Add all cards to this section's grid
+        items.forEach(item => {
+            grid.appendChild(createCard(item, type));
+        });
+
+        section.appendChild(grid);
+        return section;
+    };
+
+    // Render each section with its own independent grid
     // Patreon Section
     if (socialsData.patreon && socialsData.patreon.items.length > 0) {
-        container.appendChild(createHeader(t.patreonTitle || "Support Us", 'patreon'));
-        socialsData.patreon.items.forEach(item => {
-            container.appendChild(createCard(item, 'patreon'));
-        });
+        socialsGrid.appendChild(createSectionWrapper(t.patreonTitle || "Support Us", 'patreon', socialsData.patreon.items));
     }
 
     // YouTube Section
     if (socialsData.youtube && socialsData.youtube.items.length > 0) {
-        container.appendChild(createHeader(t.youtubeTitle, 'youtube'));
-        socialsData.youtube.items.forEach(item => {
-            container.appendChild(createCard(item, 'youtube'));
-        });
+        socialsGrid.appendChild(createSectionWrapper(t.youtubeTitle, 'youtube', socialsData.youtube.items));
     }
 
     // Instagram Section
     if (socialsData.instagram && socialsData.instagram.items.length > 0) {
-        container.appendChild(createHeader(t.instagramTitle, 'instagram'));
-        socialsData.instagram.items.forEach(item => {
-            container.appendChild(createCard(item, 'instagram'));
-        });
+        socialsGrid.appendChild(createSectionWrapper(t.instagramTitle, 'instagram', socialsData.instagram.items));
     }
 
     // TikTok Section
     if (socialsData.tiktok && socialsData.tiktok.items.length > 0) {
-        container.appendChild(createHeader(t.tiktokTitle, 'tiktok'));
-        socialsData.tiktok.items.forEach(item => {
-            container.appendChild(createCard(item, 'tiktok'));
-        });
+        socialsGrid.appendChild(createSectionWrapper(t.tiktokTitle, 'tiktok', socialsData.tiktok.items));
     }
-
-    socialsGrid.appendChild(container);
 }
 
 // 4. Filter Logic
@@ -645,6 +648,10 @@ function setupLanguageSelector() {
 
             // Update State
             currentLanguage = value;
+
+            // Update Active State
+            options.forEach(o => o.classList.remove('active'));
+            opt.classList.add('active');
 
             // Update UI
             updateUIText(); // Update all static text
