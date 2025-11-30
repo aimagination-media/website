@@ -2,6 +2,7 @@ import { state, domElements } from './state.js';
 import { translations, langNames } from './translations.js';
 import { getPlaylistTitle, getChannelDisplayName, getChannelUrl } from './utils.js';
 import { filterByPlaylist } from './filter.js';
+import { updateTimeline } from './timeline.js';
 
 export function updateUIText() {
     const t = translations[state.currentLanguage] || translations['en'];
@@ -70,14 +71,50 @@ export function renderGrid(videos, isFiltered = false) {
                 <p>${(translations[state.currentLanguage] || translations['en']).noVideos}</p>
             </div>
         `;
+        updateTimeline([]); // Clear timeline
         return;
     }
 
+    let lastMonthYear = null;
+
     videos.forEach((video, index) => {
+        // Check for date change and insert header
+        if (video.date && video.date !== 'TBA') {
+            const dateObj = new Date(video.date);
+            if (!isNaN(dateObj.getTime())) {
+                const monthYear = dateObj.toLocaleString('default', { month: 'long', year: 'numeric' });
+
+                if (monthYear !== lastMonthYear) {
+                    lastMonthYear = monthYear;
+
+                    const header = document.createElement('div');
+                    header.className = 'grid-header';
+                    header.innerHTML = `
+                        <h3>${monthYear}</h3>
+                    `;
+                    domElements.videoGrid.appendChild(header);
+                }
+            }
+        }
+
         const isFeatured = (!isFiltered && index < 2) ? 'featured' : '';
         const isScheduled = video.isScheduled ? 'scheduled' : '';
         const card = document.createElement('article');
+
+        // Extract date for timeline data attributes
+        let dataYear = '';
+        let dataMonth = '';
+        if (video.date && video.date !== 'TBA') {
+            const dateObj = new Date(video.date);
+            if (!isNaN(dateObj.getTime())) {
+                dataYear = dateObj.getFullYear();
+                dataMonth = dateObj.toLocaleString('default', { month: 'short' });
+            }
+        }
+
         card.className = `video-card ${isFeatured} ${isScheduled} accent-${video.channelId}`;
+        if (dataYear) card.dataset.year = dataYear;
+        if (dataMonth) card.dataset.month = dataMonth;
 
         let dateStr = 'Coming Soon';
         if (video.date && video.date !== 'TBA') {
@@ -124,6 +161,9 @@ export function renderGrid(videos, isFiltered = false) {
         `;
         domElements.videoGrid.appendChild(card);
     });
+
+    // Update Timeline
+    updateTimeline(videos);
 }
 
 export function renderSocials() {

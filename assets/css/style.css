@@ -611,6 +611,63 @@ lite-youtube {
     gap: 4px;
 }
 
+/* --- Grid Headers --- */
+.grid-header {
+    grid-column: 1 / -1;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+/* Add a subtle line that goes under the header text */
+.grid-header::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--primary-glow), transparent);
+    margin-left: 1rem;
+    opacity: 0.5;
+}
+
+.grid-header h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary);
+    /* Accent color */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Optional: Add a small dot or icon before the text */
+.grid-header h3::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--primary);
+}
+
+.grid-header .header-count {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* First header shouldn't have top margin if it's at the very top */
+.grid-header:first-child {
+    margin-top: 0;
+}
+
 .series-content {
     padding: 1.25rem;
     flex-grow: 1;
@@ -797,6 +854,114 @@ lite-youtube {
 #socialsGrid.bento-grid {
     display: block;
     padding: 0 5%;
+}
+
+/* --- Timeline Navigation --- */
+#timeline-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 95;
+    /* Below header (100) but above content */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+    max-height: 80vh;
+    overflow-y: auto;
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#timeline-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.timeline-year-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.timeline-year {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 2px;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+    padding-right: 8px;
+}
+
+.timeline-year.active {
+    color: var(--primary);
+    opacity: 1;
+    font-size: 0.9rem;
+}
+
+.timeline-months {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-end;
+}
+
+.timeline-month {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 2px 0;
+
+}
+
+.month-label {
+    font-size: 0.7rem;
+    color: var(--text-main);
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.2s ease;
+    pointer-events: none;
+    /* Let click pass to container */
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.timeline-month:hover .month-label,
+.timeline-month.active .month-label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.month-dot {
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.timeline-month:hover .month-dot {
+    background: var(--text-main);
+    transform: scale(1.5);
+}
+
+.timeline-month.active .month-dot {
+    background: var(--primary);
+    transform: scale(2);
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
+/* Hide on mobile/tablet */
+@media (max-width: 1024px) {
+    #timeline-nav {
+        display: none;
+    }
 }
 
 /* YouTube Card Specifics */
