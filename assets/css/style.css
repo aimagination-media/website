@@ -93,6 +93,10 @@ body {
     /* Fixed dimensions to prevent layout shift */
     width: 40px;
     height: 40px;
+    line-height: 1;
+    /* Fix vertical alignment issues */
+    margin: 0;
+    /* Reset margins */
 
     /* Gradient Style */
     background: linear-gradient(45deg, #f3ec78, #af4261, #c060ff, #60c0ff, #f3ec78);

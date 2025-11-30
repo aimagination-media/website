@@ -73,44 +73,6 @@
             }
         ]
     },
-    "instagram": {
-        "title": "Instagram",
-        "items": [
-            {
-                "platform": "instagram",
-                "handle": "@aimagination_en",
-                "description": {
-                    "en": "Follow us for daily AI-generated content and updates.",
-                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
-                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
-                },
-                "url": "https://www.instagram.com/aimagination_en/",
-                "language": "en"
-            },
-            {
-                "platform": "instagram",
-                "handle": "@aimagination_es",
-                "description": {
-                    "en": "Follow us for daily AI-generated content and updates.",
-                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
-                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
-                },
-                "url": "https://www.instagram.com/aimagination_es/",
-                "language": "es"
-            },
-            {
-                "platform": "instagram",
-                "handle": "@aimagination_de",
-                "description": {
-                    "en": "Follow us for daily AI-generated content and updates.",
-                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
-                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
-                },
-                "url": "https://www.instagram.com/aimagination_de/",
-                "language": "de"
-            }
-        ]
-    },
     "tiktok": {
         "title": "TikTok",
         "items": [
@@ -145,6 +107,44 @@
                     "de": "Kurzform-KI-Inhalte, Tipps und kreative Experimente."
                 },
                 "url": "https://www.tiktok.com/@aimagination_de",
+                "language": "de"
+            }
+        ]
+    },
+    "instagram": {
+        "title": "Instagram",
+        "items": [
+            {
+                "platform": "instagram",
+                "handle": "@aimagination_en",
+                "description": {
+                    "en": "Follow us for daily AI-generated content and updates.",
+                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
+                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
+                },
+                "url": "https://www.instagram.com/aimagination_en/",
+                "language": "en"
+            },
+            {
+                "platform": "instagram",
+                "handle": "@aimagination_es",
+                "description": {
+                    "en": "Follow us for daily AI-generated content and updates.",
+                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
+                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
+                },
+                "url": "https://www.instagram.com/aimagination_es/",
+                "language": "es"
+            },
+            {
+                "platform": "instagram",
+                "handle": "@aimagination_de",
+                "description": {
+                    "en": "Follow us for daily AI-generated content and updates.",
+                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
+                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
+                },
+                "url": "https://www.instagram.com/aimagination_de/",
                 "language": "de"
             }
         ]

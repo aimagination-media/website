@@ -251,14 +251,14 @@ export function renderSocials() {
         domElements.socialsGrid.appendChild(createSectionWrapper(t.youtubeTitle, 'youtube', state.socialsData.youtube.items));
     }
 
-    // Instagram Section
-    if (state.socialsData.instagram && state.socialsData.instagram.items.length > 0) {
-        domElements.socialsGrid.appendChild(createSectionWrapper(t.instagramTitle, 'instagram', state.socialsData.instagram.items));
-    }
-
     // TikTok Section
     if (state.socialsData.tiktok && state.socialsData.tiktok.items.length > 0) {
         domElements.socialsGrid.appendChild(createSectionWrapper(t.tiktokTitle, 'tiktok', state.socialsData.tiktok.items));
+    }
+
+    // Instagram Section
+    if (state.socialsData.instagram && state.socialsData.instagram.items.length > 0) {
+        domElements.socialsGrid.appendChild(createSectionWrapper(t.instagramTitle, 'instagram', state.socialsData.instagram.items));
     }
 }
 
