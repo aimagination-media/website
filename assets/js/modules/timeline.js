@@ -16,10 +16,10 @@ export function updateTimeline(videos) {
 
     // If no videos, hide and return
     if (!videos || videos.length === 0) {
-        timelineContainer.style.display = 'none';
+        timelineContainer.classList.remove('is-visible');
         return;
     }
-    timelineContainer.style.display = 'flex';
+    timelineContainer.classList.add('is-visible');
 
     // 2. Group videos by date (Year -> Month)
     const groups = groupVideosByDate(videos);
