@@ -54,6 +54,30 @@ body {
     color: var(--primary);
 }
 
+/* AI Gradient Animation */
+.ai-gradient {
+    background: linear-gradient(45deg, #f3ec78, #af4261, #c060ff, #60c0ff, #f3ec78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 300% 300%;
+    animation: aiGradient 6s ease infinite;
+}
+
+@keyframes aiGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* Search Input - Centered */
 .search-wrapper {
     position: absolute;
@@ -191,6 +215,71 @@ main {
     z-index: 2;
 }
 
+/* Scheduled Video Styles */
+.video-card.scheduled {
+    /* Remove opacity/grayscale to make the gradient pop */
+    opacity: 1;
+    filter: none;
+}
+
+.video-card.scheduled:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
+    border-color: var(--primary);
+}
+
+.scheduled-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--text-main);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.scheduled-thumbnail {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    /* Gradient background set in accent classes for Chrome compatibility */
+    animation: gradientMove 5s ease infinite;
+    border-radius: var(--radius) var(--radius) 0 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheduled-thumbnail img {
+    display: none;
+    /* Hide the image to show the gradient */
+}
+
+.scheduled-overlay {
+    /* Reset overlay positioning since parent is flex centered */
+    position: static;
+    transform: none;
+    color: white;
+    width: auto;
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheduled-overlay svg {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+}
+
 /* Feature large videos (Bento effect) */
 .video-card.featured {
     grid-column: span 2;
@@ -264,9 +353,26 @@ lite-youtube {
     background: rgba(168, 85, 247, 0.1);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.channel-link-icon {
+    color: white;
+    opacity: 1;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+.channel-link-icon:hover {
+    color: var(--primary);
+    transform: scale(1.15);
 }
 
 .video-date {
@@ -810,6 +916,37 @@ lite-youtube {
 .accent-tiktok .channel-tag {
     color: var(--primary);
     background: color-mix(in srgb, var(--primary), transparent 90%);
+}
+
+/* Explicitly set --primary and gradient for scheduled thumbnails to ensure gradient works in Chrome */
+.video-card.accent-math .scheduled-thumbnail {
+    --primary: #3b82f6;
+    background: linear-gradient(135deg, var(--primary), #282828);
+    background-size: 200% 200%;
+}
+
+.video-card.accent-chemistry .scheduled-thumbnail {
+    --primary: #10b981;
+    background: linear-gradient(135deg, var(--primary), #282828);
+    background-size: 200% 200%;
+}
+
+.video-card.accent-audiobook .scheduled-thumbnail {
+    --primary: #f59e0b;
+    background: linear-gradient(135deg, var(--primary), #282828);
+    background-size: 200% 200%;
+}
+
+.video-card.accent-gallery .scheduled-thumbnail {
+    --primary: #ec4899;
+    background: linear-gradient(135deg, var(--primary), #282828);
+    background-size: 200% 200%;
+}
+
+.video-card.accent-book .scheduled-thumbnail {
+    --primary: #f59e0b;
+    background: linear-gradient(135deg, var(--primary), #282828);
+    background-size: 200% 200%;
 }
 
 .accent-math .series-link:hover,

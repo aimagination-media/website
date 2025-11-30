@@ -1,6 +1,6 @@
 import { state, domElements } from './state.js';
 import { translations, langNames } from './translations.js';
-import { getPlaylistTitle } from './utils.js';
+import { getPlaylistTitle, getChannelDisplayName, getChannelUrl } from './utils.js';
 import { filterByPlaylist } from './filter.js';
 
 export function updateUIText() {
@@ -37,6 +37,8 @@ export function renderPlaylists(playlistList) {
                </a>`
             : '';
 
+        const channelDisplayName = getChannelDisplayName(playlist.channelId, state.currentLanguage, state.socialsData);
+
         card.innerHTML = `
             <div class="series-thumbnail-stack">
                 <img src="${playlist.thumbnail}" alt="${playlist.title}" loading="lazy">
@@ -50,7 +52,7 @@ export function renderPlaylists(playlistList) {
                 ${linkHtml}
             </div>
             <div class="series-content">
-                <span class="channel-tag">${playlist.channelName}</span>
+                <span class="channel-tag">${channelDisplayName}</span>
                 <h3 class="series-title">${playlist.title}</h3>
                 <div class="series-meta">${playlist.videoCount} Videos</div>
             </div>
@@ -73,18 +75,48 @@ export function renderGrid(videos, isFiltered = false) {
 
     videos.forEach((video, index) => {
         const isFeatured = (!isFiltered && index < 2) ? 'featured' : '';
+        const isScheduled = video.isScheduled ? 'scheduled' : '';
         const card = document.createElement('article');
-        card.className = `video-card ${isFeatured} accent-${video.channelId}`;
+        card.className = `video-card ${isFeatured} ${isScheduled} accent-${video.channelId}`;
 
-        const dateObj = new Date(video.date);
-        const dateStr = dateObj.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+        let dateStr = 'Coming Soon';
+        if (video.date && video.date !== 'TBA') {
+            const dateObj = new Date(video.date);
+            if (!isNaN(dateObj.getTime())) {
+                dateStr = dateObj.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+            } else {
+                dateStr = video.date; // Fallback to raw string if parsing fails but not TBA
+            }
+        }
+
+        const mediaContent = video.isScheduled
+            ? `<div class="scheduled-thumbnail">
+                 <img src="${video.thumbnail}" alt="${video.title}" loading="lazy" onerror="this.src='assets/images/placeholder.jpg'">
+                 <div class="scheduled-overlay">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                 </div>
+               </div>`
+            : `<lite-youtube videoid="${video.id}" playlabel="Play: ${video.title}" params="controls=1&modestbranding=1&rel=0"></lite-youtube>`;
+
+        const channelDisplayName = getChannelDisplayName(video.channelId, video.language, state.socialsData);
+        const channelUrl = getChannelUrl(video.channelId, video.language, state.socialsData);
+
+        const channelLinkHtml = channelUrl
+            ? `<a href="${channelUrl}" target="_blank" class="channel-link-icon" title="Visit Channel">
+                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+               </a>`
+            : '';
 
         card.innerHTML = `
-            <lite-youtube videoid="${video.id}" playlabel="Play: ${video.title}" params="controls=1&modestbranding=1&rel=0"></lite-youtube>
+            ${mediaContent}
             <div class="card-content">
                 <div class="card-meta">
-                    <span class="channel-tag">${video.channelName}</span>
+                    <span class="channel-tag">
+                        ${channelDisplayName}
+                        ${channelLinkHtml}
+                    </span>
                     <span class="video-date">${dateStr}</span>
+                    ${video.isScheduled ? '<span class="scheduled-badge">Scheduled</span>' : ''}
                 </div>
                 <h3 class="card-title">${video.title}</h3>
                 ${video.playlistId ? `<div class="series-meta">Playlist: ${getPlaylistTitle(video.playlistId, state.allPlaylists) || 'Unknown Playlist'}</div>` : ''}
@@ -261,12 +293,22 @@ export function updateVideoTypeFilters() {
 
     const t = translations[state.currentLanguage] || translations['en'];
 
+    // Get base videos for counting (filtered by current language for published, all for upcoming)
+    const langVideos = state.currentLanguage === 'all' ? state.allVideos : state.allVideos.filter(v => v.language === state.currentLanguage);
+
+    // Calculate counts for each filter type
+    const allCount = langVideos.filter(v => !v.isScheduled).length;
+    const longCount = langVideos.filter(v => v.videoType && v.videoType.includes('4k') && !v.isScheduled).length;
+    const shortsCount = langVideos.filter(v => v.videoType && v.videoType.includes('short') && !v.isScheduled).length;
+    const upcomingCount = state.allVideos.filter(v => v.isScheduled).length; // Always show count across all languages
+
     domElements.videoTypeFilters.innerHTML = '';
 
     const types = [
-        { value: 'all', label: t.allVideos },
-        { value: '4k', label: t.videos4k },
-        { value: 'shorts', label: t.shorts }
+        { value: 'all', label: `${t.allVideos} (${allCount})` },
+        { value: 'long', label: `${t.videosLongFormat} (${longCount})` },
+        { value: 'shorts', label: `${t.shorts} (${shortsCount})` },
+        { value: 'upcoming', label: `Upcoming (${upcomingCount})` }
     ];
 
     types.forEach(type => {

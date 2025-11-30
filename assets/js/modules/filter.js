@@ -4,14 +4,26 @@ import { renderGrid, renderPlaylists, updateChannelFilters, updateVideoTypeFilte
 
 export function refreshContent() {
     if (state.currentView === 'videos') {
-        // Filter by Language
-        let langVideos = state.currentLanguage === 'all' ? state.allVideos : state.allVideos.filter(v => v.language === state.currentLanguage);
+        // Filter by Language - but show ALL languages for upcoming videos
+        let langVideos;
+        if (state.currentVideoType === 'upcoming') {
+            // Show upcoming videos from all languages
+            langVideos = state.allVideos;
+        } else {
+            // Normal language filtering for published content
+            langVideos = state.currentLanguage === 'all' ? state.allVideos : state.allVideos.filter(v => v.language === state.currentLanguage);
+        }
 
         // Filter by Video Type
-        if (state.currentVideoType === '4k') {
-            langVideos = langVideos.filter(v => v.videoType && v.videoType.includes('4k'));
+        if (state.currentVideoType === 'long') {
+            langVideos = langVideos.filter(v => v.videoType && v.videoType.includes('4k') && !v.isScheduled);
         } else if (state.currentVideoType === 'shorts') {
-            langVideos = langVideos.filter(v => v.videoType && v.videoType.includes('short'));
+            langVideos = langVideos.filter(v => v.videoType && v.videoType.includes('short') && !v.isScheduled);
+        } else if (state.currentVideoType === 'upcoming') {
+            langVideos = langVideos.filter(v => v.isScheduled);
+        } else {
+            // 'all' case - exclude scheduled
+            langVideos = langVideos.filter(v => !v.isScheduled);
         }
 
         const langPlaylists = state.currentLanguage === 'all' ? state.allPlaylists : state.allPlaylists.filter(p => p.language === state.currentLanguage);
@@ -19,6 +31,14 @@ export function refreshContent() {
         // Update Filters
         updateChannelFilters(langVideos);
         updateVideoTypeFilters();
+
+        // Update section title based on video type filter
+        const t = translations[state.currentLanguage] || translations['en'];
+        if (state.currentVideoType === 'upcoming') {
+            domElements.latestTitle.textContent = t.upcoming;
+        } else {
+            domElements.latestTitle.textContent = t.latest;
+        }
 
         // Render
         renderPlaylists(langPlaylists);

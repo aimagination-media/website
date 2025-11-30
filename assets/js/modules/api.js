@@ -21,23 +21,45 @@ export async function fetchContent() {
             const channelColor = channel.color || '#71717a';
 
             // Process Videos
+            const publishedVideos = [];
+            const scheduledVideos = [];
+
             channel.videos.forEach(video => {
                 if (video.state === 'published') {
-                    state.allVideos.push({
-                        id: video.video_id,
-                        title: video.title,
-                        thumbnail: video.thumbnail,
-                        date: video.published_at,
-                        channelName: channelName,
-                        channelId: channelKey,
-                        channelColor: channelColor,
-                        language: lang,
-                        serie: video.serie,
-                        playlistId: video.playlist_id,
-                        videoType: video.video_type,
-                        searchStr: `${video.title} ${channelName} ${lang} ${video.serie || ''}`
-                    });
+                    publishedVideos.push(video);
+                } else if (video.state === 'scheduled') {
+                    // Only include if date is valid and not TBA
+                    if (video.published_at && video.published_at !== 'TBA') {
+                        scheduledVideos.push(video);
+                    }
                 }
+            });
+
+            // Sort scheduled videos by date ASCENDING (closest first)
+            scheduledVideos.sort((a, b) => new Date(a.published_at) - new Date(b.published_at));
+
+            // Limit scheduled videos to max 2 per type (long format/shorts) per channel
+            const scheduledLongFormat = scheduledVideos.filter(v => v.video_type.includes('4k')).slice(0, 2);
+            const scheduledShorts = scheduledVideos.filter(v => v.video_type.includes('short')).slice(0, 2);
+            const limitedScheduledVideos = [...scheduledLongFormat, ...scheduledShorts];
+
+            // Add all published and selected scheduled to state
+            [...publishedVideos, ...limitedScheduledVideos].forEach(video => {
+                state.allVideos.push({
+                    id: video.video_id,
+                    title: video.title,
+                    thumbnail: video.thumbnail,
+                    date: video.published_at,
+                    channelName: channelName,
+                    channelId: channelKey,
+                    channelColor: channelColor,
+                    language: lang,
+                    serie: video.serie,
+                    playlistId: video.playlist_id,
+                    videoType: video.video_type,
+                    searchStr: `${video.title} ${channelName} ${lang} ${video.serie || ''}`,
+                    isScheduled: video.state === 'scheduled'
+                });
             });
 
             // Process Playlists
@@ -68,6 +90,17 @@ export async function fetchContent() {
         });
     });
 
-    // Sort by date descending
-    state.allVideos.sort((a, b) => new Date(b.date) - new Date(a.date));
+    // Global Sort: Scheduled (Asc) -> Published (Desc)
+    state.allVideos.sort((a, b) => {
+        if (a.isScheduled && !b.isScheduled) return -1;
+        if (!a.isScheduled && b.isScheduled) return 1;
+
+        if (a.isScheduled && b.isScheduled) {
+            // Both scheduled: Ascending (closest first)
+            return new Date(a.date) - new Date(b.date);
+        } else {
+            // Both published: Descending (newest first)
+            return new Date(b.date) - new Date(a.date);
+        }
+    });
 }

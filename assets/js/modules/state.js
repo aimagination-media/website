@@ -5,7 +5,7 @@ export const state = {
     fuse: null,
     currentLanguage: 'en',
     currentView: 'videos',
-    currentVideoType: 'all', // 'all', '4k', 'shorts'
+    currentVideoType: 'all', // 'all', 'long', 'shorts'
     DATA_URL: 'assets/data/content.json',
     SOCIALS_URL: 'assets/data/socials.json'
 };

@@ -2,6 +2,7 @@ export const translations = {
     en: {
         featured: "Featured Playlists",
         latest: "Latest Uploads",
+        upcoming: "Upcoming Videos",
         socials: "Community & Socials",
         videosBtn: "Videos",
         socialsBtn: "Socials",
@@ -17,13 +18,14 @@ export const translations = {
         subscribe: "Subscribe",
         follow: "Follow",
         patreonTitle: "Support Us",
-        videos4k: "4K Videos",
+        videosLongFormat: "Long Format",
         shorts: "Shorts",
         allVideos: "All Videos"
     },
     es: {
         featured: "Listas Destacadas",
         latest: "Últimos Videos",
+        upcoming: "Próximos Videos",
         socials: "Comunidad y Redes",
         videosBtn: "Videos",
         socialsBtn: "Redes",
@@ -39,13 +41,14 @@ export const translations = {
         subscribe: "Suscribirse",
         follow: "Seguir",
         patreonTitle: "Apóyanos",
-        videos4k: "Videos 4K",
+        videosLongFormat: "Formato Largo",
         shorts: "Shorts",
         allVideos: "Todos los Videos"
     },
     de: {
         featured: "Vorgestellte Playlists",
         latest: "Neueste Uploads",
+        upcoming: "Kommende Videos",
         socials: "Community & Soziales",
         videosBtn: "Videos",
         socialsBtn: "Soziales",
@@ -61,7 +64,7 @@ export const translations = {
         subscribe: "Abonnieren",
         follow: "Folgen",
         patreonTitle: "Unterstütze uns",
-        videos4k: "4K-Videos",
+        videosLongFormat: "Langformat",
         shorts: "Shorts",
         allVideos: "Alle Videos"
     }

@@ -105,6 +105,13 @@ open:
 		echo "Please manually open: http://localhost:$(PORT)"; \
 	fi
 
+# Reset the server (kill process on PORT and restart)
+reset:
+	@echo "🔄 Resetting server on port $(PORT)..."
+	@lsof -ti :$(PORT) | xargs kill -9 2>/dev/null || true
+	@echo "✅ Server stopped."
+	@$(MAKE) serve
+
 # Run basic tests and validation
 test:
 	@echo "🧪 Running website validation tests..."
