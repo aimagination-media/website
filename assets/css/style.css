@@ -78,6 +78,36 @@ body {
     }
 }
 
+/* Morphing X Styles */
+#morphing-x {
+    font-size: 1em;
+    /* Base size, overridden by JS */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Fixed dimensions to prevent layout shift */
+    width: 40px;
+    height: 40px;
+
+    /* Gradient Style */
+    background: linear-gradient(45deg, #f3ec78, #af4261, #c060ff, #60c0ff, #f3ec78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 300% 300%;
+    animation: aiGradient 6s ease infinite;
+}
+
+#morphing-x.hidden {
+    opacity: 0;
+    transform: translateY(5px) scale(0.8);
+}
+
 /* Search Input - Centered */
 .search-wrapper {
     position: absolute;
@@ -402,16 +432,21 @@ lite-youtube {
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     .glass-header {
-        padding: 0 1rem;
+        padding: 1rem;
         height: auto;
-        min-height: var(--header-height);
+        min-height: 90px;
+        /* Increased height */
         flex-wrap: wrap;
         gap: 0.5rem;
-        padding-bottom: 0.75rem;
+        padding-bottom: 1rem;
+        align-items: flex-start;
+        /* Align to top but with padding */
     }
 
     .brand {
         width: auto;
+        margin-top: 0.5rem;
+        /* Push down slightly */
     }
 
     .controls {

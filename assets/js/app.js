@@ -5,12 +5,14 @@ import { fetchContent } from './modules/api.js';
 import { updateUIText } from './modules/render.js';
 import { refreshContent, setupSearch, setupFilters } from './modules/filter.js';
 import { setupLanguageSelector, setupViewToggle, setupVideoTypeFilters } from './modules/events.js';
+import { initBranding } from './modules/branding.js';
 
 async function initPortfolio() {
     try {
         // Detect and set language
         state.currentLanguage = detectLanguage();
         updateUIText();
+        initBranding(); // Initialize Morphing X Animation
 
         // Show loading state
         const t = translations[state.currentLanguage] || translations['en'];
