@@ -18,6 +18,7 @@ help:
 	@echo "  make install-deps - Install Node.js dependencies for development"
 	@echo "  make test         - Run basic tests and validation"
 	@echo "  make clean        - Clean temporary files"
+	@echo "  make update-content - Generate content, commit, and push"
 	@echo "  make open         - Open the website in default browser"
 	@echo ""
 	@echo "Configuration:"
@@ -159,6 +160,17 @@ clean:
 	@find . -name "Thumbs.db" -delete 2>/dev/null || true
 	@find . -name "*.tmp" -delete 2>/dev/null || true
 	@echo "✅ Cleanup complete!"
+
+# Generate content, commit and push
+update-content:
+	@echo "🔄 Generating content..."
+	python3 scripts/generate_content.py
+	@echo "💾 Committing changes..."
+	git add .
+	git commit -m "Update content"
+	@echo "🚀 Pushing to repository..."
+	git push
+
 
 # Development workflow - serve and open
 dev: serve &
