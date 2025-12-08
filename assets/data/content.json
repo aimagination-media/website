@@ -22844,7 +22844,7 @@
           "thumbnail": "https://img.youtube.com/vi/RzE6KK084RI/hqdefault.jpg",
           "duration": 266.85,
           "published_at": "2025-12-08 20:00:00",
-          "state": "scheduled",
+          "state": "published",
           "release_date": "2025-12-08 20:00:00",
           "serie": "na",
           "sub_serie": "na",
@@ -24704,6 +24704,27 @@
           ]
         }
       }
+    },
+    "quiz": {
+      "title": "Quiz",
+      "description": "",
+      "color": "#71717a",
+      "videos": [
+        {
+          "title": "GK Marathon The Pub Quiz Edition",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": 397.02,
+          "published_at": "TBA",
+          "state": "drafting",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_4k_en"
+        }
+      ],
+      "playlists": {}
     },
     "music": {
       "title": "Music",
@@ -29160,7 +29181,7 @@
           "thumbnail": "https://img.youtube.com/vi/IBu0_hGqyUA/hqdefault.jpg",
           "duration": 266.85,
           "published_at": "2025-12-08 12:00:00",
-          "state": "scheduled",
+          "state": "published",
           "release_date": "2025-12-08 12:00:00",
           "serie": "na",
           "sub_serie": "na",
