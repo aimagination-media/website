@@ -11,6 +11,7 @@ export function updateUIText() {
     if (domElements.latestTitle) domElements.latestTitle.textContent = t.latest;
     if (domElements.socialsTitle) domElements.socialsTitle.textContent = t.socials;
     if (domElements.videosBtnText) domElements.videosBtnText.textContent = t.videosBtn;
+    if (domElements.playlistsBtnText) domElements.playlistsBtnText.textContent = t.playlistsBtn;
     if (domElements.socialsBtnText) domElements.socialsBtnText.textContent = t.socialsBtn;
     if (domElements.searchInput) domElements.searchInput.placeholder = t.searchPlaceholder;
 

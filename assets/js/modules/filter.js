@@ -3,33 +3,30 @@ import { translations } from './translations.js';
 import { renderGrid, renderPlaylists, updateChannelFilters, updateVideoTypeFilters, renderSocials } from './render.js';
 
 export function refreshContent() {
-    if (state.currentView === 'videos') {
-        // Filter by Language - but show ALL languages for upcoming videos
-        let langVideos;
-        if (state.currentVideoType === 'upcoming') {
-            // Show upcoming videos from all languages
-            langVideos = state.allVideos;
-        } else {
-            // Normal language filtering for published content
-            langVideos = state.currentLanguage === 'all' ? state.allVideos : state.allVideos.filter(v => v.language === state.currentLanguage);
-        }
+    // Common Logic for Video/Playlist filtering by language
+    const langVideos = (state.currentVideoType === 'upcoming')
+        ? state.allVideos
+        : (state.currentLanguage === 'all' ? state.allVideos : state.allVideos.filter(v => v.language === state.currentLanguage));
 
+    const langPlaylists = state.currentLanguage === 'all' ? state.allPlaylists : state.allPlaylists.filter(p => p.language === state.currentLanguage);
+
+    if (state.currentView === 'videos') {
         // Filter by Video Type
+        let filteredVideos = langVideos;
+
         if (state.currentVideoType === 'long') {
-            langVideos = langVideos.filter(v => v.videoType && v.videoType.includes('4k') && !v.isScheduled);
+            filteredVideos = langVideos.filter(v => v.videoType && v.videoType.includes('4k') && !v.isScheduled);
         } else if (state.currentVideoType === 'shorts') {
-            langVideos = langVideos.filter(v => v.videoType && v.videoType.includes('short') && !v.isScheduled);
+            filteredVideos = langVideos.filter(v => v.videoType && v.videoType.includes('short') && !v.isScheduled);
         } else if (state.currentVideoType === 'upcoming') {
-            langVideos = langVideos.filter(v => v.isScheduled);
+            filteredVideos = langVideos.filter(v => v.isScheduled);
         } else {
             // 'all' case - exclude scheduled
-            langVideos = langVideos.filter(v => !v.isScheduled);
+            filteredVideos = langVideos.filter(v => !v.isScheduled);
         }
 
-        const langPlaylists = state.currentLanguage === 'all' ? state.allPlaylists : state.allPlaylists.filter(p => p.language === state.currentLanguage);
-
         // Update Filters
-        updateChannelFilters(langVideos);
+        updateChannelFilters(filteredVideos);
         updateVideoTypeFilters();
 
         // Update section title based on video type filter
@@ -40,19 +37,38 @@ export function refreshContent() {
             domElements.latestTitle.textContent = t.latest;
         }
 
-        // Render
-        renderPlaylists(langPlaylists);
-        renderGrid(langVideos);
+        // Render Videos
+        renderGrid(filteredVideos);
 
-        domElements.seriesSection.style.display = langPlaylists.length > 0 ? 'block' : 'none';
+        // Visibility
+        domElements.seriesSection.style.display = 'none';
         domElements.latestSection.style.display = 'block';
         domElements.filterBar.style.display = 'block';
+        if (domElements.videoTypeFilters) domElements.videoTypeFilters.parentElement.style.display = 'block';
         domElements.socialsSection.style.display = 'none';
+
+    } else if (state.currentView === 'playlists') {
+        // Update Filters (use all lang videos for channel list to be consistent, or just playlists?)
+        // Let's use playlists channels for consistency if possible, but existing updateChannelFilters uses videos.
+        // For now, keep using langVideos for channel filters to ensure all channels are selectable
+        updateChannelFilters(langVideos);
+
+        // Render Playlists
+        renderPlaylists(langPlaylists);
+
+        // Visibility
+        domElements.seriesSection.style.display = 'block';
+        domElements.latestSection.style.display = 'none';
+        domElements.filterBar.style.display = 'block';
+        if (domElements.videoTypeFilters) domElements.videoTypeFilters.parentElement.style.display = 'none'; // Hide video type filters
+        domElements.socialsSection.style.display = 'none';
+
     } else {
         // Socials View
         domElements.seriesSection.style.display = 'none';
         domElements.latestSection.style.display = 'none';
         domElements.filterBar.style.display = 'none';
+        if (domElements.videoTypeFilters) domElements.videoTypeFilters.parentElement.style.display = 'none';
         domElements.socialsSection.style.display = 'block';
         renderSocials();
     }

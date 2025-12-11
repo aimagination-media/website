@@ -26,6 +26,7 @@ export const domElements = {
     latestTitle: document.getElementById('latestTitle'),
     socialsTitle: document.getElementById('socialsTitle'),
     videosBtnText: document.getElementById('videosBtnText'),
+    playlistsBtnText: document.getElementById('playlistsBtnText'),
     socialsBtnText: document.getElementById('socialsBtnText'),
     langLabel: document.querySelector('#langBtn span'),
     langBtn: document.getElementById('langBtn'),
