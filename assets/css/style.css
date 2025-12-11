@@ -578,29 +578,11 @@ lite-youtube {
     color: var(--text-main);
 }
 
-/* --- Swimlane (Horizontal Scroll) --- */
-.swimlane {
-    display: flex;
-    gap: 1.5rem;
-    overflow-x: auto;
-    padding-bottom: 1.5rem;
-    /* Space for scrollbar/shadow */
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    /* Firefox */
-}
 
-.swimlane::-webkit-scrollbar {
-    display: none;
-    /* Chrome/Safari */
-}
 
 /* --- Series Card --- */
 .series-card {
-    flex: 0 0 300px;
-    /* Fixed width for swimlane items */
-    scroll-snap-align: start;
+    /* Grid layout handles width */
     background: var(--surface);
     border-radius: var(--radius);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -763,18 +745,7 @@ lite-youtube {
     }
 }
 
-/* Mobile adjustments for swimlane */
-@media (max-width: 768px) {
-    .swimlane {
-        padding-right: 1rem;
-        /* Peek effect */
-    }
 
-    .series-card {
-        flex: 0 0 260px;
-        /* Slightly smaller on mobile */
-    }
-}
 
 .series-link {
     position: absolute;

@@ -12,7 +12,7 @@ export const state = {
 
 export const domElements = {
     videoGrid: document.getElementById('videoGrid'),
-    seriesSwimlane: document.getElementById('seriesSwimlane'),
+    seriesGrid: document.getElementById('seriesGrid'),
     searchInput: document.getElementById('searchInput'),
     channelFilters: document.getElementById('channelFilters'),
     seriesSection: document.getElementById('seriesSection'),

@@ -21,7 +21,7 @@ export function updateUIText() {
 }
 
 export function renderPlaylists(playlistList) {
-    domElements.seriesSwimlane.innerHTML = '';
+    domElements.seriesGrid.innerHTML = '';
 
     playlistList.forEach(playlist => {
         const card = document.createElement('div');
@@ -58,7 +58,7 @@ export function renderPlaylists(playlistList) {
                 <div class="series-meta">${playlist.videoCount} Videos</div>
             </div>
         `;
-        domElements.seriesSwimlane.appendChild(card);
+        domElements.seriesGrid.appendChild(card);
     });
 }
 
