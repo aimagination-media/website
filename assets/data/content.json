@@ -21709,8 +21709,8 @@
         },
         {
           "title": "The Architect of Time: A Legacy Unveiled - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "gj9ahMutd_s",
+          "thumbnail": "https://img.youtube.com/vi/gj9ahMutd_s/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "produced",
@@ -21718,6 +21718,19 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": "PLHj7JBZThUrUaEwpfoCsWvv8tIY7ys91G",
+          "video_type": "book_short_en"
+        },
+        {
+          "title": "The Clockwork Garden: A World of Wonders - Promotion",
+          "video_id": "SQLhDeczMAw",
+          "thumbnail": "https://img.youtube.com/vi/SQLhDeczMAw/hqdefault.jpg",
+          "duration": 55.78,
+          "published_at": "TBA",
+          "state": "produced",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLHj7JBZThUrV7OxFKv96IESx5uyIKT0Kl",
           "video_type": "book_short_en"
         },
         {
@@ -21839,15 +21852,15 @@
         },
         {
           "title": "Shadows in the Haze: A Chilling Revelation - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "-9tuDLp0fAk",
+          "thumbnail": "https://img.youtube.com/vi/-9tuDLp0fAk/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "produced",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLHj7JBZThUrXUc0PkMKu7nZHoDXJqdzSj",
           "video_type": "book_short_en"
         },
         {
@@ -22099,15 +22112,15 @@
         },
         {
           "title": "The Chronicles of Nonsense: The Comical Kingdom - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "ZTF_Kdw9NzA",
+          "thumbnail": "https://img.youtube.com/vi/ZTF_Kdw9NzA/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "produced",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLHj7JBZThUrXlwDCMxl7n1fFKQybtaDBc",
           "video_type": "book_short_en"
         },
         {
@@ -22515,15 +22528,15 @@
         },
         {
           "title": "Crimson Manor: The Bloodline Curse - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "K6wUwHxn9MU",
+          "thumbnail": "https://img.youtube.com/vi/K6wUwHxn9MU/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
-          "state": "produced",
+          "state": "scheduled",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLHj7JBZThUrXDOtYgdIp94Je-1qOVVHo9",
           "video_type": "book_short_en"
         },
         {
@@ -23819,7 +23832,7 @@
           "thumbnail": "https://img.youtube.com/vi/zzGqh-V7hV8/hqdefault.jpg",
           "duration": 388.63,
           "published_at": "2025-07-17 12:00:00",
-          "state": "produced",
+          "state": "published",
           "release_date": "2025-07-17 12:00:00",
           "serie": "na",
           "sub_serie": "na",
@@ -23832,7 +23845,7 @@
           "thumbnail": "https://img.youtube.com/vi/P-t7M0cze9Y/hqdefault.jpg",
           "duration": 344.75,
           "published_at": "2025-07-15 12:00:00",
-          "state": "produced",
+          "state": "published",
           "release_date": "2025-07-15 12:00:00",
           "serie": "na",
           "sub_serie": "na",
@@ -24392,8 +24405,8 @@
             },
             {
               "title": "The Architect of Time: A Legacy Unveiled - Promotion",
-              "video_id": "na",
-              "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+              "video_id": "gj9ahMutd_s",
+              "thumbnail": "https://img.youtube.com/vi/gj9ahMutd_s/hqdefault.jpg",
               "duration": 55.78,
               "published_at": "TBA",
               "state": "produced",
@@ -24687,6 +24700,19 @@
               "sub_serie": "na",
               "playlist_id": "PLHj7JBZThUrV7OxFKv96IESx5uyIKT0Kl",
               "video_type": "book_4k_en"
+            },
+            {
+              "title": "The Clockwork Garden: A World of Wonders - Promotion",
+              "video_id": "SQLhDeczMAw",
+              "thumbnail": "https://img.youtube.com/vi/SQLhDeczMAw/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "produced",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLHj7JBZThUrV7OxFKv96IESx5uyIKT0Kl",
+              "video_type": "book_short_en"
             }
           ]
         },
@@ -24823,6 +24849,19 @@
               "sub_serie": "na",
               "playlist_id": "PLHj7JBZThUrXUc0PkMKu7nZHoDXJqdzSj",
               "video_type": "book_4k_en"
+            },
+            {
+              "title": "Shadows in the Haze: A Chilling Revelation - Promotion",
+              "video_id": "-9tuDLp0fAk",
+              "thumbnail": "https://img.youtube.com/vi/-9tuDLp0fAk/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "produced",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLHj7JBZThUrXUc0PkMKu7nZHoDXJqdzSj",
+              "video_type": "book_short_en"
             }
           ]
         },
@@ -24959,6 +24998,19 @@
               "sub_serie": "na",
               "playlist_id": "PLHj7JBZThUrXlwDCMxl7n1fFKQybtaDBc",
               "video_type": "book_4k_en"
+            },
+            {
+              "title": "The Chronicles of Nonsense: The Comical Kingdom - Promotion",
+              "video_id": "ZTF_Kdw9NzA",
+              "thumbnail": "https://img.youtube.com/vi/ZTF_Kdw9NzA/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "produced",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLHj7JBZThUrXlwDCMxl7n1fFKQybtaDBc",
+              "video_type": "book_short_en"
             }
           ]
         },
@@ -25387,7 +25439,7 @@
               "thumbnail": "https://img.youtube.com/vi/P-t7M0cze9Y/hqdefault.jpg",
               "duration": 344.75,
               "published_at": "2025-07-15 12:00:00",
-              "state": "produced",
+              "state": "published",
               "release_date": "2025-07-15 12:00:00",
               "serie": "na",
               "sub_serie": "na",
@@ -25400,7 +25452,7 @@
               "thumbnail": "https://img.youtube.com/vi/zzGqh-V7hV8/hqdefault.jpg",
               "duration": 388.63,
               "published_at": "2025-07-17 12:00:00",
-              "state": "produced",
+              "state": "published",
               "release_date": "2025-07-17 12:00:00",
               "serie": "na",
               "sub_serie": "na",
@@ -25542,6 +25594,19 @@
               "sub_serie": "na",
               "playlist_id": "PLHj7JBZThUrXDOtYgdIp94Je-1qOVVHo9",
               "video_type": "book_4k_en"
+            },
+            {
+              "title": "Crimson Manor: The Bloodline Curse - Promotion",
+              "video_id": "K6wUwHxn9MU",
+              "thumbnail": "https://img.youtube.com/vi/K6wUwHxn9MU/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "scheduled",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLHj7JBZThUrXDOtYgdIp94Je-1qOVVHo9",
+              "video_type": "book_short_en"
             }
           ]
         },
@@ -26108,8 +26173,8 @@
         },
         {
           "title": "The Architect of Time: A Legacy Unveiled - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "B1KXYP8_fug",
+          "thumbnail": "https://img.youtube.com/vi/B1KXYP8_fug/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "tts_paid",
@@ -26117,19 +26182,19 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": "PLbB96_rjo-tqhgmtT4n2kPlDF7bHlUlyG",
-          "video_type": "book_short_en"
+          "video_type": "book_short_es"
         },
         {
           "title": "The Clockwork Garden: A World of Wonders - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "ByhS4wocyco",
+          "thumbnail": "https://img.youtube.com/vi/ByhS4wocyco/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "tts_paid",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLbB96_rjo-trHbl7PWM_88x015ZpfepU1",
           "video_type": "book_short_es"
         },
         {
@@ -26498,15 +26563,15 @@
         },
         {
           "title": "The Chronicles of Nonsense: The Comical Kingdom - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "eLdHa_ok_H4",
+          "thumbnail": "https://img.youtube.com/vi/eLdHa_ok_H4/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "scheduled",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLbB96_rjo-tohLs38IUcicvaSztFLzOIX",
           "video_type": "book_short_es"
         },
         {
@@ -26914,15 +26979,15 @@
         },
         {
           "title": "Crimson Manor: The Bloodline Curse - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "9zGrlttZ9dc",
+          "thumbnail": "https://img.youtube.com/vi/9zGrlttZ9dc/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "scheduled",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLbB96_rjo-toc6Ku-jvWLmtjgibvvwlWb",
           "video_type": "book_short_es"
         },
         {
@@ -27061,7 +27126,7 @@
           "thumbnail": "https://img.youtube.com/vi/5dWRNKhvnC8/hqdefault.jpg",
           "duration": 266.85,
           "published_at": "2025-12-17 12:00:00",
-          "state": "scheduled",
+          "state": "published",
           "release_date": "2025-12-17 12:00:00",
           "serie": "na",
           "sub_serie": "na",
@@ -27490,7 +27555,7 @@
           "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
           "duration": 348.7,
           "published_at": "2025-10-05 12:00:00",
-          "state": "content_ready",
+          "state": "published",
           "release_date": "2025-10-05 12:00:00",
           "serie": "na",
           "sub_serie": "na",
@@ -27503,7 +27568,7 @@
           "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
           "duration": 364.2,
           "published_at": "2025-10-03 12:00:00",
-          "state": "content_ready",
+          "state": "published",
           "release_date": "2025-10-03 12:00:00",
           "serie": "na",
           "sub_serie": "na",
@@ -27516,7 +27581,7 @@
           "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
           "duration": 380.38,
           "published_at": "2025-10-01 12:00:00",
-          "state": "content_ready",
+          "state": "published",
           "release_date": "2025-10-01 12:00:00",
           "serie": "na",
           "sub_serie": "na",
@@ -27529,7 +27594,7 @@
           "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
           "duration": 365.13,
           "published_at": "2025-09-29 12:00:00",
-          "state": "content_ready",
+          "state": "published",
           "release_date": "2025-09-29 12:00:00",
           "serie": "na",
           "sub_serie": "na",
@@ -28574,7 +28639,7 @@
               "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
               "duration": 365.13,
               "published_at": "2025-09-29 12:00:00",
-              "state": "content_ready",
+              "state": "published",
               "release_date": "2025-09-29 12:00:00",
               "serie": "na",
               "sub_serie": "na",
@@ -28587,7 +28652,7 @@
               "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
               "duration": 380.38,
               "published_at": "2025-10-01 12:00:00",
-              "state": "content_ready",
+              "state": "published",
               "release_date": "2025-10-01 12:00:00",
               "serie": "na",
               "sub_serie": "na",
@@ -28600,7 +28665,7 @@
               "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
               "duration": 364.2,
               "published_at": "2025-10-03 12:00:00",
-              "state": "content_ready",
+              "state": "published",
               "release_date": "2025-10-03 12:00:00",
               "serie": "na",
               "sub_serie": "na",
@@ -28613,7 +28678,7 @@
               "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
               "duration": 348.7,
               "published_at": "2025-10-05 12:00:00",
-              "state": "content_ready",
+              "state": "published",
               "release_date": "2025-10-05 12:00:00",
               "serie": "na",
               "sub_serie": "na",
@@ -28622,8 +28687,8 @@
             },
             {
               "title": "The Architect of Time: A Legacy Unveiled - Promotion",
-              "video_id": "na",
-              "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+              "video_id": "B1KXYP8_fug",
+              "thumbnail": "https://img.youtube.com/vi/B1KXYP8_fug/hqdefault.jpg",
               "duration": 55.78,
               "published_at": "TBA",
               "state": "tts_paid",
@@ -28631,7 +28696,7 @@
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLbB96_rjo-tqhgmtT4n2kPlDF7bHlUlyG",
-              "video_type": "book_short_en"
+              "video_type": "book_short_es"
             }
           ]
         },
@@ -28917,6 +28982,19 @@
               "sub_serie": "na",
               "playlist_id": "PLbB96_rjo-trHbl7PWM_88x015ZpfepU1",
               "video_type": "book_4k_es"
+            },
+            {
+              "title": "The Clockwork Garden: A World of Wonders - Promotion",
+              "video_id": "ByhS4wocyco",
+              "thumbnail": "https://img.youtube.com/vi/ByhS4wocyco/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "tts_paid",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLbB96_rjo-trHbl7PWM_88x015ZpfepU1",
+              "video_type": "book_short_es"
             }
           ]
         },
@@ -28956,7 +29034,7 @@
               "thumbnail": "https://img.youtube.com/vi/5dWRNKhvnC8/hqdefault.jpg",
               "duration": 266.85,
               "published_at": "2025-12-17 12:00:00",
-              "state": "scheduled",
+              "state": "published",
               "release_date": "2025-12-17 12:00:00",
               "serie": "na",
               "sub_serie": "na",
@@ -29202,6 +29280,19 @@
               "sub_serie": "na",
               "playlist_id": "PLbB96_rjo-tohLs38IUcicvaSztFLzOIX",
               "video_type": "book_4k_es"
+            },
+            {
+              "title": "The Chronicles of Nonsense: The Comical Kingdom - Promotion",
+              "video_id": "eLdHa_ok_H4",
+              "thumbnail": "https://img.youtube.com/vi/eLdHa_ok_H4/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "scheduled",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLbB96_rjo-tohLs38IUcicvaSztFLzOIX",
+              "video_type": "book_short_es"
             }
           ]
         },
@@ -29785,6 +29876,19 @@
               "sub_serie": "na",
               "playlist_id": "PLbB96_rjo-toc6Ku-jvWLmtjgibvvwlWb",
               "video_type": "book_4k_es"
+            },
+            {
+              "title": "Crimson Manor: The Bloodline Curse - Promotion",
+              "video_id": "9zGrlttZ9dc",
+              "thumbnail": "https://img.youtube.com/vi/9zGrlttZ9dc/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "scheduled",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLbB96_rjo-toc6Ku-jvWLmtjgibvvwlWb",
+              "video_type": "book_short_es"
             }
           ]
         },
@@ -30119,8 +30223,8 @@
         },
         {
           "title": "The Architect of Time: A Legacy Unveiled - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "2Aw_tw0-3Us",
+          "thumbnail": "https://img.youtube.com/vi/2Aw_tw0-3Us/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "tts_paid",
@@ -30132,15 +30236,15 @@
         },
         {
           "title": "The Clockwork Garden: A World of Wonders - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "nWru0w0sAdI",
+          "thumbnail": "https://img.youtube.com/vi/nWru0w0sAdI/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "tts_paid",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSRL_xvi7JVcVx1UWIylCvLc",
           "video_type": "book_short_de"
         },
         {
@@ -30522,15 +30626,15 @@
         },
         {
           "title": "The Chronicles of Nonsense: The Comical Kingdom - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "op1K0r5XIdU",
+          "thumbnail": "https://img.youtube.com/vi/op1K0r5XIdU/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "tts_paid",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSRhb_e7e2DEKF0zMPTNiHbF",
           "video_type": "book_short_de"
         },
         {
@@ -30938,15 +31042,15 @@
         },
         {
           "title": "Crimson Manor: The Bloodline Curse - Promotion",
-          "video_id": "na",
-          "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+          "video_id": "X2iBEXRPRIg",
+          "thumbnail": "https://img.youtube.com/vi/X2iBEXRPRIg/hqdefault.jpg",
           "duration": 55.78,
           "published_at": "TBA",
           "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLQ2FMhj-JCSQaxo0lq3YTmX1bW99GodG3",
           "video_type": "book_short_de"
         },
         {
@@ -31137,7 +31241,7 @@
           "thumbnail": "https://img.youtube.com/vi/O9Y4efmJ8EQ/hqdefault.jpg",
           "duration": 235.93,
           "published_at": "2025-12-18 12:00:00",
-          "state": "scheduled",
+          "state": "published",
           "release_date": "2025-12-18 12:00:00",
           "serie": "na",
           "sub_serie": "na",
@@ -32750,8 +32854,8 @@
             },
             {
               "title": "The Architect of Time: A Legacy Unveiled - Promotion",
-              "video_id": "na",
-              "thumbnail": "https://img.youtube.com/vi/na/hqdefault.jpg",
+              "video_id": "2Aw_tw0-3Us",
+              "thumbnail": "https://img.youtube.com/vi/2Aw_tw0-3Us/hqdefault.jpg",
               "duration": 55.78,
               "published_at": "TBA",
               "state": "tts_paid",
@@ -33045,6 +33149,19 @@
               "sub_serie": "na",
               "playlist_id": "PLQ2FMhj-JCSRL_xvi7JVcVx1UWIylCvLc",
               "video_type": "book_4k_de"
+            },
+            {
+              "title": "The Clockwork Garden: A World of Wonders - Promotion",
+              "video_id": "nWru0w0sAdI",
+              "thumbnail": "https://img.youtube.com/vi/nWru0w0sAdI/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "tts_paid",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSRL_xvi7JVcVx1UWIylCvLc",
+              "video_type": "book_short_de"
             }
           ]
         },
@@ -33136,7 +33253,7 @@
               "thumbnail": "https://img.youtube.com/vi/O9Y4efmJ8EQ/hqdefault.jpg",
               "duration": 235.93,
               "published_at": "2025-12-18 12:00:00",
-              "state": "scheduled",
+              "state": "published",
               "release_date": "2025-12-18 12:00:00",
               "serie": "na",
               "sub_serie": "na",
@@ -33330,6 +33447,19 @@
               "sub_serie": "na",
               "playlist_id": "PLQ2FMhj-JCSRhb_e7e2DEKF0zMPTNiHbF",
               "video_type": "book_4k_de"
+            },
+            {
+              "title": "The Chronicles of Nonsense: The Comical Kingdom - Promotion",
+              "video_id": "op1K0r5XIdU",
+              "thumbnail": "https://img.youtube.com/vi/op1K0r5XIdU/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "tts_paid",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSRhb_e7e2DEKF0zMPTNiHbF",
+              "video_type": "book_short_de"
             }
           ]
         },
@@ -33913,6 +34043,19 @@
               "sub_serie": "na",
               "playlist_id": "PLQ2FMhj-JCSQaxo0lq3YTmX1bW99GodG3",
               "video_type": "book_4k_de"
+            },
+            {
+              "title": "Crimson Manor: The Bloodline Curse - Promotion",
+              "video_id": "X2iBEXRPRIg",
+              "thumbnail": "https://img.youtube.com/vi/X2iBEXRPRIg/hqdefault.jpg",
+              "duration": 55.78,
+              "published_at": "TBA",
+              "state": "content_ready",
+              "release_date": null,
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLQ2FMhj-JCSQaxo0lq3YTmX1bW99GodG3",
+              "video_type": "book_short_de"
             }
           ]
         },
