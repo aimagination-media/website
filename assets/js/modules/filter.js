@@ -76,6 +76,12 @@ export function refreshContent() {
 
 export function filterByPlaylist(playlistId, playlistTitle) {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+
+    // Switch to showing the videos section
+    domElements.seriesSection.style.display = 'none';
+    domElements.latestSection.style.display = 'block';
+    if (domElements.videoTypeFilters) domElements.videoTypeFilters.parentElement.style.display = 'none';
+
     domElements.latestSection.scrollIntoView({ behavior: 'smooth' });
 
     // Filter from current language set
