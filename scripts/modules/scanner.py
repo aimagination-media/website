@@ -109,6 +109,13 @@ def scan_vault():
                         # Auto-update the Obsidian file to reflect the state change
                         update_frontmatter_state(file_path, 'published')
                 
+                # Logic: If produced and has a real video_id, mark as published
+                # (produced means video is ready/uploaded, so it should be shown)
+                if state == 'produced' and meta.get('video_id') and meta.get('video_id').lower() != 'na':
+                    state = 'published'
+                    # Auto-update the Obsidian file to reflect the state change
+                    update_frontmatter_state(file_path, 'published')
+                
                 # Construct Video Object
                 video = {
                     'title': meta.get('title', 'Untitled'),
