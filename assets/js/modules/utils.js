@@ -22,6 +22,7 @@ export function getPlaylistTitle(playlistId, allPlaylists) {
  * - Other channels fall back to title from content.json
  */
 export function getChannelDisplayName(channelId, currentLang, socialsData) {
+    console.log('getChannelDisplayName called:', { channelId, currentLang, hasSocialsData: !!socialsData, hasYoutube: !!(socialsData && socialsData.youtube) });
     if (!socialsData || !socialsData.youtube) return channelId.toUpperCase();
 
     // Map dev channel IDs to channel_dev_id in socials

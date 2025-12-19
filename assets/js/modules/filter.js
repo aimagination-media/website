@@ -138,12 +138,16 @@ export function setupFilters() {
             renderPlaylists(langPlaylists);
             renderGrid(langVideos);
         } else {
-            domElements.latestSection.querySelector('h2').textContent = `${selectedChannel} Videos`;
+            // Import getChannelDisplayName dynamically to get proper channel name for header
+            import('./utils.js').then(({ getChannelDisplayName }) => {
+                const displayName = getChannelDisplayName(selectedChannel, state.currentLanguage, state.socialsData);
+                domElements.latestSection.querySelector('h2').textContent = `${displayName} Videos`;
+            });
 
-            const filteredPlaylists = langPlaylists.filter(s => s.channelName === selectedChannel);
+            const filteredPlaylists = langPlaylists.filter(s => s.channelId === selectedChannel);
             renderPlaylists(filteredPlaylists);
 
-            const filteredVideos = langVideos.filter(v => v.channelName === selectedChannel);
+            const filteredVideos = langVideos.filter(v => v.channelId === selectedChannel);
             renderGrid(filteredVideos, true);
         }
     });

@@ -157,7 +157,7 @@ export function renderGrid(videos, isFiltered = false) {
                     ${video.isScheduled ? '<span class="scheduled-badge">Scheduled</span>' : ''}
                 </div>
                 <h3 class="card-title">${video.title}</h3>
-                ${video.playlistId ? `<div class="series-meta">Playlist: ${getPlaylistTitle(video.playlistId, state.allPlaylists) || 'Unknown Playlist'}</div>` : ''}
+                ${video.playlistId ? `<div class="series-meta">Playlist: <a href="https://www.youtube.com/playlist?list=${video.playlistId}" target="_blank" class="playlist-link">${getPlaylistTitle(video.playlistId, state.allPlaylists) || 'Unknown Playlist'}</a></div>` : ''}
             </div>
         `;
         domElements.videoGrid.appendChild(card);
@@ -304,8 +304,9 @@ export function renderSocials() {
 }
 
 export function updateChannelFilters(videos) {
-    const channels = new Set();
-    videos.forEach(v => channels.add(v.channelName));
+    // Collect unique channel IDs
+    const channelIds = new Set();
+    videos.forEach(v => channelIds.add(v.channelId));
 
     const allBtn = document.createElement('button');
     allBtn.className = 'chip active';
@@ -316,15 +317,20 @@ export function updateChannelFilters(videos) {
     domElements.channelFilters.innerHTML = '';
     domElements.channelFilters.appendChild(allBtn);
 
-    // Map channel names to IDs for accent classes
-    const channelMap = {};
-    videos.forEach(v => channelMap[v.channelName] = v.channelId);
+    // Build a map from channelId to display name
+    const channelDisplayMap = {};
+    channelIds.forEach(channelId => {
+        channelDisplayMap[channelId] = getChannelDisplayName(channelId, state.currentLanguage, state.socialsData);
+    });
 
-    Array.from(channels).sort().forEach(channelName => {
+    // Sort by display name and create buttons
+    Array.from(channelIds).sort((a, b) =>
+        channelDisplayMap[a].localeCompare(channelDisplayMap[b])
+    ).forEach(channelId => {
         const btn = document.createElement('button');
-        btn.className = `chip accent-${channelMap[channelName]}`;
-        btn.textContent = channelName;
-        btn.dataset.channel = channelName;
+        btn.className = `chip accent-${channelId}`;
+        btn.textContent = channelDisplayMap[channelId];
+        btn.dataset.channel = channelId;
         domElements.channelFilters.appendChild(btn);
     });
 }

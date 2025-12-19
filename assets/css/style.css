@@ -458,6 +458,18 @@ lite-youtube {
     font-style: italic;
 }
 
+.playlist-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-style: normal;
+    transition: all 0.2s ease;
+}
+
+.playlist-link:hover {
+    color: var(--text-main);
+    text-decoration: underline;
+}
+
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     .glass-header {
