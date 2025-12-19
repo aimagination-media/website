@@ -109,19 +109,9 @@ def scan_vault():
                         # Auto-update the Obsidian file to reflect the state change
                         update_frontmatter_state(file_path, 'published')
                 
-                # Logic: If produced and has a real video_id, mark as published
-                # (produced means video is ready/uploaded, so it should be shown)
-                if state == 'produced' and meta.get('video_id') and meta.get('video_id').lower() != 'na':
-                    state = 'published'
-                    # Auto-update the Obsidian file to reflect the state change
-                    update_frontmatter_state(file_path, 'published')
-                
-                # Logic: If scheduled but no publish_date, and has a valid video_id, mark as published
-                # (video is uploaded and ready, but date wasn't set)
-                if state == 'scheduled' and not publish_date and meta.get('video_id') and meta.get('video_id').lower() != 'na':
-                    state = 'published'
-                    # Auto-update the Obsidian file to reflect the state change
-                    update_frontmatter_state(file_path, 'published')
+                # Note: We intentionally do NOT auto-update 'produced' or 'scheduled without date' states
+                # because those states indicate the video is not yet ready for public viewing.
+                # Only videos with scheduled + publish_date in the past get auto-updated (handled above).
                 
                 # Construct Video Object
                 video = {

@@ -67,7 +67,10 @@ export async function fetchContent() {
                 Object.keys(channel.playlists).forEach(playlistId => {
                     const playlistData = channel.playlists[playlistId];
                     const playlistVideos = playlistData ? playlistData.videos : undefined;
-                    const publishedVideos = playlistVideos ? playlistVideos.filter(v => v.state === 'published') : [];
+                    // Only include videos that are published AND have a real published date (not TBA)
+                    const publishedVideos = playlistVideos ? playlistVideos.filter(v =>
+                        v.state === 'published' && v.published_at && v.published_at !== 'TBA'
+                    ) : [];
 
                     if (publishedVideos.length > 0) {
                         const thumb = publishedVideos[0].thumbnail || `https://img.youtube.com/vi/${publishedVideos[0].video_id}/hqdefault.jpg`;
