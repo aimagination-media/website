@@ -4,7 +4,7 @@ import datetime
 from .config import VAULT_PATH, OUTPUT_PATH, CHANNEL_INFO, CHANNEL_NAME_MAPPING
 from .utils import load_cache, save_cache
 from .youtube import fetch_playlist_title
-from .parser import parse_frontmatter
+from .parser import parse_frontmatter, update_frontmatter_state
 
 def scan_vault():
     data = {
@@ -106,6 +106,8 @@ def scan_vault():
 
                     if pub_dt <= datetime.datetime.now():
                         state = 'published'
+                        # Auto-update the Obsidian file to reflect the state change
+                        update_frontmatter_state(file_path, 'published')
                 
                 # Construct Video Object
                 video = {
