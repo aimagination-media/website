@@ -21,6 +21,10 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/skeleton.css">
+    <link rel="stylesheet" href="assets/css/search.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
@@ -30,9 +34,22 @@
             <h1><span class="ai-gradient">AI</span>magination<span id="morphing-x">X</span></h1>
         </div>
         <div class="search-wrapper">
-            <input type="text" id="searchInput" placeholder="Search across channels..." aria-label="Search videos">
-            <span class="shortcut">/</span>
+            <div class="search-input-container">
+                <input type="text" id="searchInput" placeholder="Search across channels..." aria-label="Search videos">
+                <button class="search-clear-btn" id="searchClearBtn" aria-label="Clear search">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <span class="shortcut">/</span>
+                <div class="search-dropdown" id="searchDropdown">
+                    <!-- Recent searches will be populated here -->
+                </div>
+            </div>
         </div>
+        <!-- Result count badge -->
+        <div class="search-result-count" id="searchResultCount"></div>
     </header>
 
     <main>
@@ -150,6 +167,81 @@
             </div>
         </section>
     </main>
+
+    <!-- Bottom Navigation (Mobile Only) -->
+    <nav class="bottom-nav" id="bottomNav">
+        <div class="bottom-nav-container">
+            <div class="bottom-nav-item active" data-view="videos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+                <span>Videos</span>
+            </div>
+            <div class="bottom-nav-item" data-view="playlists">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+                <span>Playlists</span>
+            </div>
+            <div class="bottom-nav-item" data-view="socials">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+                <span>Socials</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3><span class="ai-gradient">AI</span>magination Studio</h3>
+                <p>Educational content in Math, Chemistry, and Audiobooks across multiple languages</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Channels</h4>
+                    <a href="https://youtube.com/@aimathematics" target="_blank">Math Animations</a>
+                    <a href="https://youtube.com/@aichemistry" target="_blank">Chemistry Explained</a>
+                    <a href="https://youtube.com/@aiaudiobooks" target="_blank">Audiobooks</a>
+                    <a href="https://youtube.com/@aigallery" target="_blank">AI Gallery</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="https://youtube.com/@aimathematics" target="_blank">YouTube</a>
+                    <a href="https://patreon.com/aimagination" target="_blank">Patreon</a>
+                    <a href="https://instagram.com/aimagination.studio" target="_blank">Instagram</a>
+                    <a href="https://tiktok.com/@aimagination" target="_blank">TikTok</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>More</h4>
+                    <a href="#about">About</a>
+                    <a href="#support">Support</a>
+                    <a href="#privacy">Privacy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 AImagination Studio. Crafted with ✨</p>
+            <button class="back-to-top" aria-label="Back to top" id="backToTop">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </button>
+        </div>
+    </footer>
 
     <!-- App Logic -->
     <script type="module" src="assets/js/app.js"></script>

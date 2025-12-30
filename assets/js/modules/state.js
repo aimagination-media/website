@@ -32,5 +32,8 @@ export const domElements = {
     langBtn: document.getElementById('langBtn'),
     langDropdown: document.getElementById('langDropdown'),
     langOptions: document.querySelectorAll('.lang-option'),
-    toggleBtns: document.querySelectorAll('.toggle-btn')
+    toggleBtns: document.querySelectorAll('.toggle-btn'),
+    searchClearBtn: document.getElementById('searchClearBtn'),
+    searchDropdown: document.getElementById('searchDropdown'),
+    searchResultCount: document.getElementById('searchResultCount')
 };

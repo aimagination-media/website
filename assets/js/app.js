@@ -6,6 +6,8 @@ import { updateUIText } from './modules/render.js';
 import { refreshContent, setupSearch, setupFilters } from './modules/filter.js';
 import { setupLanguageSelector, setupViewToggle, setupVideoTypeFilters } from './modules/events.js';
 import { initBranding } from './modules/branding.js';
+import { showVideoSkeleton, showPlaylistSkeleton } from './modules/skeleton.js';
+import { setupBottomNav, setupSwipeGestures } from './modules/mobile.js';
 
 async function initPortfolio() {
     try {
@@ -14,14 +16,8 @@ async function initPortfolio() {
         updateUIText();
         initBranding(); // Initialize Morphing X Animation
 
-        // Show loading state
-        const t = translations[state.currentLanguage] || translations['en'];
-        domElements.videoGrid.innerHTML = `
-            <div class="loading-state">
-                <div class="loading-spinner"></div>
-                <p>${t.loading}</p>
-            </div>
-        `;
+        // Show skeleton loading state
+        showVideoSkeleton(domElements.videoGrid, 8);
 
         // Fetch Content and Socials
         await fetchContent();
@@ -38,6 +34,18 @@ async function initPortfolio() {
         setupLanguageSelector();
         setupViewToggle();
         setupVideoTypeFilters();
+
+        // Mobile Enhancements
+        setupBottomNav();
+        setupSwipeGestures();
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        if (backToTopBtn) {
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
 
         // Initial Render
         refreshContent();

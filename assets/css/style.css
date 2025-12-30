@@ -258,8 +258,9 @@ main {
     border-radius: var(--radius);
     overflow: hidden;
     transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-        box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-        border-color 0.2s ease;
+        box-shadow 0.3s ease,
+        border-color 0.2s ease,
+        filter 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
@@ -268,10 +269,42 @@ main {
 }
 
 .video-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
-    border-color: rgba(168, 85, 247, 0.3);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 60px -10px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(168, 85, 247, 0.15);
+    border-color: rgba(168, 85, 247, 0.5);
+    filter: brightness(1.05);
     z-index: 2;
+}
+
+/* Shine effect on hover */
+.video-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.03),
+            transparent);
+    transition: left 0.5s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.video-card:hover::before {
+    left: 100%;
+}
+
+/* Thumbnail zoom on hover */
+.video-card lite-youtube {
+    transition: transform 0.4s ease;
+}
+
+.video-card:hover lite-youtube {
+    transform: scale(1.05);
 }
 
 /* Scheduled Video Styles */
@@ -675,23 +708,24 @@ lite-youtube {
 .grid-header::after {
     content: '';
     flex-grow: 1;
-    height: 1px;
-    background: linear-gradient(90deg, var(--primary-glow), transparent);
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), rgba(168, 85, 247, 0.3), transparent);
     margin-left: 1rem;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .grid-header h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: 800;
     margin: 0;
-    color: var(--primary);
-    /* Accent color */
+    color: var(--text-main);
+    /* Higher contrast */
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     display: flex;
     align-items: center;
     gap: 8px;
+    text-shadow: 0 0 20px var(--primary-glow);
 }
 
 /* Optional: Add a small dot or icon before the text */

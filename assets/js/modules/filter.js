@@ -1,6 +1,14 @@
 import { state, domElements } from './state.js';
 import { translations } from './translations.js';
 import { renderGrid, renderPlaylists, updateChannelFilters, updateVideoTypeFilters, renderSocials } from './render.js';
+import { showVideoSkeleton } from './skeleton.js';
+import {
+    saveRecentSearch,
+    showSearchDropdown,
+    hideSearchDropdown,
+    showResultCount,
+    updateClearButton
+} from './searchEnhance.js';
 
 export function refreshContent() {
     // Common Logic for Video/Playlist filtering by language
@@ -94,21 +102,67 @@ export function filterByPlaylist(playlistId, playlistTitle) {
 }
 
 export function setupSearch() {
+    let searchTimeout;
+
     domElements.searchInput.addEventListener('input', (e) => {
         const query = e.target.value;
+
+        // Update clear button visibility
+        updateClearButton(query.length > 0);
+
+        // Clear previous timeout
+        clearTimeout(searchTimeout);
+
         document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
         document.querySelector('[data-channel="all"]').classList.add('active');
         const t = translations[state.currentLanguage] || translations['en'];
-        domElements.latestSection.querySelector('h2').textContent = t.searchResults;
 
         if (!query) {
             domElements.latestSection.querySelector('h2').textContent = t.latest;
+            hideSearchDropdown();
             refreshContent(); // Reset to current language view
             return;
         }
 
-        const results = state.fuse.search(query).map(result => result.item);
-        renderGrid(results, true);
+        // Show dropdown when focused and has value
+        showSearchDropdown(query);
+
+        // Debounce search
+        searchTimeout = setTimeout(() => {
+            const results = state.fuse.search(query).map(result => result.item);
+
+            // Save to recent searches
+            if (query.trim().length >= 2) {
+                saveRecentSearch(query.trim());
+            }
+
+            // Show result count
+            showResultCount(results.length);
+
+            domElements.latestSection.querySelector('h2').textContent = t.searchResults;
+            renderGrid(results, true);
+        }, 300); // 300ms debounce
+    });
+
+    // Show dropdown on focus (if empty, show recent searches)
+    domElements.searchInput.addEventListener('focus', () => {
+        if (!domElements.searchInput.value) {
+            showSearchDropdown('');
+        }
+    });
+
+    // Hide dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!domElements.searchInput.contains(e.target) && !domElements.searchDropdown.contains(e.target)) {
+            hideSearchDropdown();
+        }
+    });
+
+    // Clear button handler
+    domElements.searchClearBtn.addEventListener('click', () => {
+        domElements.searchInput.value = '';
+        domElements.searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+        domElements.searchInput.focus();
     });
 
     document.addEventListener('keydown', (e) => {
