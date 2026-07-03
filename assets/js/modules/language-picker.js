@@ -231,7 +231,7 @@ export class LanguagePickerManager {
         
         // Fall back to browser language
         const browserLang = navigator.language || navigator.userLanguage;
-        const supportedLanguages = ['en', 'es', 'de', 'hi'];
+        const supportedLanguages = ['en', 'es', 'de', 'fr', 'it', 'hi'];
         
         // Extract language code (e.g., 'en-US' -> 'en')
         const langCode = browserLang.split('-')[0].toLowerCase();
@@ -244,6 +244,8 @@ export class LanguagePickerManager {
             'en': { name: 'English', flag: '🇺🇸' },
             'es': { name: 'Español', flag: '🇪🇸' },
             'de': { name: 'Deutsch', flag: '🇩🇪' },
+            'fr': { name: 'Français', flag: '🇫🇷' },
+            'it': { name: 'Italiano', flag: '🇮🇹' },
             'hi': { name: 'हिंदी', flag: '🇮🇳' }
         };
         

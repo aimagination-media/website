@@ -70,7 +70,55 @@ export const translations = {
         videosLongFormat: "Langformat",
         shorts: "Shorts",
         allVideos: "Alle Videos"
+    },
+    fr: {
+        featured: "Listes en Vedette",
+        latest: "Dernières Vidéos",
+        upcoming: "Vidéos à Venir",
+        socials: "Communauté & Réseaux",
+        videosBtn: "Vidéos",
+        playlistsBtn: "Listes",
+        socialsBtn: "Réseaux",
+        searchPlaceholder: "Rechercher dans les chaînes...",
+        all: "Tous",
+        searchResults: "Résultats de Recherche",
+        playlist: "Liste",
+        loading: "Chargement du contenu...",
+        noVideos: "Aucune vidéo trouvée.",
+        youtubeTitle: "Chaînes YouTube",
+        instagramTitle: "Instagram",
+        tiktokTitle: "TikTok",
+        subscribe: "S'abonner",
+        follow: "Suivre",
+        patreonTitle: "Soutenez-nous",
+        videosLongFormat: "Format Long",
+        shorts: "Shorts",
+        allVideos: "Toutes les Vidéos"
+    },
+    it: {
+        featured: "Playlist in Evidenza",
+        latest: "Ultimi Video",
+        upcoming: "Prossimi Video",
+        socials: "Community & Social",
+        videosBtn: "Video",
+        playlistsBtn: "Playlist",
+        socialsBtn: "Social",
+        searchPlaceholder: "Cerca nei canali...",
+        all: "Tutti",
+        searchResults: "Risultati di Ricerca",
+        playlist: "Playlist",
+        loading: "Caricamento contenuti...",
+        noVideos: "Nessun video trovato.",
+        youtubeTitle: "Canali YouTube",
+        instagramTitle: "Instagram",
+        tiktokTitle: "TikTok",
+        subscribe: "Iscriviti",
+        follow: "Segui",
+        patreonTitle: "Sostienici",
+        videosLongFormat: "Formato Lungo",
+        shorts: "Shorts",
+        allVideos: "Tutti i Video"
     }
 };
 
-export const langNames = { en: 'English', es: 'Español', de: 'Deutsch', all: 'All Languages' };
+export const langNames = { en: 'English', es: 'Español', de: 'Deutsch', fr: 'Français', it: 'Italiano', all: 'All Languages' };

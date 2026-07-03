@@ -10,11 +10,14 @@ def scan_vault():
     data = {
         'en': {},
         'es': {},
-        'de': {}
+        'de': {},
+        'fr': {},
+        'it': {}
     }
     
     playlist_cache = load_cache()
     cache_updated = False
+    _failed_playlists = set()  # run-local: don't refetch an unreachable ID per-video
     
     # Initialize structure
     for lang in data:
@@ -50,7 +53,7 @@ def scan_vault():
                     continue
                 
                 # Normalize language
-                lang_map = {'spanish': 'es', 'english': 'en', 'german': 'de'}
+                lang_map = {'spanish': 'es', 'english': 'en', 'german': 'de', 'french': 'fr', 'italian': 'it'}
                 lang = meta['language'].lower()
                 lang = lang_map.get(lang, lang)
                 
@@ -140,6 +143,8 @@ def scan_vault():
                     if not playlist_title or playlist_title.lower() == 'na':
                         if playlist_id in playlist_cache:
                             playlist_title = playlist_cache[playlist_id]
+                        elif playlist_id in _failed_playlists:
+                            playlist_title = ''  # already failed this run, skip
                         else:
                             print(f"Fetching title for playlist: {playlist_id}")
                             fetched_title = fetch_playlist_title(playlist_id)
@@ -147,6 +152,8 @@ def scan_vault():
                                 playlist_title = fetched_title
                                 playlist_cache[playlist_id] = fetched_title
                                 cache_updated = True
+                            else:
+                                _failed_playlists.add(playlist_id)
                     
                     if playlist_id not in data[lang][channel_key]['playlists']:
                         data[lang][channel_key]['playlists'][playlist_id] = {

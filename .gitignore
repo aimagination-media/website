@@ -1,3 +1,7 @@
 
 # Brainstorm visual companion artifacts
 .superpowers/
+
+# Python bytecode
+__pycache__/
+*.pyc

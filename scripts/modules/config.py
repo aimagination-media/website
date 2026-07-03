@@ -9,25 +9,33 @@ CHANNEL_INFO = {
         'color': '#3b82f6', # Blue
         'en': {'title': 'Mathematics', 'description': 'Master math concepts from basics to advanced topics'},
         'es': {'title': 'Matemáticas', 'description': 'Domina conceptos matemáticos desde lo básico hasta temas avanzados'},
-        'de': {'title': 'Mathematik', 'description': 'Meistere mathematische Konzepte von den Grundlagen bis zu fortgeschrittenen Themen'}
+        'de': {'title': 'Mathematik', 'description': 'Meistere mathematische Konzepte von den Grundlagen bis zu fortgeschrittenen Themen'},
+        'fr': {'title': 'Mathématiques', 'description': 'Maîtrissez les concepts mathématiques des bases aux sujets avancés'},
+        'it': {'title': 'Matematica', 'description': 'Padroneggia i concetti matematici dalle basi ai temi avanzati'}
     },
     'chemistry': {
         'color': '#10b981', # Emerald
         'en': {'title': 'Chemistry', 'description': 'Explore the fascinating world of chemical reactions'},
         'es': {'title': 'Química', 'description': 'Explora el fascinante mundo de las reacciones químicas'},
-        'de': {'title': 'Chemie', 'description': 'Entdecke die faszinierende Welt der chemischen Reaktionen'}
+        'de': {'title': 'Chemie', 'description': 'Entdecke die faszinierende Welt der chemischen Reaktionen'},
+        'fr': {'title': 'Chimie', 'description': 'Explorez le monde fascinant des réactions chimiques'},
+        'it': {'title': 'Chimica', 'description': "Esplora l'affascinante mondo delle reazioni chimiche"}
     },
     'audiobook': {
         'color': '#f59e0b', # Amber
         'en': {'title': 'Audiobooks', 'description': 'Listen to engaging stories and educational content'},
         'es': {'title': 'Audiolibros', 'description': 'Escucha historias cautivadoras y contenido educativo'},
-        'de': {'title': 'Hörbücher', 'description': 'Höre fesselnde Geschichten und Bildungsinhalte'}
+        'de': {'title': 'Hörbücher', 'description': 'Höre fesselnde Geschichten und Bildungsinhalte'},
+        'fr': {'title': 'Livres Audio', 'description': 'Écoutez des histoires captivantes et du contenu éducatif'},
+        'it': {'title': 'Audiolibri', 'description': 'Ascolta storie coinvolgenti e contenuti educativi'}
     },
     'gallery': {
         'color': '#ec4899', # Pink
         'en': {'title': 'AI Vivid Dreams', 'description': 'Journey into the boundless imagination of AI art'},
         'es': {'title': 'Sueños Vívidos de IA', 'description': 'Viaje a la imaginación ilimitada del arte de la IA'},
-        'de': {'title': 'KI Lebendige Träume', 'description': 'Reise in die grenzenlose Fantasie der KI-Kunst'}
+        'de': {'title': 'KI Lebendige Träume', 'description': 'Reise in die grenzenlose Fantasie der KI-Kunst'},
+        'fr': {'title': 'Rêves Éclatants d\'IA', 'description': "Voyage dans l'imagination sans limites de l'art IA"},
+        'it': {'title': 'Sogni Vividi dell\'IA', 'description': "Viaggia nell'immaginazione senza limiti dell'arte IA"}
     }
 }
 
