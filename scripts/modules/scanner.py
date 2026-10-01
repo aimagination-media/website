@@ -4,7 +4,38 @@ import datetime
 from .config import VAULT_PATH, OUTPUT_PATH, CHANNEL_INFO, CHANNEL_NAME_MAPPING
 from .utils import load_cache, save_cache
 from .youtube import fetch_playlist_title
-from .parser import parse_frontmatter, update_frontmatter_state
+from .parser import parse_frontmatter
+
+def _parse_publish_date(publish_date):
+    """Return a datetime, or None when the value cannot be read."""
+    if isinstance(publish_date, datetime.datetime):
+        return publish_date
+    if isinstance(publish_date, datetime.date):
+        return datetime.datetime.combine(publish_date, datetime.time.min)
+    if not isinstance(publish_date, str):
+        return None
+
+    text = publish_date.strip()
+    if text.endswith('Z'):
+        text = text[:-1] + '+00:00'
+    for fmt in ('%Y-%m-%d %H:%M:%S', '%Y-%m-%d'):
+        try:
+            return datetime.datetime.strptime(text, fmt)
+        except ValueError:
+            continue
+    try:
+        return datetime.datetime.fromisoformat(text)
+    except ValueError:
+        return None
+
+
+def _publish_date_has_passed(publish_date):
+    pub_dt = _parse_publish_date(publish_date)
+    if pub_dt is None:
+        return False
+    now = datetime.datetime.now(pub_dt.tzinfo) if pub_dt.tzinfo else datetime.datetime.now()
+    return pub_dt <= now
+
 
 def scan_vault():
     data = {
@@ -92,29 +123,13 @@ def scan_vault():
                 state = meta.get('state', 'draft')
                 publish_date = meta.get('publish_date')
                 
-                # Logic: If scheduled and date is passed, mark as published
-                if state == 'scheduled' and publish_date:
-                    if isinstance(publish_date, str):
-                        try:
-                            pub_dt = datetime.datetime.strptime(publish_date, '%Y-%m-%d %H:%M:%S')
-                        except ValueError:
-                            # Try other formats or ignore
-                            pub_dt = datetime.datetime.max
-                    elif isinstance(publish_date, (datetime.date, datetime.datetime)):
-                        pub_dt = publish_date
-                        if isinstance(pub_dt, datetime.date) and not isinstance(pub_dt, datetime.datetime):
-                             pub_dt = datetime.datetime.combine(pub_dt, datetime.time.min)
-                    else:
-                        pub_dt = datetime.datetime.max
-
-                    if pub_dt <= datetime.datetime.now():
+                # Past-due scheduled videos are published on the site. Vault notes
+                # stay as written — rewriting them would reformat production frontmatter.
+                video_id = meta.get('video_id')
+                has_youtube_id = bool(video_id) and str(video_id).lower() not in ('na', 'none', 'null')
+                if str(state).lower() == 'scheduled' and publish_date and has_youtube_id:
+                    if _publish_date_has_passed(publish_date):
                         state = 'published'
-                        # Auto-update the Obsidian file to reflect the state change
-                        update_frontmatter_state(file_path, 'published')
-                
-                # Note: We intentionally do NOT auto-update 'produced' or 'scheduled without date' states
-                # because those states indicate the video is not yet ready for public viewing.
-                # Only videos with scheduled + publish_date in the past get auto-updated (handled above).
                 
                 # Construct Video Object
                 video = {
