@@ -25,6 +25,61 @@
         "items": [
             {
                 "platform": "youtube",
+                "channel_dev_id": "quiz",
+                "multi_lang_channel": "true",
+                "language": "English",
+                "handle": "Omnia Quiz",
+                "description": "Trivia in English — marathons and shorts.",
+                "url": "https://www.youtube.com/channel/UC_Di5FThDVn72uVrJxP5oYw",
+                "id": "omnia_quiz_en",
+                "logo": "assets/img/omnia/en.png"
+            },
+            {
+                "platform": "youtube",
+                "channel_dev_id": "quiz",
+                "multi_lang_channel": "true",
+                "language": "Spanish",
+                "handle": "Omnia Quiz Español",
+                "description": "Quiz en español — maratones y shorts.",
+                "url": "https://www.youtube.com/channel/UCjQgOzX0a6V7SE1tTLNhLAA",
+                "id": "omnia_quiz_es",
+                "logo": "assets/img/omnia/es.png"
+            },
+            {
+                "platform": "youtube",
+                "channel_dev_id": "quiz",
+                "multi_lang_channel": "true",
+                "language": "German",
+                "handle": "Omnia Quiz Deutsch",
+                "description": "Quiz auf Deutsch — Marathons und Shorts.",
+                "url": "https://www.youtube.com/channel/UC-FaWw19FLdEoNRzL3QvbhA",
+                "id": "omnia_quiz_de",
+                "logo": "assets/img/omnia/de.png"
+            },
+            {
+                "platform": "youtube",
+                "channel_dev_id": "quiz",
+                "multi_lang_channel": "true",
+                "language": "French",
+                "handle": "Omnia Quiz Français",
+                "description": "Quiz en français — marathons et shorts.",
+                "url": "https://www.youtube.com/channel/UCyyfKChBjZ85rEArxBateCA",
+                "id": "omnia_quiz_fr",
+                "logo": "assets/img/omnia/fr.png"
+            },
+            {
+                "platform": "youtube",
+                "channel_dev_id": "quiz",
+                "multi_lang_channel": "true",
+                "language": "Italian",
+                "handle": "Omnia Quiz IT",
+                "description": "Quiz in italiano — maratone e short.",
+                "url": "https://www.youtube.com/channel/UCYFphhw5CQ9YmtGyTUvzoJQ",
+                "id": "omnia_quiz_it",
+                "logo": "assets/img/omnia/it.png"
+            },
+            {
+                "platform": "youtube",
                 "channel_dev_id": "ai_gallery",
                 "multi_lang_channel": "false",
                 "language": "English",
@@ -79,35 +134,42 @@
             {
                 "platform": "tiktok",
                 "handle": "@aimagination_en",
-                "description": {
-                    "en": "Short-form AI content, tips, and creative experiments.",
-                    "es": "Contenido de IA en formato corto, consejos y experimentos creativos.",
-                    "de": "Kurzform-KI-Inhalte, Tipps und kreative Experimente."
-                },
+                "description": "Omnia Quiz shorts in English.",
                 "url": "https://www.tiktok.com/@aimagination_en",
-                "language": "en"
+                "language": "en",
+                "logo": "assets/img/omnia/en.png"
             },
             {
                 "platform": "tiktok",
                 "handle": "@aimagination_es",
-                "description": {
-                    "en": "Short-form AI content, tips, and creative experiments.",
-                    "es": "Contenido de IA en formato corto, consejos y experimentos creativos.",
-                    "de": "Kurzform-KI-Inhalte, Tipps und kreative Experimente."
-                },
+                "description": "Shorts de Omnia Quiz en español.",
                 "url": "https://www.tiktok.com/@aimagination_es",
-                "language": "es"
+                "language": "es",
+                "logo": "assets/img/omnia/es.png"
             },
             {
                 "platform": "tiktok",
                 "handle": "@aimagination_de",
-                "description": {
-                    "en": "Short-form AI content, tips, and creative experiments.",
-                    "es": "Contenido de IA en formato corto, consejos y experimentos creativos.",
-                    "de": "Kurzform-KI-Inhalte, Tipps und kreative Experimente."
-                },
+                "description": "Omnia Quiz Shorts auf Deutsch.",
                 "url": "https://www.tiktok.com/@aimagination_de",
-                "language": "de"
+                "language": "de",
+                "logo": "assets/img/omnia/de.png"
+            },
+            {
+                "platform": "tiktok",
+                "handle": "@aimagination_fr",
+                "description": "Shorts Omnia Quiz en français.",
+                "url": "https://www.tiktok.com/@aimagination_fr",
+                "language": "fr",
+                "logo": "assets/img/omnia/fr.png"
+            },
+            {
+                "platform": "tiktok",
+                "handle": "@aimagination_it",
+                "description": "Short Omnia Quiz in italiano.",
+                "url": "https://www.tiktok.com/@aimagination_it",
+                "language": "it",
+                "logo": "assets/img/omnia/it.png"
             }
         ]
     },
@@ -117,35 +179,42 @@
             {
                 "platform": "instagram",
                 "handle": "@aimagination_en",
-                "description": {
-                    "en": "Follow us for daily AI-generated content and updates.",
-                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
-                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
-                },
+                "description": "Omnia Quiz on Instagram, in English.",
                 "url": "https://www.instagram.com/aimagination_en/",
-                "language": "en"
+                "language": "en",
+                "logo": "assets/img/omnia/en.png"
             },
             {
                 "platform": "instagram",
                 "handle": "@aimagination_es",
-                "description": {
-                    "en": "Follow us for daily AI-generated content and updates.",
-                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
-                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
-                },
+                "description": "Omnia Quiz en Instagram, en español.",
                 "url": "https://www.instagram.com/aimagination_es/",
-                "language": "es"
+                "language": "es",
+                "logo": "assets/img/omnia/es.png"
             },
             {
                 "platform": "instagram",
                 "handle": "@aimagination_de",
-                "description": {
-                    "en": "Follow us for daily AI-generated content and updates.",
-                    "es": "Síguenos para contenido generado por IA y actualizaciones diarias.",
-                    "de": "Folge uns für tägliche KI-generierte Inhalte und Updates."
-                },
+                "description": "Omnia Quiz auf Instagram, auf Deutsch.",
                 "url": "https://www.instagram.com/aimagination_de/",
-                "language": "de"
+                "language": "de",
+                "logo": "assets/img/omnia/de.png"
+            },
+            {
+                "platform": "instagram",
+                "handle": "@omnia_quiz_fr",
+                "description": "Omnia Quiz sur Instagram, en français.",
+                "url": "https://www.instagram.com/omnia_quiz_fr/",
+                "language": "fr",
+                "logo": "assets/img/omnia/fr.png"
+            },
+            {
+                "platform": "instagram",
+                "handle": "@aimagination_it",
+                "description": "Omnia Quiz su Instagram, in italiano.",
+                "url": "https://www.instagram.com/aimagination_it/",
+                "language": "it",
+                "logo": "assets/img/omnia/it.png"
             }
         ]
     }

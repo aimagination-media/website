@@ -202,11 +202,19 @@ export function renderSocials() {
         // Create Banner (like video thumbnail)
         const banner = document.createElement('div');
         banner.className = 'social-banner';
-        banner.innerHTML = `
+        if (item.logo) {
+            const logo = document.createElement('img');
+            logo.className = 'social-logo';
+            logo.src = item.logo;
+            logo.alt = '';
+            banner.appendChild(logo);
+        } else {
+            banner.innerHTML = `
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 ${icons[type]}
             </svg>
         `;
+        }
 
         // Create Card Content (like video card content)
         const content = document.createElement('div');

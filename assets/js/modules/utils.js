@@ -29,14 +29,17 @@ export function getChannelDisplayName(channelId, currentLang, socialsData) {
     const channelMapping = {
         'book': 'Stories',
         'audiobook': 'Stories',
-        'gallery': 'ai_gallery'
+        'gallery': 'ai_gallery',
+        'quiz': 'quiz'
     };
 
     // Map language codes to full language names used in socials.json
     const langMapping = {
         'en': 'English',
         'es': 'Spanish',
-        'de': 'German'
+        'de': 'German',
+        'fr': 'French',
+        'it': 'Italian'
     };
 
     const mappedDevId = channelMapping[channelId];
@@ -67,13 +70,16 @@ export function getChannelUrl(channelId, currentLang, socialsData) {
     const channelMapping = {
         'book': 'Stories',
         'audiobook': 'Stories',
-        'gallery': 'ai_gallery'
+        'gallery': 'ai_gallery',
+        'quiz': 'quiz'
     };
 
     const langMapping = {
         'en': 'English',
         'es': 'Spanish',
-        'de': 'German'
+        'de': 'German',
+        'fr': 'French',
+        'it': 'Italian'
     };
 
     const mappedDevId = channelMapping[channelId];
