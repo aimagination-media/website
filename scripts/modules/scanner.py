@@ -29,6 +29,13 @@ def _parse_publish_date(publish_date):
         return None
 
 
+def _clean_title(value):
+    text = str(value).strip() if value is not None else ''
+    if not text or text.lower() in ('na', 'untitled playlist'):
+        return ''
+    return text
+
+
 def _publish_date_has_passed(publish_date):
     pub_dt = _parse_publish_date(publish_date)
     if pub_dt is None:
@@ -151,11 +158,15 @@ def scan_vault():
                 
                 # Add to Playlists
                 playlist_id = meta.get('playlist_id')
-                playlist_title = meta.get('playlist') or meta.get('serie') # Fallback to serie for title if needed
+                playlist_title = (
+                    _clean_title(meta.get('playlist_name'))
+                    or _clean_title(meta.get('playlist'))
+                    or _clean_title(meta.get('serie'))
+                )
 
                 if playlist_id:
-                    # Auto-fetch title if missing
-                    if not playlist_title or playlist_title.lower() == 'na':
+                    # Auto-fetch title if the note does not carry one
+                    if not playlist_title:
                         if playlist_id in playlist_cache:
                             playlist_title = playlist_cache[playlist_id]
                         elif playlist_id in _failed_playlists:
@@ -170,13 +181,16 @@ def scan_vault():
                             else:
                                 _failed_playlists.add(playlist_id)
                     
-                    if playlist_id not in data[lang][channel_key]['playlists']:
-                        data[lang][channel_key]['playlists'][playlist_id] = {
+                    playlists = data[lang][channel_key]['playlists']
+                    if playlist_id not in playlists:
+                        playlists[playlist_id] = {
                             'id': playlist_id,
                             'title': playlist_title or 'Untitled Playlist',
                             'videos': []
                         }
-                    data[lang][channel_key]['playlists'][playlist_id]['videos'].append(video)
+                    elif playlist_title and playlists[playlist_id]['title'] == 'Untitled Playlist':
+                        playlists[playlist_id]['title'] = playlist_title
+                    playlists[playlist_id]['videos'].append(video)
                     
             except Exception as e:
                 print(f"Error processing file {file_path}: {e}")
