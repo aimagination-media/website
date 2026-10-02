@@ -2,7 +2,7 @@ import { state, domElements } from './state.js';
 import { translations, langNames } from './translations.js';
 import { getPlaylistTitle, getChannelDisplayName, getChannelUrl } from './utils.js';
 import { filterByPlaylist } from './filter.js';
-import { updateTimeline } from './timeline.js';
+import { updateTimeline, setMonthReveal, updateActiveState } from './timeline.js';
 
 export function updateUIText() {
     const t = translations[state.currentLanguage] || translations['en'];
@@ -63,8 +63,190 @@ export function renderPlaylists(playlistList) {
     });
 }
 
+const PAGE_SIZE = 24;
+
+let pendingVideos = [];
+let renderedCount = 0;
+let lastMonthLabel = null;
+let gridIsFiltered = false;
+let appending = false;
+let sentinel = null;
+let sentinelObserver = null;
+let headerObserver = null;
+
+function videoDateParts(dateStr) {
+    if (!dateStr || dateStr === 'TBA') return null;
+    const date = new Date(dateStr);
+    if (isNaN(date.getTime())) return null;
+    return {
+        year: String(date.getFullYear()),
+        month: date.toLocaleString('default', { month: 'short' }),
+        label: date.toLocaleString('default', { month: 'long', year: 'numeric' }),
+        display: date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }),
+    };
+}
+
+function buildVideoCard(video, index) {
+    const parts = videoDateParts(video.date);
+    const isFeatured = (!gridIsFiltered && index < 2) ? 'featured' : '';
+    const isScheduled = video.isScheduled ? 'scheduled' : '';
+    const card = document.createElement('article');
+    card.className = `video-card ${isFeatured} ${isScheduled} accent-${video.channelId}`;
+    if (parts) {
+        card.dataset.year = parts.year;
+        card.dataset.month = parts.month;
+    }
+
+    const dateStr = parts ? parts.display : (video.date && video.date !== 'TBA' ? video.date : 'Coming Soon');
+    const mediaContent = video.isScheduled
+        ? `<div class="scheduled-thumbnail">
+             <img src="${video.thumbnail}" alt="${video.title}" loading="lazy" onerror="this.src='assets/images/placeholder.jpg'">
+             <div class="scheduled-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+             </div>
+           </div>`
+        : `<lite-youtube videoid="${video.id}" playlabel="Play: ${video.title}" params="controls=1&modestbranding=1&rel=0"></lite-youtube>`;
+
+    const channelDisplayName = getChannelDisplayName(video.channelId, video.language, state.socialsData);
+    const channelUrl = getChannelUrl(video.channelId, video.language, state.socialsData);
+    const channelLinkHtml = channelUrl
+        ? `<a href="${channelUrl}" target="_blank" class="channel-link-icon" title="Visit Channel">
+             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+           </a>`
+        : '';
+
+    card.innerHTML = `
+        ${mediaContent}
+        <div class="card-content">
+            <div class="card-meta">
+                <span class="channel-tag">
+                    ${channelDisplayName}
+                    ${channelLinkHtml}
+                </span>
+                <span class="video-date">${dateStr}</span>
+                ${video.isScheduled ? '<span class="scheduled-badge">Scheduled</span>' : ''}
+            </div>
+            <h3 class="card-title">${video.title}</h3>
+            ${video.playlistId ? `<div class="series-meta">Playlist: <a href="https://www.youtube.com/playlist?list=${video.playlistId}" target="_blank" class="playlist-link">${getPlaylistTitle(video.playlistId, state.allPlaylists) || 'Unknown Playlist'}</a></div>` : ''}
+        </div>
+    `;
+    return { card, parts };
+}
+
+function ensureObservers() {
+    if (!sentinel) {
+        sentinel = document.createElement('button');
+        sentinel.type = 'button';
+        sentinel.className = 'grid-sentinel';
+        sentinel.addEventListener('click', () => appendChunk());
+    }
+    if (!sentinelObserver) {
+        sentinelObserver = new IntersectionObserver((entries) => {
+            if (entries.some(entry => entry.isIntersecting)) appendChunk();
+        }, { rootMargin: '600px 0px' });
+    }
+    if (!headerObserver) {
+        headerObserver = new IntersectionObserver((entries) => {
+            const hit = entries
+                .filter(entry => entry.isIntersecting)
+                .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+            if (!hit) return;
+            updateActiveState(hit.target.dataset.year, hit.target.dataset.month);
+        }, { rootMargin: '-90px 0px -65% 0px', threshold: 0 });
+    }
+}
+
+function updateSentinelText() {
+    if (!sentinel) return;
+    const t = translations[state.currentLanguage] || translations['en'];
+    const pattern = t.showingCount || 'Showing {shown} of {total}';
+    sentinel.textContent = pattern
+        .replace('{shown}', String(renderedCount))
+        .replace('{total}', String(pendingVideos.length));
+}
+
+function sentinelNeedsMore() {
+    if (!sentinel || !sentinel.isConnected) return false;
+    if (domElements.latestSection.style.display === 'none') return false;
+    return sentinel.getBoundingClientRect().top < window.innerHeight + 600;
+}
+
+function observeNewHeaders() {
+    ensureObservers();
+    domElements.videoGrid.querySelectorAll('.grid-header:not([data-watched])').forEach(header => {
+        header.dataset.watched = '1';
+        headerObserver.observe(header);
+    });
+}
+
+function retireSentinel() {
+    if (sentinelObserver && sentinel) sentinelObserver.unobserve(sentinel);
+    if (sentinel && sentinel.isConnected) sentinel.remove();
+}
+
+function appendChunk() {
+    if (appending || renderedCount >= pendingVideos.length) {
+        if (renderedCount >= pendingVideos.length) retireSentinel();
+        return;
+    }
+    appending = true;
+    const firstPage = renderedCount === 0;
+    try {
+        do {
+            const end = Math.min(renderedCount + PAGE_SIZE, pendingVideos.length);
+            const fragment = document.createDocumentFragment();
+            for (let index = renderedCount; index < end; index++) {
+                const { card, parts } = buildVideoCard(pendingVideos[index], index);
+                if (parts && parts.label !== lastMonthLabel) {
+                    lastMonthLabel = parts.label;
+                    const header = document.createElement('div');
+                    header.className = 'grid-header';
+                    header.dataset.year = parts.year;
+                    header.dataset.month = parts.month;
+                    header.innerHTML = `<h3>${parts.label}</h3>`;
+                    fragment.appendChild(header);
+                }
+                fragment.appendChild(card);
+            }
+            renderedCount = end;
+            if (!sentinel.isConnected) domElements.videoGrid.appendChild(sentinel);
+            domElements.videoGrid.insertBefore(fragment, sentinel);
+            updateSentinelText();
+            if (renderedCount >= pendingVideos.length) {
+                retireSentinel();
+                break;
+            }
+        } while (sentinelNeedsMore());
+    } finally {
+        appending = false;
+    }
+    observeNewHeaders();
+    if (firstPage) {
+        const first = domElements.videoGrid.querySelector('.grid-header');
+        if (first) updateActiveState(first.dataset.year, first.dataset.month);
+    }
+}
+
+function revealMonth(year, month) {
+    const selector = `.grid-header[data-year="${year}"][data-month="${month}"]`;
+    let hops = 0;
+    while (!domElements.videoGrid.querySelector(selector) && renderedCount < pendingVideos.length && hops < 80) {
+        const before = renderedCount;
+        appendChunk();
+        if (renderedCount === before) break;
+        hops++;
+    }
+}
+
+setMonthReveal(revealMonth);
+
 export function renderGrid(videos, isFiltered = false) {
+    pendingVideos = videos;
+    renderedCount = 0;
+    lastMonthLabel = null;
+    gridIsFiltered = isFiltered;
     domElements.videoGrid.innerHTML = '';
+    if (window.scrollY > 240) window.scrollTo({ top: 0 });
 
     if (videos.length === 0) {
         domElements.videoGrid.innerHTML = `
@@ -72,99 +254,15 @@ export function renderGrid(videos, isFiltered = false) {
                 <p>${(translations[state.currentLanguage] || translations['en']).noVideos}</p>
             </div>
         `;
-        updateTimeline([]); // Clear timeline
+        updateTimeline([]);
+        retireSentinel();
         return;
     }
 
-    let lastMonthYear = null;
-
-    videos.forEach((video, index) => {
-        // Check for date change and insert header
-        if (video.date && video.date !== 'TBA') {
-            const dateObj = new Date(video.date);
-            if (!isNaN(dateObj.getTime())) {
-                const monthYear = dateObj.toLocaleString('default', { month: 'long', year: 'numeric' });
-
-                if (monthYear !== lastMonthYear) {
-                    lastMonthYear = monthYear;
-
-                    const header = document.createElement('div');
-                    header.className = 'grid-header';
-                    header.innerHTML = `
-                        <h3>${monthYear}</h3>
-                    `;
-                    domElements.videoGrid.appendChild(header);
-                }
-            }
-        }
-
-        const isFeatured = (!isFiltered && index < 2) ? 'featured' : '';
-        const isScheduled = video.isScheduled ? 'scheduled' : '';
-        const card = document.createElement('article');
-
-        // Extract date for timeline data attributes
-        let dataYear = '';
-        let dataMonth = '';
-        if (video.date && video.date !== 'TBA') {
-            const dateObj = new Date(video.date);
-            if (!isNaN(dateObj.getTime())) {
-                dataYear = dateObj.getFullYear();
-                dataMonth = dateObj.toLocaleString('default', { month: 'short' });
-            }
-        }
-
-        card.className = `video-card ${isFeatured} ${isScheduled} accent-${video.channelId}`;
-        if (dataYear) card.dataset.year = dataYear;
-        if (dataMonth) card.dataset.month = dataMonth;
-
-        let dateStr = 'Coming Soon';
-        if (video.date && video.date !== 'TBA') {
-            const dateObj = new Date(video.date);
-            if (!isNaN(dateObj.getTime())) {
-                dateStr = dateObj.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
-            } else {
-                dateStr = video.date; // Fallback to raw string if parsing fails but not TBA
-            }
-        }
-
-        const mediaContent = video.isScheduled
-            ? `<div class="scheduled-thumbnail">
-                 <img src="${video.thumbnail}" alt="${video.title}" loading="lazy" onerror="this.src='assets/images/placeholder.jpg'">
-                 <div class="scheduled-overlay">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                 </div>
-               </div>`
-            : `<lite-youtube videoid="${video.id}" playlabel="Play: ${video.title}" params="controls=1&modestbranding=1&rel=0"></lite-youtube>`;
-
-        const channelDisplayName = getChannelDisplayName(video.channelId, video.language, state.socialsData);
-        const channelUrl = getChannelUrl(video.channelId, video.language, state.socialsData);
-
-        const channelLinkHtml = channelUrl
-            ? `<a href="${channelUrl}" target="_blank" class="channel-link-icon" title="Visit Channel">
-                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-               </a>`
-            : '';
-
-        card.innerHTML = `
-            ${mediaContent}
-            <div class="card-content">
-                <div class="card-meta">
-                    <span class="channel-tag">
-                        ${channelDisplayName}
-                        ${channelLinkHtml}
-                    </span>
-                    <span class="video-date">${dateStr}</span>
-                    ${video.isScheduled ? '<span class="scheduled-badge">Scheduled</span>' : ''}
-                </div>
-                <h3 class="card-title">${video.title}</h3>
-                ${video.playlistId ? `<div class="series-meta">Playlist: <a href="https://www.youtube.com/playlist?list=${video.playlistId}" target="_blank" class="playlist-link">${getPlaylistTitle(video.playlistId, state.allPlaylists) || 'Unknown Playlist'}</a></div>` : ''}
-            </div>
-        `;
-        domElements.videoGrid.appendChild(card);
-    });
-
-    // Update Timeline
+    ensureObservers();
     updateTimeline(videos);
+    sentinelObserver.observe(sentinel);
+    appendChunk();
 }
 
 export function renderSocials() {

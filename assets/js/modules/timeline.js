@@ -3,8 +3,11 @@ import { domElements } from './state.js';
 let timelineContainer = null;
 let activeYear = null;
 let activeMonth = null;
-let isScrolling = false;
-let scrollTimeout = null;
+let revealForMonth = () => {};
+
+export function setMonthReveal(fn) {
+    revealForMonth = fn;
+}
 
 export function updateTimeline(videos) {
     // 1. Create container if it doesn't exist
@@ -22,12 +25,7 @@ export function updateTimeline(videos) {
     // 2. Group videos by date (Year -> Month)
     const groups = groupVideosByDate(videos);
 
-    // 3. Render timeline
     renderTimeline(groups);
-
-    // 4. Setup scroll listener (idempotent)
-    window.removeEventListener('scroll', handleScroll);
-    window.addEventListener('scroll', handleScroll, { passive: true });
 }
 
 function groupVideosByDate(videos) {
@@ -120,74 +118,20 @@ function renderTimeline(groups) {
 }
 
 function scrollToMonth(year, month) {
-    // Find the first video card with this date
-    // We need to rely on the DOM elements having data attributes or similar
-    // Since we didn't add data attributes yet, let's assume we will add data-date-year and data-date-month to cards
-
-    const selector = `.video-card[data-year="${year}"][data-month="${month}"]`;
+    revealForMonth(year, month);
+    const selector = `.grid-header[data-year="${year}"][data-month="${month}"]`;
     const target = document.querySelector(selector);
+    if (!target) return;
 
-    if (target) {
-        isScrolling = true;
-        const headerOffset = 100; // Adjust for sticky header
-        const elementPosition = target.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-        });
-
-        // Update active state manually
-        updateActiveState(year, month);
-
-        // Reset scrolling flag after animation
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-            isScrolling = false;
-        }, 1000);
-    }
+    const headerOffset = 100;
+    const offsetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    updateActiveState(year, month);
 }
 
-function handleScroll() {
-    if (isScrolling) return;
-
-    // Debounce slightly? Or just run. requestAnimationFrame is better.
-    requestAnimationFrame(() => {
-        // Find which video is currently most visible or at the top
-        const headerHeight = 100;
-        const cards = document.querySelectorAll('.video-card');
-
-        let currentCard = null;
-
-        for (const card of cards) {
-            const rect = card.getBoundingClientRect();
-            if (rect.top >= headerHeight && rect.top < window.innerHeight / 2) {
-                currentCard = card;
-                break;
-            }
-        }
-
-        // Fallback: if no card found in that range, maybe we are at the very top or bottom
-        if (!currentCard && cards.length > 0) {
-            // check if we are near top
-            if (window.scrollY < 200) {
-                currentCard = cards[0];
-            }
-        }
-
-        if (currentCard) {
-            const year = currentCard.dataset.year;
-            const month = currentCard.dataset.month;
-            if (year && month) {
-                updateActiveState(year, month);
-            }
-        }
-    });
-}
-
-function updateActiveState(year, month) {
-    if (activeYear === year && activeMonth === month) return;
+export function updateActiveState(year, month) {
+    const alreadyMarked = document.querySelector(`.timeline-month.active[data-year="${year}"][data-month="${month}"]`);
+    if (activeYear === year && activeMonth === month && alreadyMarked) return;
 
     activeYear = year;
     activeMonth = month;

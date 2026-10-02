@@ -723,6 +723,23 @@ lite-youtube {
     margin-top: 0;
 }
 
+.grid-sentinel {
+    grid-column: 1 / -1;
+    margin: 0.5rem 0 1rem;
+    padding: 0.85rem 1rem;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-muted);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.grid-sentinel:hover {
+    color: var(--text-main);
+}
+
 .series-content {
     padding: 1.25rem;
     flex-grow: 1;
