@@ -214,11 +214,10 @@ main {
     padding-bottom: 4rem;
 }
 
-/* Reserve space for timeline on desktop */
+/* Reserve space for the timeline only while it is on screen */
 @media (min-width: 1024px) {
-    main {
+    body.has-timeline main {
         padding-right: 60px;
-        /* Timeline width + spacing */
     }
 }
 

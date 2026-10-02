@@ -317,7 +317,7 @@ export function updateChannelFilters(videos) {
     videos.forEach(v => channelIds.add(v.channelId));
 
     const allBtn = document.createElement('button');
-    allBtn.className = 'chip active';
+    allBtn.className = `chip${state.currentChannel === 'all' ? ' active' : ''}`;
     const t = translations[state.currentLanguage] || translations['en'];
     allBtn.textContent = t.all;
     allBtn.dataset.channel = 'all';
@@ -336,7 +336,7 @@ export function updateChannelFilters(videos) {
         channelDisplayMap[a].localeCompare(channelDisplayMap[b])
     ).forEach(channelId => {
         const btn = document.createElement('button');
-        btn.className = `chip accent-${channelId}`;
+        btn.className = `chip accent-${channelId}${state.currentChannel === channelId ? ' active' : ''}`;
         btn.textContent = channelDisplayMap[channelId];
         btn.dataset.channel = channelId;
         domElements.channelFilters.appendChild(btn);
@@ -348,14 +348,16 @@ export function updateVideoTypeFilters() {
 
     const t = translations[state.currentLanguage] || translations['en'];
 
-    // Get base videos for counting (filtered by current language for published, all for upcoming)
-    const langVideos = state.currentLanguage === 'all' ? state.allVideos : state.allVideos.filter(v => v.language === state.currentLanguage);
+    // Counts follow the selected channel so the chip matches the grid.
+    const langVideos = (state.currentLanguage === 'all' ? state.allVideos : state.allVideos.filter(v => v.language === state.currentLanguage))
+        .filter(v => state.currentChannel === 'all' || v.channelId === state.currentChannel);
+    const upcomingPool = state.allVideos.filter(v => state.currentChannel === 'all' || v.channelId === state.currentChannel);
 
     // Calculate counts for each filter type
     const allCount = langVideos.filter(v => !v.isScheduled).length;
     const longCount = langVideos.filter(v => v.videoType && v.videoType.includes('4k') && !v.isScheduled).length;
     const shortsCount = langVideos.filter(v => v.videoType && v.videoType.includes('short') && !v.isScheduled).length;
-    const upcomingCount = state.allVideos.filter(v => v.isScheduled).length; // Always show count across all languages
+    const upcomingCount = upcomingPool.filter(v => v.isScheduled).length;
 
     domElements.videoTypeFilters.innerHTML = '';
 

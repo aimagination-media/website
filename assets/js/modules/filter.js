@@ -1,6 +1,8 @@
 import { state, domElements } from './state.js';
 import { translations } from './translations.js';
 import { renderGrid, renderPlaylists, updateChannelFilters, updateVideoTypeFilters, renderSocials } from './render.js';
+import { updateTimeline } from './timeline.js';
+import { getChannelDisplayName } from './utils.js';
 import { showVideoSkeleton } from './skeleton.js';
 import {
     saveRecentSearch,
@@ -10,45 +12,60 @@ import {
     updateClearButton
 } from './searchEnhance.js';
 
-export function refreshContent() {
-    // Common Logic for Video/Playlist filtering by language
-    const langVideos = (state.currentVideoType === 'upcoming')
-        ? state.allVideos
-        : (state.currentLanguage === 'all' ? state.allVideos : state.allVideos.filter(v => v.language === state.currentLanguage));
+function videosInLanguage() {
+    if (state.currentLanguage === 'all') return state.allVideos;
+    return state.allVideos.filter(v => v.language === state.currentLanguage);
+}
 
-    const langPlaylists = state.currentLanguage === 'all' ? state.allPlaylists : state.allPlaylists.filter(p => p.language === state.currentLanguage);
+function applyChannel(items) {
+    if (!state.currentChannel || state.currentChannel === 'all') return items;
+    return items.filter(item => item.channelId === state.currentChannel);
+}
+
+function applyVideoType(videos) {
+    if (state.currentVideoType === 'long') {
+        return videos.filter(v => v.videoType && v.videoType.includes('4k') && !v.isScheduled);
+    }
+    if (state.currentVideoType === 'shorts') {
+        return videos.filter(v => v.videoType && v.videoType.includes('short') && !v.isScheduled);
+    }
+    if (state.currentVideoType === 'upcoming') {
+        return videos.filter(v => v.isScheduled);
+    }
+    return videos.filter(v => !v.isScheduled);
+}
+
+export function refreshContent() {
+    const langVideos = videosInLanguage();
+    const langPlaylists = state.currentLanguage === 'all'
+        ? state.allPlaylists
+        : state.allPlaylists.filter(p => p.language === state.currentLanguage);
+
+    const channelIds = new Set(langVideos.map(v => v.channelId));
+    if (state.currentChannel !== 'all' && !channelIds.has(state.currentChannel)) {
+        state.currentChannel = 'all';
+    }
 
     if (state.currentView === 'videos') {
-        // Filter by Video Type
-        let filteredVideos = langVideos;
+        // Upcoming stays cross-language; every other type follows the language picker.
+        const typePool = state.currentVideoType === 'upcoming' ? state.allVideos : langVideos;
+        const filteredVideos = applyVideoType(applyChannel(typePool));
 
-        if (state.currentVideoType === 'long') {
-            filteredVideos = langVideos.filter(v => v.videoType && v.videoType.includes('4k') && !v.isScheduled);
-        } else if (state.currentVideoType === 'shorts') {
-            filteredVideos = langVideos.filter(v => v.videoType && v.videoType.includes('short') && !v.isScheduled);
-        } else if (state.currentVideoType === 'upcoming') {
-            filteredVideos = langVideos.filter(v => v.isScheduled);
-        } else {
-            // 'all' case - exclude scheduled
-            filteredVideos = langVideos.filter(v => !v.isScheduled);
-        }
-
-        // Update Filters
-        updateChannelFilters(filteredVideos);
+        updateChannelFilters(langVideos);
         updateVideoTypeFilters();
 
-        // Update section title based on video type filter
         const t = translations[state.currentLanguage] || translations['en'];
         if (state.currentVideoType === 'upcoming') {
             domElements.latestTitle.textContent = t.upcoming;
+        } else if (state.currentChannel !== 'all') {
+            const name = getChannelDisplayName(state.currentChannel, state.currentLanguage, state.socialsData);
+            domElements.latestTitle.textContent = name;
         } else {
             domElements.latestTitle.textContent = t.latest;
         }
 
-        // Render Videos
         renderGrid(filteredVideos);
 
-        // Visibility
         domElements.seriesSection.style.display = 'none';
         domElements.latestSection.style.display = 'block';
         domElements.filterBar.style.display = 'block';
@@ -56,23 +73,18 @@ export function refreshContent() {
         domElements.socialsSection.style.display = 'none';
 
     } else if (state.currentView === 'playlists') {
-        // Update Filters (use all lang videos for channel list to be consistent, or just playlists?)
-        // Let's use playlists channels for consistency if possible, but existing updateChannelFilters uses videos.
-        // For now, keep using langVideos for channel filters to ensure all channels are selectable
         updateChannelFilters(langVideos);
+        renderPlaylists(applyChannel(langPlaylists));
+        updateTimeline([]);
 
-        // Render Playlists
-        renderPlaylists(langPlaylists);
-
-        // Visibility
         domElements.seriesSection.style.display = 'block';
         domElements.latestSection.style.display = 'none';
         domElements.filterBar.style.display = 'block';
-        if (domElements.videoTypeFilters) domElements.videoTypeFilters.parentElement.style.display = 'none'; // Hide video type filters
+        if (domElements.videoTypeFilters) domElements.videoTypeFilters.parentElement.style.display = 'none';
         domElements.socialsSection.style.display = 'none';
 
     } else {
-        // Socials View
+        updateTimeline([]);
         domElements.seriesSection.style.display = 'none';
         domElements.latestSection.style.display = 'none';
         domElements.filterBar.style.display = 'none';
@@ -83,7 +95,7 @@ export function refreshContent() {
 }
 
 export function filterByPlaylist(playlistId, playlistTitle) {
-    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('#channelFilters .chip').forEach(c => c.classList.remove('active'));
 
     // Switch to showing the videos section
     domElements.seriesSection.style.display = 'none';
@@ -113,8 +125,10 @@ export function setupSearch() {
         // Clear previous timeout
         clearTimeout(searchTimeout);
 
-        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-        document.querySelector('[data-channel="all"]').classList.add('active');
+        state.currentChannel = 'all';
+        document.querySelectorAll('#channelFilters .chip').forEach(c => c.classList.remove('active'));
+        const allChip = document.querySelector('#channelFilters [data-channel="all"]');
+        if (allChip) allChip.classList.add('active');
         const t = translations[state.currentLanguage] || translations['en'];
 
         if (!query) {
@@ -175,34 +189,11 @@ export function setupSearch() {
 
 export function setupFilters() {
     domElements.channelFilters.addEventListener('click', (e) => {
-        if (!e.target.classList.contains('chip')) return;
+        const chip = e.target.closest('.chip');
+        if (!chip || !chip.dataset.channel) return;
 
-        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-        e.target.classList.add('active');
+        state.currentChannel = chip.dataset.channel;
         domElements.searchInput.value = '';
-
-        const selectedChannel = e.target.dataset.channel;
-        const langVideos = state.currentLanguage === 'all' ? state.allVideos : state.allVideos.filter(v => v.language === state.currentLanguage);
-        const langPlaylists = state.currentLanguage === 'all' ? state.allPlaylists : state.allPlaylists.filter(p => p.language === state.currentLanguage);
-
-        const t = translations[state.currentLanguage] || translations['en'];
-
-        if (selectedChannel === 'all') {
-            domElements.latestSection.querySelector('h2').textContent = t.latest;
-            renderPlaylists(langPlaylists);
-            renderGrid(langVideos);
-        } else {
-            // Import getChannelDisplayName dynamically to get proper channel name for header
-            import('./utils.js').then(({ getChannelDisplayName }) => {
-                const displayName = getChannelDisplayName(selectedChannel, state.currentLanguage, state.socialsData);
-                domElements.latestSection.querySelector('h2').textContent = `${displayName} Videos`;
-            });
-
-            const filteredPlaylists = langPlaylists.filter(s => s.channelId === selectedChannel);
-            renderPlaylists(filteredPlaylists);
-
-            const filteredVideos = langVideos.filter(v => v.channelId === selectedChannel);
-            renderGrid(filteredVideos, true);
-        }
+        refreshContent();
     });
 }

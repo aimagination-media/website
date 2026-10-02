@@ -14,12 +14,10 @@ export function updateTimeline(videos) {
         document.body.appendChild(timelineContainer);
     }
 
-    // If no videos, hide and return
-    if (!videos || videos.length === 0) {
-        timelineContainer.classList.remove('is-visible');
-        return;
-    }
-    timelineContainer.classList.add('is-visible');
+    const show = Boolean(videos && videos.length);
+    timelineContainer.classList.toggle('is-visible', show);
+    document.body.classList.toggle('has-timeline', show);
+    if (!show) return;
 
     // 2. Group videos by date (Year -> Month)
     const groups = groupVideosByDate(videos);
