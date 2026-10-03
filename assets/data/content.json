@@ -6566,19 +6566,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "Organ Function Quiz — Can YOU Name All 35 from the Job Description? 🫀 | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #15",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -11090,6 +11077,19 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "Organ Function Quiz — Can YOU Name All 35 from the Job Description? 🫀 | Short #07",
+          "video_id": "yVEpdQvqMeQ",
+          "thumbnail": "https://img.youtube.com/vi/yVEpdQvqMeQ/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-03T12:44:21.712+02:00",
+          "state": "published",
+          "release_date": "2026-10-03T12:44:21.712+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLaE3B99WdzDc",
+          "video_type": "quiz_short_en"
+        },
+        {
           "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯",
           "video_id": "p7qH5YILoHg",
           "thumbnail": "https://img.youtube.com/vi/p7qH5YILoHg/hqdefault.jpg",
@@ -13898,6 +13898,19 @@
               "published_at": "2026-10-02T17:22:48.084+02:00",
               "state": "published",
               "release_date": "2026-10-02T17:22:48.084+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLaE3B99WdzDc",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Organ Function Quiz — Can YOU Name All 35 from the Job Description? 🫀 | Short #07",
+              "video_id": "yVEpdQvqMeQ",
+              "thumbnail": "https://img.youtube.com/vi/yVEpdQvqMeQ/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-03T12:44:21.712+02:00",
+              "state": "published",
+              "release_date": "2026-10-03T12:44:21.712+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLaE3B99WdzDc",
@@ -21282,19 +21295,6 @@
           "video_type": "quiz_short_es"
         },
         {
-          "title": "Funciones de los órganos: ¿te crees MÉDICO ante estas 35 preguntas? 🫀 | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
           "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #13",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -22023,12 +22023,64 @@
           "video_type": "quiz_short_es"
         },
         {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #09",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #06",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #08",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Cultura general con truco — ¿Solo el 1% acierta las 35 preguntas? 🧠 | Short #10",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #07",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -22049,12 +22101,51 @@
           "video_type": "quiz_short_es"
         },
         {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Cultura general con truco — ¿Solo el 1% acierta las 35 preguntas? 🧠 | Short #02",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #11",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #03",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -22101,6 +22192,19 @@
           "video_type": "quiz_short_es"
         },
         {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #02",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Cultura general quiz — ¿Te TRAGASTE los mitos de andar por casa? | 40 🏠 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -22140,6 +22244,19 @@
           "video_type": "quiz_short_es"
         },
         {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #01",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Cultura general quiz — ¿Te TRAGASTE los mitos de andar por casa? | 40 🏠 | Short #11",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -22159,6 +22276,19 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #13",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -22244,12 +22374,51 @@
           "video_type": "quiz_short_es"
         },
         {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #10",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Cultura general quiz — ¿Te TRAGASTE los mitos de andar por casa? | 40 🏠 | Short #06",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #05",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #12",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -25179,6 +25348,32 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_4k_es"
+        },
+        {
+          "title": "Funciones de los órganos: ¿te crees MÉDICO ante estas 35 preguntas? 🫀 | Short #07",
+          "video_id": "h4h45Wn4SRk",
+          "thumbnail": "https://img.youtube.com/vi/h4h45Wn4SRk/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-03T12:44:45.026+02:00",
+          "state": "published",
+          "release_date": "2026-10-03T12:44:45.026+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf84Hmir1qGA",
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯",
+          "video_id": "wj_KI9eKgok",
+          "thumbnail": "https://img.youtube.com/vi/wj_KI9eKgok/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-03T12:42:41.266+02:00",
+          "state": "published",
+          "release_date": "2026-10-03T12:42:41.266+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
           "video_type": "quiz_4k_es"
         },
         {
@@ -28163,6 +28358,19 @@
               "sub_serie": "na",
               "playlist_id": "PLf84Hmir1qGA",
               "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Funciones de los órganos: ¿te crees MÉDICO ante estas 35 preguntas? 🫀 | Short #07",
+              "video_id": "h4h45Wn4SRk",
+              "thumbnail": "https://img.youtube.com/vi/h4h45Wn4SRk/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-03T12:44:45.026+02:00",
+              "state": "published",
+              "release_date": "2026-10-03T12:44:45.026+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf84Hmir1qGA",
+              "video_type": "quiz_short_es"
             }
           ]
         },
@@ -29117,6 +29325,19 @@
               "sub_serie": "na",
               "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
               "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯",
+              "video_id": "wj_KI9eKgok",
+              "thumbnail": "https://img.youtube.com/vi/wj_KI9eKgok/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-03T12:42:41.266+02:00",
+              "state": "published",
+              "release_date": "2026-10-03T12:42:41.266+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
+              "video_type": "quiz_4k_es"
             },
             {
               "title": "Maratón de Cultura General 100 Preguntas — ¿Eres un Erudito? 🧠 | Short #32",
@@ -35656,19 +35877,6 @@
           "video_type": "quiz_short_de"
         },
         {
-          "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
           "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #02",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -36371,6 +36579,45 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #08",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #05",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #12",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "Allgemeinwissen Quiz: 40 Alltagsmythen, an die du IMMER NOCH glaubst 🏠 | Short #02",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -36423,6 +36670,19 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "Allgemeinwissen Quiz — Nur 1% knackt wirklich diese 35 Twists 🧠 | Short #10",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -36462,6 +36722,19 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #03",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "Allgemeinwissen Quiz: 40 Alltagsmythen, an die du IMMER NOCH glaubst 🏠 | Short #13",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -36481,6 +36754,32 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #09",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #07",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -36514,6 +36813,19 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #13",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "Allgemeinwissen Quiz — Nur 1% knackt wirklich diese 35 Twists 🧠 | Short #03",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -36533,6 +36845,19 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #02",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -36579,6 +36904,32 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #10",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #01",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "Allgemeinwissen Quiz — Nur 1% knackt wirklich diese 35 Twists 🧠 | Short #05",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -36598,6 +36949,32 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #11",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀 | Short #06",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -39241,6 +39618,32 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀",
+          "video_id": "iiL37buN_Uc",
+          "thumbnail": "https://img.youtube.com/vi/iiL37buN_Uc/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-03T12:45:13.481+02:00",
+          "state": "published",
+          "release_date": "2026-10-03T12:45:13.481+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLz-GCke5VOi2s-McnYJ-gIyItPrhsGLFK",
+          "video_type": "quiz_4k_de"
+        },
+        {
+          "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #07",
+          "video_id": "PvvDNQoU7zU",
+          "thumbnail": "https://img.youtube.com/vi/PvvDNQoU7zU/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-03T12:45:08.893+02:00",
+          "state": "published",
+          "release_date": "2026-10-03T12:45:08.893+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
           "video_type": "quiz_short_de"
         },
         {
@@ -42160,6 +42563,19 @@
               "sub_serie": "na",
               "playlist_id": "PLajD0ihicykI",
               "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #07",
+              "video_id": "PvvDNQoU7zU",
+              "thumbnail": "https://img.youtube.com/vi/PvvDNQoU7zU/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-03T12:45:08.893+02:00",
+              "state": "published",
+              "release_date": "2026-10-03T12:45:08.893+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
             }
           ]
         },
@@ -43075,6 +43491,19 @@
               "sub_serie": "na",
               "playlist_id": "PLz-GCke5VOi2s-McnYJ-gIyItPrhsGLFK",
               "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Allgemeinwissen Quiz — Bist du der HEIMLICHE Verwechslungsmeister? 🔀",
+              "video_id": "iiL37buN_Uc",
+              "thumbnail": "https://img.youtube.com/vi/iiL37buN_Uc/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-03T12:45:13.481+02:00",
+              "state": "published",
+              "release_date": "2026-10-03T12:45:13.481+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLz-GCke5VOi2s-McnYJ-gIyItPrhsGLFK",
+              "video_type": "quiz_4k_de"
             },
             {
               "title": "Allgemeinwissen Marathon: 100 Kneipenquiz Fragen – Schaffst du 100%? 🧠 | Short #21",
@@ -45243,19 +45672,6 @@
           "video_type": "quiz_short_fr"
         },
         {
-          "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
           "title": "Biologie lycée : seuls 1 % cartonnent vraiment les 50 questions 🧬 | Short #07",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -46101,7 +46517,33 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #03",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
           "title": "Culture générale quiz : 35 questions pièges, le TOP 8 % seulement 🎯 | Short #02",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #11",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -46153,7 +46595,46 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #07",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
           "title": "Culture générale quiz : 35 questions pièges, le TOP 8 % seulement 🎯 | Short #06",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #10",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #05",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -46198,6 +46679,19 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #06",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -46270,6 +46764,19 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #01",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
           "title": "Culture générale : 35 questions faciles que presque personne ne réussit 🔥 | Short #02",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -46283,12 +46790,51 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #13",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #09",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
           "title": "Quiz culture générale : QUI GOBE ces 40 idées reçues du quotidien ? 🏠 | Short #12",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #08",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -46348,6 +46894,19 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
           "title": "Culture générale : 35 questions faciles que presque personne ne réussit 🔥 | Short #09",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -46374,7 +46933,33 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #02",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
           "title": "Culture générale quiz : 35 questions pièges, le TOP 8 % seulement 🎯 | Short #07",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #12",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -49221,6 +49806,32 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #07",
+          "video_id": "-Cuhgkh5h-8",
+          "thumbnail": "https://img.youtube.com/vi/-Cuhgkh5h-8/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-03T12:45:20.072+02:00",
+          "state": "published",
+          "release_date": "2026-10-03T12:45:20.072+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLa8TtmnkqmJw",
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀",
+          "video_id": "_3I6qQZhkP4",
+          "thumbnail": "https://img.youtube.com/vi/_3I6qQZhkP4/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-03T12:42:37.012+02:00",
+          "state": "published",
+          "release_date": "2026-10-03T12:42:37.012+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLVE4mdl-HN5E",
+          "video_type": "quiz_4k_fr"
+        },
+        {
           "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #09",
           "video_id": "4Lki4eqDovM",
           "thumbnail": "https://img.youtube.com/vi/4Lki4eqDovM/hqdefault.jpg",
@@ -51877,6 +52488,19 @@
               "sub_serie": "na",
               "playlist_id": "PLa8TtmnkqmJw",
               "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #07",
+              "video_id": "-Cuhgkh5h-8",
+              "thumbnail": "https://img.youtube.com/vi/-Cuhgkh5h-8/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-03T12:45:20.072+02:00",
+              "state": "published",
+              "release_date": "2026-10-03T12:45:20.072+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLa8TtmnkqmJw",
+              "video_type": "quiz_short_fr"
             }
           ]
         },
@@ -52884,6 +53508,19 @@
               "published_at": "2026-09-26T14:31:12.988+02:00",
               "state": "published",
               "release_date": "2026-09-26T14:31:12.988+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLVE4mdl-HN5E",
+              "video_type": "quiz_4k_fr"
+            },
+            {
+              "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀",
+              "video_id": "_3I6qQZhkP4",
+              "thumbnail": "https://img.youtube.com/vi/_3I6qQZhkP4/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-03T12:42:37.012+02:00",
+              "state": "published",
+              "release_date": "2026-10-03T12:42:37.012+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLVE4mdl-HN5E",
@@ -54777,19 +55414,6 @@
           "video_type": "quiz_short_it"
         },
         {
-          "title": "Funzioni degli Organi: Ce la fai a indovinarle tutte? — 35 Domande 🫀 | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
           "title": "Funzioni degli Organi: Ce la fai a indovinarle tutte? — 35 Domande 🫀 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -55739,6 +56363,19 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #01",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "Cultura Generale Quiz: 40 miti da sfatare che a casa credevi veri 🏠 | Short #05",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -55804,6 +56441,19 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #05",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "🔥 Cultura generale: 35 domande di ogni giorno col twist diabolico | Short #02",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -55831,6 +56481,45 @@
         },
         {
           "title": "Cultura Generale: QUASI NESSUNO azzecca queste 35 bufale in salotto 🧠 | Short #05",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #10",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #11",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #09",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -55875,6 +56564,32 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #12",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #02",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -55960,12 +56675,38 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #03",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "🔥 Cultura generale: 35 domande di ogni giorno col twist diabolico | Short #07",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #06",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -55992,6 +56733,19 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #13",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -56051,12 +56805,51 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #07",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "🔥 Cultura generale: 35 domande di ogni giorno col twist diabolico | Short #05",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
           "state": "PRODUCED",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #08",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -59535,6 +60328,32 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯",
+          "video_id": "HMoL1DLVS9E",
+          "thumbnail": "https://img.youtube.com/vi/HMoL1DLVS9E/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-03T13:06:40.598+02:00",
+          "state": "published",
+          "release_date": "2026-10-03T13:06:40.598+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PL-8ccV13rzSvrNOUHBN72LkWYqfXGQENo",
+          "video_type": "quiz_4k_it"
+        },
+        {
+          "title": "Funzioni degli Organi: Ce la fai a indovinarle tutte? — 35 Domande 🫀 | Short #07",
+          "video_id": "uN4KGm_K8FA",
+          "thumbnail": "https://img.youtube.com/vi/uN4KGm_K8FA/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-03T12:45:10.067+02:00",
+          "state": "published",
+          "release_date": "2026-10-03T12:45:10.067+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLYc7xd8qJWPM",
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "Funzioni degli Organi: Ce la fai a indovinarle tutte? — 35 Domande 🫀 | Short #09",
           "video_id": "maHpQQu2g74",
           "thumbnail": "https://img.youtube.com/vi/maHpQQu2g74/hqdefault.jpg",
@@ -61478,6 +62297,19 @@
               "video_type": "quiz_short_it"
             },
             {
+              "title": "Funzioni degli Organi: Ce la fai a indovinarle tutte? — 35 Domande 🫀 | Short #07",
+              "video_id": "uN4KGm_K8FA",
+              "thumbnail": "https://img.youtube.com/vi/uN4KGm_K8FA/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-03T12:45:10.067+02:00",
+              "state": "published",
+              "release_date": "2026-10-03T12:45:10.067+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLYc7xd8qJWPM",
+              "video_type": "quiz_short_it"
+            },
+            {
               "title": "🦁 Riconosci gli Animali? Solo 1% Supera il Test di 50 Domande | Short #02",
               "video_id": "T_gVhMUqHQQ",
               "thumbnail": "https://img.youtube.com/vi/T_gVhMUqHQQ/hqdefault.jpg",
@@ -62146,6 +62978,19 @@
               "published_at": "2026-09-26T14:03:49.812+02:00",
               "state": "published",
               "release_date": "2026-09-26T14:03:49.812+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PL-8ccV13rzSvrNOUHBN72LkWYqfXGQENo",
+              "video_type": "quiz_4k_it"
+            },
+            {
+              "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯",
+              "video_id": "HMoL1DLVS9E",
+              "thumbnail": "https://img.youtube.com/vi/HMoL1DLVS9E/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-03T13:06:40.598+02:00",
+              "state": "published",
+              "release_date": "2026-10-03T13:06:40.598+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PL-8ccV13rzSvrNOUHBN72LkWYqfXGQENo",
