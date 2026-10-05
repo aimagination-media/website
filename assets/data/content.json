@@ -7736,19 +7736,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "Everyday Tricky Questions Quiz — Only the Top 1% Outsmart All 35 Traps 🧠 | Short #11",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "Daily Life Quiz — Most Households Still FAIL These 40 Everyday Questions 🏠 | Short #08",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -11062,6 +11049,19 @@
           "sub_serie": "na",
           "playlist_id": null,
           "video_type": "quiz_4k_en"
+        },
+        {
+          "title": "Everyday Tricky Questions Quiz — Only the Top 1% Outsmart All 35 Traps 🧠 | Short #11",
+          "video_id": "0k0g6OztW-o",
+          "thumbnail": "https://img.youtube.com/vi/0k0g6OztW-o/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-05T14:27:03.348+02:00",
+          "state": "published",
+          "release_date": "2026-10-05T14:27:03.348+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
+          "video_type": "quiz_short_en"
         },
         {
           "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯 | Short #03",
@@ -14871,6 +14871,19 @@
               "published_at": "2026-10-04T15:35:36.643+02:00",
               "state": "published",
               "release_date": "2026-10-04T15:35:36.643+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Everyday Tricky Questions Quiz — Only the Top 1% Outsmart All 35 Traps 🧠 | Short #11",
+              "video_id": "0k0g6OztW-o",
+              "thumbnail": "https://img.youtube.com/vi/0k0g6OztW-o/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-05T14:27:03.348+02:00",
+              "state": "published",
+              "release_date": "2026-10-05T14:27:03.348+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
@@ -22192,19 +22205,6 @@
           "video_type": "quiz_short_es"
         },
         {
-          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #02",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
           "title": "Cultura general quiz — ¿Te TRAGASTE los mitos de andar por casa? | 40 🏠 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -25349,6 +25349,19 @@
           "sub_serie": "na",
           "playlist_id": null,
           "video_type": "quiz_4k_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #02",
+          "video_id": "K_14BCgaLCI",
+          "thumbnail": "https://img.youtube.com/vi/K_14BCgaLCI/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-05T14:29:53.009+02:00",
+          "state": "published",
+          "release_date": "2026-10-05T14:29:53.009+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
+          "video_type": "quiz_short_es"
         },
         {
           "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #03",
@@ -29360,6 +29373,19 @@
               "published_at": "2026-10-04T15:36:50.264+02:00",
               "state": "published",
               "release_date": "2026-10-04T15:36:50.264+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
+              "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #02",
+              "video_id": "K_14BCgaLCI",
+              "thumbnail": "https://img.youtube.com/vi/K_14BCgaLCI/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-05T14:29:53.009+02:00",
+              "state": "published",
+              "release_date": "2026-10-05T14:29:53.009+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
@@ -38347,19 +38373,6 @@
           "video_type": "quiz_4k_de"
         },
         {
-          "title": "Schweres Allgemeinwissen Quiz – Nur 1% schaffen alle 30 Fragen! 🧠 | Short #02",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": 397.02,
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
           "title": "Schweres Allgemeinwissen Quiz – Nur 1% schaffen alle 30 Fragen! 🧠 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -39631,6 +39644,19 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Schweres Allgemeinwissen Quiz – Nur 1% schaffen alle 30 Fragen! 🧠 | Short #02",
+          "video_id": "Xc-vt8o38kg",
+          "thumbnail": "https://img.youtube.com/vi/Xc-vt8o38kg/hqdefault.jpg",
+          "duration": 397.02,
+          "published_at": "2026-10-05T14:29:51.927+02:00",
+          "state": "published",
+          "release_date": "2026-10-05T14:29:51.927+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLIYnzIGBKtio",
           "video_type": "quiz_short_de"
         },
         {
@@ -44964,6 +44990,19 @@
               "sub_serie": "na",
               "playlist_id": "PLIYnzIGBKtio",
               "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Schweres Allgemeinwissen Quiz – Nur 1% schaffen alle 30 Fragen! 🧠 | Short #02",
+              "video_id": "Xc-vt8o38kg",
+              "thumbnail": "https://img.youtube.com/vi/Xc-vt8o38kg/hqdefault.jpg",
+              "duration": 397.02,
+              "published_at": "2026-10-05T14:29:51.927+02:00",
+              "state": "published",
+              "release_date": "2026-10-05T14:29:51.927+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLIYnzIGBKtio",
+              "video_type": "quiz_short_de"
             }
           ]
         },
@@ -46705,19 +46744,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "FAILED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
-          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #06",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -49829,6 +49855,19 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #06",
+          "video_id": "u7vmLRdvjoY",
+          "thumbnail": "https://img.youtube.com/vi/u7vmLRdvjoY/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-05T14:30:17.610+02:00",
+          "state": "published",
+          "release_date": "2026-10-05T14:30:17.610+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLVE4mdl-HN5E",
           "video_type": "quiz_short_fr"
         },
         {
@@ -53579,6 +53618,19 @@
               "video_type": "quiz_short_fr"
             },
             {
+              "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #06",
+              "video_id": "u7vmLRdvjoY",
+              "thumbnail": "https://img.youtube.com/vi/u7vmLRdvjoY/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-05T14:30:17.610+02:00",
+              "state": "published",
+              "release_date": "2026-10-05T14:30:17.610+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLVE4mdl-HN5E",
+              "video_type": "quiz_short_fr"
+            },
+            {
               "title": "Marathon Culture Générale 100 Questions 🔥 Seul 1% Y Arrive !",
               "video_id": "dSjNxO9GXjM",
               "thumbnail": "https://img.youtube.com/vi/dSjNxO9GXjM/hqdefault.jpg",
@@ -56629,19 +56681,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "FAILED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
-          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #02",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -60367,6 +60406,19 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #02",
+          "video_id": "0xyE64EoyrI",
+          "thumbnail": "https://img.youtube.com/vi/0xyE64EoyrI/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-05T14:29:53.316+02:00",
+          "state": "published",
+          "release_date": "2026-10-05T14:29:53.316+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PL-8ccV13rzSvrNOUHBN72LkWYqfXGQENo",
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #03",
           "video_id": "DYROoq9nUFE",
           "thumbnail": "https://img.youtube.com/vi/DYROoq9nUFE/hqdefault.jpg",
@@ -63056,6 +63108,19 @@
               "published_at": "2026-10-04T15:37:01.868+02:00",
               "state": "published",
               "release_date": "2026-10-04T15:37:01.868+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PL-8ccV13rzSvrNOUHBN72LkWYqfXGQENo",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #02",
+              "video_id": "0xyE64EoyrI",
+              "thumbnail": "https://img.youtube.com/vi/0xyE64EoyrI/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-05T14:29:53.316+02:00",
+              "state": "published",
+              "release_date": "2026-10-05T14:29:53.316+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PL-8ccV13rzSvrNOUHBN72LkWYqfXGQENo",
