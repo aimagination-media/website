@@ -6592,19 +6592,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #12",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #14",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -11051,6 +11038,19 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #12",
+          "video_id": "2ytiVtMlgkA",
+          "thumbnail": "https://img.youtube.com/vi/2ytiVtMlgkA/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-06T12:34:40.543+02:00",
+          "state": "published",
+          "release_date": "2026-10-06T12:34:40.543+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLaE3B99WdzDc",
+          "video_type": "quiz_short_en"
+        },
+        {
           "title": "Everyday Tricky Questions Quiz — Only the Top 1% Outsmart All 35 Traps 🧠 | Short #11",
           "video_id": "0k0g6OztW-o",
           "thumbnail": "https://img.youtube.com/vi/0k0g6OztW-o/hqdefault.jpg",
@@ -13911,6 +13911,19 @@
               "published_at": "2026-10-03T12:44:21.712+02:00",
               "state": "published",
               "release_date": "2026-10-03T12:44:21.712+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLaE3B99WdzDc",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #12",
+              "video_id": "2ytiVtMlgkA",
+              "thumbnail": "https://img.youtube.com/vi/2ytiVtMlgkA/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-06T12:34:40.543+02:00",
+              "state": "published",
+              "release_date": "2026-10-06T12:34:40.543+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLaE3B99WdzDc",
@@ -21425,19 +21438,6 @@
           "video_type": "quiz_short_es"
         },
         {
-          "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #12",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
           "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #08",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -25351,6 +25351,19 @@
           "video_type": "quiz_4k_es"
         },
         {
+          "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #12",
+          "video_id": "4zhtwPnQiEU",
+          "thumbnail": "https://img.youtube.com/vi/4zhtwPnQiEU/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-06T12:34:29.542+02:00",
+          "state": "published",
+          "release_date": "2026-10-06T12:34:29.542+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf84Hmir1qGA",
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #02",
           "video_id": "K_14BCgaLCI",
           "thumbnail": "https://img.youtube.com/vi/K_14BCgaLCI/hqdefault.jpg",
@@ -28393,6 +28406,19 @@
               "published_at": "2026-10-03T12:44:45.026+02:00",
               "state": "published",
               "release_date": "2026-10-03T12:44:45.026+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf84Hmir1qGA",
+              "video_type": "quiz_short_es"
+            },
+            {
+              "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #12",
+              "video_id": "4zhtwPnQiEU",
+              "thumbnail": "https://img.youtube.com/vi/4zhtwPnQiEU/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-06T12:34:29.542+02:00",
+              "state": "published",
+              "release_date": "2026-10-06T12:34:29.542+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLf84Hmir1qGA",
@@ -35942,33 +35968,7 @@
           "video_type": "quiz_short_de"
         },
         {
-          "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #06",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
           "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
-          "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #12",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -38235,7 +38235,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": 397.02,
           "published_at": "TBA",
-          "state": "PRODUCED",
+          "state": "READY_FOR_UPLOAD",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -39644,6 +39644,32 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #06",
+          "video_id": "fMLoC_aKwFM",
+          "thumbnail": "https://img.youtube.com/vi/fMLoC_aKwFM/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-06T12:47:44.107+02:00",
+          "state": "published",
+          "release_date": "2026-10-06T12:47:44.107+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #12",
+          "video_id": "XJZlBen5xAA",
+          "thumbnail": "https://img.youtube.com/vi/XJZlBen5xAA/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-06T12:34:39.114+02:00",
+          "state": "published",
+          "release_date": "2026-10-06T12:34:39.114+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
           "video_type": "quiz_short_de"
         },
         {
@@ -42628,6 +42654,32 @@
               "sub_serie": "na",
               "playlist_id": "PLajD0ihicykI",
               "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #12",
+              "video_id": "XJZlBen5xAA",
+              "thumbnail": "https://img.youtube.com/vi/XJZlBen5xAA/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-06T12:34:39.114+02:00",
+              "state": "published",
+              "release_date": "2026-10-06T12:34:39.114+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #06",
+              "video_id": "fMLoC_aKwFM",
+              "thumbnail": "https://img.youtube.com/vi/fMLoC_aKwFM/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-06T12:47:44.107+02:00",
+              "state": "published",
+              "release_date": "2026-10-06T12:47:44.107+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
             }
           ]
         },
@@ -43797,7 +43849,7 @@
               "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
               "duration": 397.02,
               "published_at": "TBA",
-              "state": "PRODUCED",
+              "state": "READY_FOR_UPLOAD",
               "release_date": null,
               "serie": "na",
               "sub_serie": "na",
@@ -45685,19 +45737,6 @@
           "video_type": "quiz_4k_fr"
         },
         {
-          "title": "Biologie lycée : seuls 1 % cartonnent vraiment les 50 questions 🧬 | Short #12",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
           "title": "Biologie lycée : seuls 1 % cartonnent vraiment les 50 questions 🧬 | Short #13",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -45834,19 +45873,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
-          "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -48758,7 +48784,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": 397.02,
           "published_at": "TBA",
-          "state": "CONTENT_READY",
+          "state": "FAILED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -49855,6 +49881,32 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #04",
+          "video_id": "tL9o7PIgofE",
+          "thumbnail": "https://img.youtube.com/vi/tL9o7PIgofE/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-06T12:48:09.322+02:00",
+          "state": "published",
+          "release_date": "2026-10-06T12:48:09.322+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLa8TtmnkqmJw",
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Biologie lycée : seuls 1 % cartonnent vraiment les 50 questions 🧬 | Short #12",
+          "video_id": "zFwxZn4aqag",
+          "thumbnail": "https://img.youtube.com/vi/zFwxZn4aqag/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-06T12:35:11.783+02:00",
+          "state": "published",
+          "release_date": "2026-10-06T12:35:11.783+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLa8TtmnkqmJw",
           "video_type": "quiz_short_fr"
         },
         {
@@ -52575,6 +52627,32 @@
               "published_at": "2026-10-03T12:45:20.072+02:00",
               "state": "published",
               "release_date": "2026-10-03T12:45:20.072+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLa8TtmnkqmJw",
+              "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "Biologie lycée : seuls 1 % cartonnent vraiment les 50 questions 🧬 | Short #12",
+              "video_id": "zFwxZn4aqag",
+              "thumbnail": "https://img.youtube.com/vi/zFwxZn4aqag/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-06T12:35:11.783+02:00",
+              "state": "published",
+              "release_date": "2026-10-06T12:35:11.783+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLa8TtmnkqmJw",
+              "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #04",
+              "video_id": "tL9o7PIgofE",
+              "thumbnail": "https://img.youtube.com/vi/tL9o7PIgofE/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-06T12:48:09.322+02:00",
+              "state": "published",
+              "release_date": "2026-10-06T12:48:09.322+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLa8TtmnkqmJw",
@@ -55615,19 +55693,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
-          "title": "Biologia Superiori: Solo l'1% Prende 50/50 🧬 | Short #12",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -60406,6 +60471,19 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Biologia Superiori: Solo l'1% Prende 50/50 🧬 | Short #12",
+          "video_id": "gKzW1OWkSec",
+          "thumbnail": "https://img.youtube.com/vi/gKzW1OWkSec/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-06T12:33:58.343+02:00",
+          "state": "published",
+          "release_date": "2026-10-06T12:33:58.343+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLYc7xd8qJWPM",
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "Quiz cultura generale: 40 fatti quotidiani che MESCOLI senza accorgertene 🤯 | Short #02",
           "video_id": "0xyE64EoyrI",
           "thumbnail": "https://img.youtube.com/vi/0xyE64EoyrI/hqdefault.jpg",
@@ -62408,6 +62486,19 @@
               "published_at": "2026-10-03T12:45:10.067+02:00",
               "state": "published",
               "release_date": "2026-10-03T12:45:10.067+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLYc7xd8qJWPM",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "Biologia Superiori: Solo l'1% Prende 50/50 🧬 | Short #12",
+              "video_id": "gKzW1OWkSec",
+              "thumbnail": "https://img.youtube.com/vi/gKzW1OWkSec/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-06T12:33:58.343+02:00",
+              "state": "published",
+              "release_date": "2026-10-06T12:33:58.343+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLYc7xd8qJWPM",
