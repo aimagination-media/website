@@ -23492,19 +23492,6 @@
           "video_type": "quiz_short_es"
         },
         {
-          "title": "Banderas de América Quiz — ¿Reconoces las 55 del continente? 🌎 | Short #13",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
           "title": "Banderas de América Quiz — ¿Reconoces las 55 del continente? 🌎 | Short #06",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -25525,7 +25512,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "PRODUCED",
+          "state": "BAD_VIDEO_DROP",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -25817,6 +25804,19 @@
           "sub_serie": "na",
           "playlist_id": null,
           "video_type": "quiz_4k_es"
+        },
+        {
+          "title": "Banderas de América Quiz — ¿Reconoces las 55 del continente? 🌎 | Short #13",
+          "video_id": "TkFGhNOZbFk",
+          "thumbnail": "https://img.youtube.com/vi/TkFGhNOZbFk/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-08T21:47:43.394+02:00",
+          "state": "UPLOADED",
+          "release_date": "2026-10-08T21:47:43.394+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLDqoC4-2E2kE",
+          "video_type": "quiz_short_es"
         },
         {
           "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #01",
@@ -31029,6 +31029,19 @@
               "published_at": "2026-09-30T16:20:14.838+02:00",
               "state": "published",
               "release_date": "2026-09-30T16:20:14.838+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLDqoC4-2E2kE",
+              "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Banderas de América Quiz — ¿Reconoces las 55 del continente? 🌎 | Short #13",
+              "video_id": "TkFGhNOZbFk",
+              "thumbnail": "https://img.youtube.com/vi/TkFGhNOZbFk/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-08T21:47:43.394+02:00",
+              "state": "UPLOADED",
+              "release_date": "2026-10-08T21:47:43.394+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLDqoC4-2E2kE",
@@ -38347,19 +38360,6 @@
           "video_type": "quiz_short_de"
         },
         {
-          "title": "Afrikanische Flaggen Quiz — Erkennst du wirklich alle 60 Fahnen? 🌍 | Short #16",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
           "title": "Asien Flaggen Quiz — Nur die Top 5% schaffen wirklich alle 51 Fahnen 🏯 | Short #05",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -38898,7 +38898,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": 397.02,
           "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
+          "state": "BAD_VIDEO_DROP",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -40307,6 +40307,19 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Afrikanische Flaggen Quiz — Erkennst du wirklich alle 60 Fahnen? 🌍 | Short #16",
+          "video_id": "P8nqqWN9hX8",
+          "thumbnail": "https://img.youtube.com/vi/P8nqqWN9hX8/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-08T21:43:39.419+02:00",
+          "state": "UPLOADED",
+          "release_date": "2026-10-08T21:43:39.419+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLeMDUCbGnDAE",
           "video_type": "quiz_short_de"
         },
         {
@@ -44590,7 +44603,7 @@
               "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
               "duration": 397.02,
               "published_at": "TBA",
-              "state": "READY_FOR_UPLOAD",
+              "state": "BAD_VIDEO_DROP",
               "release_date": null,
               "serie": "na",
               "sub_serie": "na",
@@ -45234,6 +45247,19 @@
               "published_at": "2026-09-30T16:20:56.163+02:00",
               "state": "published",
               "release_date": "2026-09-30T16:20:56.163+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLeMDUCbGnDAE",
+              "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Afrikanische Flaggen Quiz — Erkennst du wirklich alle 60 Fahnen? 🌍 | Short #16",
+              "video_id": "P8nqqWN9hX8",
+              "thumbnail": "https://img.youtube.com/vi/P8nqqWN9hX8/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-08T21:43:39.419+02:00",
+              "state": "UPLOADED",
+              "release_date": "2026-10-08T21:43:39.419+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLeMDUCbGnDAE",
