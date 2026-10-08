@@ -6618,19 +6618,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #01",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "UPLOADED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #15",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -11168,6 +11155,19 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #01",
+          "video_id": "fkw6yGLQcIE",
+          "thumbnail": "https://img.youtube.com/vi/fkw6yGLQcIE/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-08T18:23:49.390+02:00",
+          "state": "UPLOADED",
+          "release_date": "2026-10-08T18:23:49.390+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLaE3B99WdzDc",
+          "video_type": "quiz_short_en"
+        },
+        {
           "title": "🧠 Human Body Quiz — 50 Curious Facts: Think You Can Ace Them All? | Short #07",
           "video_id": "sBT1V_fDigE",
           "thumbnail": "https://img.youtube.com/vi/sBT1V_fDigE/hqdefault.jpg",
@@ -14097,6 +14097,19 @@
               "sub_serie": "na",
               "playlist_id": "PLaE3B99WdzDc",
               "video_type": "quiz_4k_en"
+            },
+            {
+              "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #01",
+              "video_id": "fkw6yGLQcIE",
+              "thumbnail": "https://img.youtube.com/vi/fkw6yGLQcIE/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-08T18:23:49.390+02:00",
+              "state": "UPLOADED",
+              "release_date": "2026-10-08T18:23:49.390+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLaE3B99WdzDc",
+              "video_type": "quiz_short_en"
             }
           ]
         },
@@ -21501,6 +21514,162 @@
           "sub_serie": "na",
           "playlist_id": null,
           "video_type": "quiz_4k_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #11",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #08",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #03",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #06",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #07",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #12",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #09",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #05",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #10",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #02",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #01",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "PRODUCED",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_es"
         },
         {
           "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #14",
@@ -56428,19 +56597,6 @@
           "video_type": "quiz_short_it"
         },
         {
-          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #01",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "UPLOADED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
           "title": "Biologia Superiori: Solo l'1% Prende 50/50 🧬 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -61368,6 +61524,19 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #01",
+          "video_id": "Rp-UjWo-UE0",
+          "thumbnail": "https://img.youtube.com/vi/Rp-UjWo-UE0/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-08T18:43:17.718+02:00",
+          "state": "UPLOADED",
+          "release_date": "2026-10-08T18:43:17.718+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLYc7xd8qJWPM",
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "🧠 Miti Medici Vero o Falso? 30 Domande, Solo i Medici Fanno 30/30 | Short #02",
           "video_id": "wEclG7yVeUU",
           "thumbnail": "https://img.youtube.com/vi/wEclG7yVeUU/hqdefault.jpg",
@@ -63409,6 +63578,19 @@
               "published_at": "2026-10-06T12:33:58.343+02:00",
               "state": "published",
               "release_date": "2026-10-06T12:33:58.343+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLYc7xd8qJWPM",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #01",
+              "video_id": "Rp-UjWo-UE0",
+              "thumbnail": "https://img.youtube.com/vi/Rp-UjWo-UE0/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-08T18:43:17.718+02:00",
+              "state": "UPLOADED",
+              "release_date": "2026-10-08T18:43:17.718+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLYc7xd8qJWPM",
