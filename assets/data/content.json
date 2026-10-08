@@ -6623,7 +6623,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "PRODUCED",
+          "state": "UPLOADED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -21711,19 +21711,6 @@
           "video_type": "quiz_short_es"
         },
         {
-          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #01",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
           "title": "Funciones de los órganos: ¿te crees MÉDICO ante estas 35 preguntas? 🫀 | Short #06",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -25663,6 +25650,19 @@
           "video_type": "quiz_4k_es"
         },
         {
+          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #01",
+          "video_id": "FdBa9WK4lOA",
+          "thumbnail": "https://img.youtube.com/vi/FdBa9WK4lOA/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-08T16:50:57.567+02:00",
+          "state": "published",
+          "release_date": "2026-10-08T16:50:57.567+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf84Hmir1qGA",
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "🩺 Mitos Médicos: ¿Verdad o Mentira? Solo el 1% Acierta Estas 30 Preguntas | Short #05",
           "video_id": "ZWFj7fmxCT4",
           "thumbnail": "https://img.youtube.com/vi/ZWFj7fmxCT4/hqdefault.jpg",
@@ -28774,6 +28774,19 @@
               "sub_serie": "na",
               "playlist_id": "PLf84Hmir1qGA",
               "video_type": "quiz_4k_es"
+            },
+            {
+              "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #01",
+              "video_id": "FdBa9WK4lOA",
+              "thumbnail": "https://img.youtube.com/vi/FdBa9WK4lOA/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-08T16:50:57.567+02:00",
+              "state": "published",
+              "release_date": "2026-10-08T16:50:57.567+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf84Hmir1qGA",
+              "video_type": "quiz_short_es"
             }
           ]
         },
@@ -36592,19 +36605,6 @@
           "video_type": "quiz_short_de"
         },
         {
-          "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #01",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
           "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #13",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -40141,6 +40141,19 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #01",
+          "video_id": "0neOw1i0nQo",
+          "thumbnail": "https://img.youtube.com/vi/0neOw1i0nQo/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-08T16:50:54.840+02:00",
+          "state": "published",
+          "release_date": "2026-10-08T16:50:54.840+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "🩺 Medizin-Quiz: 30 Mythen – Wahr oder Falsch? Nur Ärzte schaffen 100%! | Short #09",
           "video_id": "Pf6-7J-yN0c",
           "thumbnail": "https://img.youtube.com/vi/Pf6-7J-yN0c/hqdefault.jpg",
@@ -43213,6 +43226,19 @@
               "sub_serie": "na",
               "playlist_id": "PLajD0ihicykI",
               "video_type": "quiz_4k_de"
+            },
+            {
+              "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #01",
+              "video_id": "0neOw1i0nQo",
+              "thumbnail": "https://img.youtube.com/vi/0neOw1i0nQo/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-08T16:50:54.840+02:00",
+              "state": "published",
+              "release_date": "2026-10-08T16:50:54.840+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
             }
           ]
         },
@@ -46613,7 +46639,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "PRODUCED",
+          "state": "UPLOADED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -56407,7 +56433,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "PRODUCED",
+          "state": "UPLOADED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
