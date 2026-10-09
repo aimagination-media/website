@@ -6839,19 +6839,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #02",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -11155,6 +11142,19 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #02",
+          "video_id": "nDnbriOOnjc",
+          "thumbnail": "https://img.youtube.com/vi/nDnbriOOnjc/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-09T14:34:44.597+02:00",
+          "state": "published",
+          "release_date": "2026-10-09T14:34:44.597+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLaE3B99WdzDc",
+          "video_type": "quiz_short_en"
+        },
+        {
           "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #01",
           "video_id": "fkw6yGLQcIE",
           "thumbnail": "https://img.youtube.com/vi/fkw6yGLQcIE/hqdefault.jpg",
@@ -14106,6 +14106,19 @@
               "published_at": "2026-10-08T18:23:49.390+02:00",
               "state": "UPLOADED",
               "release_date": "2026-10-08T18:23:49.390+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLaE3B99WdzDc",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #02",
+              "video_id": "nDnbriOOnjc",
+              "thumbnail": "https://img.youtube.com/vi/nDnbriOOnjc/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-09T14:34:44.597+02:00",
+              "state": "published",
+              "release_date": "2026-10-09T14:34:44.597+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLaE3B99WdzDc",
@@ -21664,7 +21677,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "PRODUCED",
+          "state": "FAILED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
