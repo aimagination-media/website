@@ -11285,19 +11285,6 @@
           "video_type": "quiz_4k_en"
         },
         {
-          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #04",
-          "video_id": "5VcZtgdBc1g",
-          "thumbnail": "https://img.youtube.com/vi/5VcZtgdBc1g/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "2026-10-10T13:02:25.989+02:00",
-          "state": "published",
-          "release_date": "2026-10-10T13:02:25.989+02:00",
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": "PLaE3B99WdzDc",
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️",
           "video_id": "yfgS7Su2AIk",
           "thumbnail": "https://img.youtube.com/vi/yfgS7Su2AIk/hqdefault.jpg",
@@ -11309,6 +11296,19 @@
           "sub_serie": "na",
           "playlist_id": "PLf5kOrMmgQlE",
           "video_type": "versus_4k_en"
+        },
+        {
+          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #04",
+          "video_id": "5VcZtgdBc1g",
+          "thumbnail": "https://img.youtube.com/vi/5VcZtgdBc1g/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10 13:02:00",
+          "state": "READY_FOR_UPLOAD",
+          "release_date": "2026-10-10 13:02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLaE3B99WdzDc",
+          "video_type": "quiz_short_en"
         },
         {
           "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #02",
@@ -14317,9 +14317,9 @@
               "video_id": "5VcZtgdBc1g",
               "thumbnail": "https://img.youtube.com/vi/5VcZtgdBc1g/hqdefault.jpg",
               "duration": "00:00",
-              "published_at": "2026-10-10T13:02:25.989+02:00",
-              "state": "published",
-              "release_date": "2026-10-10T13:02:25.989+02:00",
+              "published_at": "2026-10-10 13:02:00",
+              "state": "READY_FOR_UPLOAD",
+              "release_date": "2026-10-10 13:02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLaE3B99WdzDc",
@@ -22159,19 +22159,6 @@
           "video_type": "quiz_short_es"
         },
         {
-          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
           "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #05",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -26007,6 +25994,19 @@
           "video_type": "quiz_4k_es"
         },
         {
+          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #04",
+          "video_id": "_rbDDAY4EXE",
+          "thumbnail": "https://img.youtube.com/vi/_rbDDAY4EXE/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10T16:11:15.653+02:00",
+          "state": "published",
+          "release_date": "2026-10-10T16:11:15.653+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf84Hmir1qGA",
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️",
           "video_id": "cl2Zn4oicyE",
           "thumbnail": "https://img.youtube.com/vi/cl2Zn4oicyE/hqdefault.jpg",
@@ -29211,6 +29211,19 @@
               "published_at": "2026-10-09T16:53:04.814+02:00",
               "state": "published",
               "release_date": "2026-10-09T16:53:04.814+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf84Hmir1qGA",
+              "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #04",
+              "video_id": "_rbDDAY4EXE",
+              "thumbnail": "https://img.youtube.com/vi/_rbDDAY4EXE/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-10T16:11:15.653+02:00",
+              "state": "published",
+              "release_date": "2026-10-10T16:11:15.653+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLf84Hmir1qGA",
@@ -37116,7 +37129,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "PRODUCED",
+          "state": "READY_FOR_UPLOAD",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -47315,19 +47328,6 @@
           "video_type": "quiz_short_fr"
         },
         {
-          "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
           "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #03",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -51384,6 +51384,19 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #04",
+          "video_id": "0gh2cqe64DY",
+          "thumbnail": "https://img.youtube.com/vi/0gh2cqe64DY/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10T16:12:12.496+02:00",
+          "state": "published",
+          "release_date": "2026-10-10T16:12:12.496+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLa8TtmnkqmJw",
+          "video_type": "quiz_short_fr"
+        },
+        {
           "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️",
           "video_id": "ZLxDZZYIbB8",
           "thumbnail": "https://img.youtube.com/vi/ZLxDZZYIbB8/hqdefault.jpg",
@@ -54250,6 +54263,19 @@
               "published_at": "2026-10-09T16:52:13.008+02:00",
               "state": "published",
               "release_date": "2026-10-09T16:52:13.008+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLa8TtmnkqmJw",
+              "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #04",
+              "video_id": "0gh2cqe64DY",
+              "thumbnail": "https://img.youtube.com/vi/0gh2cqe64DY/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-10T16:12:12.496+02:00",
+              "state": "published",
+              "release_date": "2026-10-10T16:12:12.496+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLa8TtmnkqmJw",
@@ -57628,19 +57654,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
-          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -62354,6 +62367,19 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #04",
+          "video_id": "4gGl323Cex0",
+          "thumbnail": "https://img.youtube.com/vi/4gGl323Cex0/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10T16:11:53.587+02:00",
+          "state": "published",
+          "release_date": "2026-10-10T16:11:53.587+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLYc7xd8qJWPM",
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️",
           "video_id": "ZcQtkf4adC8",
           "thumbnail": "https://img.youtube.com/vi/ZcQtkf4adC8/hqdefault.jpg",
@@ -64479,6 +64505,19 @@
               "published_at": "2026-10-09T16:52:35.911+02:00",
               "state": "published",
               "release_date": "2026-10-09T16:52:35.911+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLYc7xd8qJWPM",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #04",
+              "video_id": "4gGl323Cex0",
+              "thumbnail": "https://img.youtube.com/vi/4gGl323Cex0/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-10T16:11:53.587+02:00",
+              "state": "published",
+              "release_date": "2026-10-10T16:11:53.587+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLYc7xd8qJWPM",
