@@ -26007,6 +26007,19 @@
           "video_type": "quiz_4k_es"
         },
         {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️",
+          "video_id": "cl2Zn4oicyE",
+          "thumbnail": "https://img.youtube.com/vi/cl2Zn4oicyE/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10T14:48:14.854+02:00",
+          "state": "published",
+          "release_date": "2026-10-10T14:48:14.854+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLRF_iszu6qFA",
+          "video_type": "versus_4k_es"
+        },
+        {
           "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #02",
           "video_id": "x-A8K8UbIvk",
           "thumbnail": "https://img.youtube.com/vi/x-A8K8UbIvk/hqdefault.jpg",
@@ -28764,6 +28777,25 @@
         }
       ],
       "playlists": {
+        "PLRF_iszu6qFA": {
+          "id": "PLRF_iszu6qFA",
+          "title": "OMNIA VS: Mundo Construido",
+          "videos": [
+            {
+              "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️",
+              "video_id": "cl2Zn4oicyE",
+              "thumbnail": "https://img.youtube.com/vi/cl2Zn4oicyE/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-10T14:48:14.854+02:00",
+              "state": "published",
+              "release_date": "2026-10-10T14:48:14.854+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLRF_iszu6qFA",
+              "video_type": "versus_4k_es"
+            }
+          ]
+        },
         "PLf84Hmir1qGA": {
           "id": "PLf84Hmir1qGA",
           "title": "Biología y el Mundo Natural",
@@ -40680,6 +40712,19 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️",
+          "video_id": "IkzCDaLIfSU",
+          "thumbnail": "https://img.youtube.com/vi/IkzCDaLIfSU/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10T14:50:12.784+02:00",
+          "state": "published",
+          "release_date": "2026-10-10T14:50:12.784+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLe3Yt_uPw8dc",
+          "video_type": "versus_4k_de"
+        },
+        {
           "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #02",
           "video_id": "SIvDn7br_m4",
           "thumbnail": "https://img.youtube.com/vi/SIvDn7br_m4/hqdefault.jpg",
@@ -43398,6 +43443,25 @@
         }
       ],
       "playlists": {
+        "PLe3Yt_uPw8dc": {
+          "id": "PLe3Yt_uPw8dc",
+          "title": "OMNIA VS: Gebaute Welt",
+          "videos": [
+            {
+              "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️",
+              "video_id": "IkzCDaLIfSU",
+              "thumbnail": "https://img.youtube.com/vi/IkzCDaLIfSU/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-10T14:50:12.784+02:00",
+              "state": "published",
+              "release_date": "2026-10-10T14:50:12.784+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLe3Yt_uPw8dc",
+              "video_type": "versus_4k_de"
+            }
+          ]
+        },
         "PLajD0ihicykI": {
           "id": "PLajD0ihicykI",
           "title": "Biologie & Die Lebende Welt",
@@ -51320,6 +51384,19 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️",
+          "video_id": "ZLxDZZYIbB8",
+          "thumbnail": "https://img.youtube.com/vi/ZLxDZZYIbB8/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10T14:14:36.879+02:00",
+          "state": "published",
+          "release_date": "2026-10-10T14:14:36.879+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLR3AVUjUzAfk",
+          "video_type": "versus_4k_fr"
+        },
+        {
           "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #02",
           "video_id": "8ngNnPB_YO4",
           "thumbnail": "https://img.youtube.com/vi/8ngNnPB_YO4/hqdefault.jpg",
@@ -53856,6 +53933,25 @@
         }
       ],
       "playlists": {
+        "PLR3AVUjUzAfk": {
+          "id": "PLR3AVUjUzAfk",
+          "title": "OMNIA VS: Monde Construit",
+          "videos": [
+            {
+              "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️",
+              "video_id": "ZLxDZZYIbB8",
+              "thumbnail": "https://img.youtube.com/vi/ZLxDZZYIbB8/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-10T14:14:36.879+02:00",
+              "state": "published",
+              "release_date": "2026-10-10T14:14:36.879+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLR3AVUjUzAfk",
+              "video_type": "versus_4k_fr"
+            }
+          ]
+        },
         "PLa8TtmnkqmJw": {
           "id": "PLa8TtmnkqmJw",
           "title": "Biologie & Le Monde Vivant",
@@ -62258,6 +62354,19 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️",
+          "video_id": "ZcQtkf4adC8",
+          "thumbnail": "https://img.youtube.com/vi/ZcQtkf4adC8/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10T14:15:25.063+02:00",
+          "state": "published",
+          "release_date": "2026-10-10T14:15:25.063+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLWYvHc36zC4o",
+          "video_type": "versus_4k_it"
+        },
+        {
           "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #02",
           "video_id": "5XiQJPu1wWs",
           "thumbnail": "https://img.youtube.com/vi/5XiQJPu1wWs/hqdefault.jpg",
@@ -64170,6 +64279,25 @@
         }
       ],
       "playlists": {
+        "PLWYvHc36zC4o": {
+          "id": "PLWYvHc36zC4o",
+          "title": "OMNIA VS: Mondo Costruito",
+          "videos": [
+            {
+              "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️",
+              "video_id": "ZcQtkf4adC8",
+              "thumbnail": "https://img.youtube.com/vi/ZcQtkf4adC8/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-10T14:15:25.063+02:00",
+              "state": "published",
+              "release_date": "2026-10-10T14:15:25.063+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLWYvHc36zC4o",
+              "video_type": "versus_4k_it"
+            }
+          ]
+        },
         "PLYc7xd8qJWPM": {
           "id": "PLYc7xd8qJWPM",
           "title": "Biologia & Il Mondo Naturale",
