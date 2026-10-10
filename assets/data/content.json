@@ -21677,7 +21677,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "FAILED",
+          "state": "CONTENT_READY",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
