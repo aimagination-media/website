@@ -6995,19 +6995,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #05",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -11298,6 +11285,32 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #04",
+          "video_id": "5VcZtgdBc1g",
+          "thumbnail": "https://img.youtube.com/vi/5VcZtgdBc1g/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10T13:02:25.989+02:00",
+          "state": "published",
+          "release_date": "2026-10-10T13:02:25.989+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLaE3B99WdzDc",
+          "video_type": "quiz_short_en"
+        },
+        {
+          "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️",
+          "video_id": "yfgS7Su2AIk",
+          "thumbnail": "https://img.youtube.com/vi/yfgS7Su2AIk/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-10T12:44:16.107+02:00",
+          "state": "published",
+          "release_date": "2026-10-10T12:44:16.107+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf5kOrMmgQlE",
+          "video_type": "versus_4k_en"
+        },
+        {
           "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #02",
           "video_id": "nDnbriOOnjc",
           "thumbnail": "https://img.youtube.com/vi/nDnbriOOnjc/hqdefault.jpg",
@@ -13899,6 +13912,25 @@
         }
       ],
       "playlists": {
+        "PLf5kOrMmgQlE": {
+          "id": "PLf5kOrMmgQlE",
+          "title": "OMNIA VS: Built World",
+          "videos": [
+            {
+              "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️",
+              "video_id": "yfgS7Su2AIk",
+              "thumbnail": "https://img.youtube.com/vi/yfgS7Su2AIk/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-10T12:44:16.107+02:00",
+              "state": "published",
+              "release_date": "2026-10-10T12:44:16.107+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf5kOrMmgQlE",
+              "video_type": "versus_4k_en"
+            }
+          ]
+        },
         "PLaE3B99WdzDc": {
           "id": "PLaE3B99WdzDc",
           "title": "Biology & The Living World",
@@ -14275,6 +14307,19 @@
               "published_at": "2026-10-09 14:34:00",
               "state": "READY_FOR_UPLOAD",
               "release_date": "2026-10-09 14:34:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLaE3B99WdzDc",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #04",
+              "video_id": "5VcZtgdBc1g",
+              "thumbnail": "https://img.youtube.com/vi/5VcZtgdBc1g/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-10T13:02:25.989+02:00",
+              "state": "published",
+              "release_date": "2026-10-10T13:02:25.989+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLaE3B99WdzDc",
