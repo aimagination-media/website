@@ -11220,6 +11220,19 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #02",
+          "video_id": "q7gGfKgmddM",
+          "thumbnail": "https://img.youtube.com/vi/q7gGfKgmddM/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-13T18:15:52.141+02:00",
+          "state": "published",
+          "release_date": "2026-10-13T18:15:52.141+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLaE3B99WdzDc",
+          "video_type": "quiz_short_en"
+        },
+        {
           "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #06",
           "video_id": "YzldO9EYDoU",
           "thumbnail": "https://img.youtube.com/vi/YzldO9EYDoU/hqdefault.jpg",
@@ -11305,19 +11318,6 @@
           "published_at": "2026-10-10 13:02:00",
           "state": "READY_FOR_UPLOAD",
           "release_date": "2026-10-10 13:02:00",
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": "PLaE3B99WdzDc",
-          "video_type": "quiz_short_en"
-        },
-        {
-          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #02",
-          "video_id": "nDnbriOOnjc",
-          "thumbnail": "https://img.youtube.com/vi/nDnbriOOnjc/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "2026-10-09 14:34:00",
-          "state": "READY_FOR_UPLOAD",
-          "release_date": "2026-10-09 14:34:00",
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": "PLaE3B99WdzDc",
@@ -14300,19 +14300,6 @@
               "video_type": "quiz_short_en"
             },
             {
-              "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #02",
-              "video_id": "nDnbriOOnjc",
-              "thumbnail": "https://img.youtube.com/vi/nDnbriOOnjc/hqdefault.jpg",
-              "duration": "00:00",
-              "published_at": "2026-10-09 14:34:00",
-              "state": "READY_FOR_UPLOAD",
-              "release_date": "2026-10-09 14:34:00",
-              "serie": "na",
-              "sub_serie": "na",
-              "playlist_id": "PLaE3B99WdzDc",
-              "video_type": "quiz_short_en"
-            },
-            {
               "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #04",
               "video_id": "5VcZtgdBc1g",
               "thumbnail": "https://img.youtube.com/vi/5VcZtgdBc1g/hqdefault.jpg",
@@ -14385,6 +14372,19 @@
               "published_at": "2026-10-13T12:59:52.902+02:00",
               "state": "published",
               "release_date": "2026-10-13T12:59:52.902+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLaE3B99WdzDc",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #02",
+              "video_id": "q7gGfKgmddM",
+              "thumbnail": "https://img.youtube.com/vi/q7gGfKgmddM/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-13T18:15:52.141+02:00",
+              "state": "published",
+              "release_date": "2026-10-13T18:15:52.141+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLaE3B99WdzDc",
@@ -22003,16 +22003,16 @@
           "video_type": "quiz_short_es"
         },
         {
-          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #05",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #02",
+          "video_id": "x-A8K8UbIvk",
+          "thumbnail": "https://img.youtube.com/vi/x-A8K8UbIvk/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
+          "state": "SCHEDULED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLf84Hmir1qGA",
           "video_type": "quiz_short_es"
         },
         {
@@ -22217,19 +22217,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
-          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #06",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -26020,6 +26007,32 @@
           "video_type": "quiz_4k_es"
         },
         {
+          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #05",
+          "video_id": "8Ssmzk_Qh7g",
+          "thumbnail": "https://img.youtube.com/vi/8Ssmzk_Qh7g/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-13T18:16:07.664+02:00",
+          "state": "published",
+          "release_date": "2026-10-13T18:16:07.664+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf84Hmir1qGA",
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #06",
+          "video_id": "nxpw-aObf54",
+          "thumbnail": "https://img.youtube.com/vi/nxpw-aObf54/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-13T18:16:05.083+02:00",
+          "state": "published",
+          "release_date": "2026-10-13T18:16:05.083+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf84Hmir1qGA",
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #10",
           "video_id": "sZwHzYMwnkU",
           "thumbnail": "https://img.youtube.com/vi/sZwHzYMwnkU/hqdefault.jpg",
@@ -26083,19 +26096,6 @@
           "sub_serie": "na",
           "playlist_id": "PLRF_iszu6qFA",
           "video_type": "versus_4k_es"
-        },
-        {
-          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #02",
-          "video_id": "x-A8K8UbIvk",
-          "thumbnail": "https://img.youtube.com/vi/x-A8K8UbIvk/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "2026-10-09T16:53:04.814+02:00",
-          "state": "published",
-          "release_date": "2026-10-09T16:53:04.814+02:00",
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": "PLf84Hmir1qGA",
-          "video_type": "quiz_short_es"
         },
         {
           "title": "Banderas de América Quiz — ¿Reconoces las 55 del continente? 🌎 | Short #13",
@@ -29269,19 +29269,6 @@
               "video_type": "quiz_short_es"
             },
             {
-              "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #02",
-              "video_id": "x-A8K8UbIvk",
-              "thumbnail": "https://img.youtube.com/vi/x-A8K8UbIvk/hqdefault.jpg",
-              "duration": "00:00",
-              "published_at": "2026-10-09T16:53:04.814+02:00",
-              "state": "published",
-              "release_date": "2026-10-09T16:53:04.814+02:00",
-              "serie": "na",
-              "sub_serie": "na",
-              "playlist_id": "PLf84Hmir1qGA",
-              "video_type": "quiz_short_es"
-            },
-            {
               "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #04",
               "video_id": "_rbDDAY4EXE",
               "thumbnail": "https://img.youtube.com/vi/_rbDDAY4EXE/hqdefault.jpg",
@@ -29328,6 +29315,45 @@
               "published_at": "2026-10-12T17:05:20.826+02:00",
               "state": "published",
               "release_date": "2026-10-12T17:05:20.826+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf84Hmir1qGA",
+              "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #06",
+              "video_id": "nxpw-aObf54",
+              "thumbnail": "https://img.youtube.com/vi/nxpw-aObf54/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-13T18:16:05.083+02:00",
+              "state": "published",
+              "release_date": "2026-10-13T18:16:05.083+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf84Hmir1qGA",
+              "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #05",
+              "video_id": "8Ssmzk_Qh7g",
+              "thumbnail": "https://img.youtube.com/vi/8Ssmzk_Qh7g/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-13T18:16:07.664+02:00",
+              "state": "published",
+              "release_date": "2026-10-13T18:16:07.664+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf84Hmir1qGA",
+              "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #02",
+              "video_id": "x-A8K8UbIvk",
+              "thumbnail": "https://img.youtube.com/vi/x-A8K8UbIvk/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "TBA",
+              "state": "SCHEDULED",
+              "release_date": null,
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLf84Hmir1qGA",
@@ -36981,6 +37007,19 @@
           "video_type": "versus_short_de"
         },
         {
+          "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #02",
+          "video_id": "SIvDn7br_m4",
+          "thumbnail": "https://img.youtube.com/vi/SIvDn7br_m4/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "SCHEDULED",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #09",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -37013,19 +37052,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
-          "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #05",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -37104,19 +37130,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
-          "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #11",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -40790,6 +40803,32 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #05",
+          "video_id": "X_FRDyQCIXY",
+          "thumbnail": "https://img.youtube.com/vi/X_FRDyQCIXY/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-13T18:16:33.155+02:00",
+          "state": "published",
+          "release_date": "2026-10-13T18:16:33.155+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #11",
+          "video_id": "jeYBLJf1cFs",
+          "thumbnail": "https://img.youtube.com/vi/jeYBLJf1cFs/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-13T18:16:12.143+02:00",
+          "state": "published",
+          "release_date": "2026-10-13T18:16:12.143+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #09",
           "video_id": "viWukoq0OLY",
           "thumbnail": "https://img.youtube.com/vi/viWukoq0OLY/hqdefault.jpg",
@@ -40840,19 +40879,6 @@
           "sub_serie": "na",
           "playlist_id": "PLe3Yt_uPw8dc",
           "video_type": "versus_4k_de"
-        },
-        {
-          "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #02",
-          "video_id": "SIvDn7br_m4",
-          "thumbnail": "https://img.youtube.com/vi/SIvDn7br_m4/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "2026-10-09T16:53:33.578+02:00",
-          "state": "published",
-          "release_date": "2026-10-09T16:53:33.578+02:00",
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": "PLajD0ihicykI",
-          "video_type": "quiz_short_de"
         },
         {
           "title": "Afrikanische Flaggen Quiz — Erkennst du wirklich alle 60 Fahnen? 🌍 | Short #16",
@@ -43987,19 +44013,6 @@
               "video_type": "quiz_short_de"
             },
             {
-              "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #02",
-              "video_id": "SIvDn7br_m4",
-              "thumbnail": "https://img.youtube.com/vi/SIvDn7br_m4/hqdefault.jpg",
-              "duration": "00:00",
-              "published_at": "2026-10-09T16:53:33.578+02:00",
-              "state": "published",
-              "release_date": "2026-10-09T16:53:33.578+02:00",
-              "serie": "na",
-              "sub_serie": "na",
-              "playlist_id": "PLajD0ihicykI",
-              "video_type": "quiz_short_de"
-            },
-            {
               "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #08",
               "video_id": "hytMf5Hgo6M",
               "thumbnail": "https://img.youtube.com/vi/hytMf5Hgo6M/hqdefault.jpg",
@@ -44033,6 +44046,45 @@
               "published_at": "2026-10-12T17:05:39.787+02:00",
               "state": "published",
               "release_date": "2026-10-12T17:05:39.787+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #11",
+              "video_id": "jeYBLJf1cFs",
+              "thumbnail": "https://img.youtube.com/vi/jeYBLJf1cFs/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-13T18:16:12.143+02:00",
+              "state": "published",
+              "release_date": "2026-10-13T18:16:12.143+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #05",
+              "video_id": "X_FRDyQCIXY",
+              "thumbnail": "https://img.youtube.com/vi/X_FRDyQCIXY/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-13T18:16:33.155+02:00",
+              "state": "published",
+              "release_date": "2026-10-13T18:16:33.155+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #02",
+              "video_id": "SIvDn7br_m4",
+              "thumbnail": "https://img.youtube.com/vi/SIvDn7br_m4/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "TBA",
+              "state": "SCHEDULED",
+              "release_date": null,
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLajD0ihicykI",
@@ -47276,16 +47328,16 @@
           "video_type": "versus_short_fr"
         },
         {
-          "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #05",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #02",
+          "video_id": "8ngNnPB_YO4",
+          "thumbnail": "https://img.youtube.com/vi/8ngNnPB_YO4/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
+          "state": "SCHEDULED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
-          "playlist_id": null,
+          "playlist_id": "PLa8TtmnkqmJw",
           "video_type": "quiz_short_fr"
         },
         {
@@ -47477,19 +47529,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
-          "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #11",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -51488,6 +51527,32 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #05",
+          "video_id": "nYrX1zpWPF4",
+          "thumbnail": "https://img.youtube.com/vi/nYrX1zpWPF4/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-13T18:16:31.201+02:00",
+          "state": "published",
+          "release_date": "2026-10-13T18:16:31.201+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLa8TtmnkqmJw",
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #11",
+          "video_id": "IYJ0RnjT1WM",
+          "thumbnail": "https://img.youtube.com/vi/IYJ0RnjT1WM/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-13T18:16:29.365+02:00",
+          "state": "published",
+          "release_date": "2026-10-13T18:16:29.365+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLa8TtmnkqmJw",
+          "video_type": "quiz_short_fr"
+        },
+        {
           "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #10",
           "video_id": "SpllZ3GPm1s",
           "thumbnail": "https://img.youtube.com/vi/SpllZ3GPm1s/hqdefault.jpg",
@@ -51551,19 +51616,6 @@
           "sub_serie": "na",
           "playlist_id": "PLR3AVUjUzAfk",
           "video_type": "versus_4k_fr"
-        },
-        {
-          "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #02",
-          "video_id": "8ngNnPB_YO4",
-          "thumbnail": "https://img.youtube.com/vi/8ngNnPB_YO4/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "2026-10-09T16:52:13.008+02:00",
-          "state": "published",
-          "release_date": "2026-10-09T16:52:13.008+02:00",
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": "PLa8TtmnkqmJw",
-          "video_type": "quiz_short_fr"
         },
         {
           "title": "🩺 Mythes Médicaux : Vrai ou Faux ? Seuls les Médecins Réussissent à 100% | Short #06",
@@ -54399,19 +54451,6 @@
               "video_type": "quiz_4k_fr"
             },
             {
-              "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #02",
-              "video_id": "8ngNnPB_YO4",
-              "thumbnail": "https://img.youtube.com/vi/8ngNnPB_YO4/hqdefault.jpg",
-              "duration": "00:00",
-              "published_at": "2026-10-09T16:52:13.008+02:00",
-              "state": "published",
-              "release_date": "2026-10-09T16:52:13.008+02:00",
-              "serie": "na",
-              "sub_serie": "na",
-              "playlist_id": "PLa8TtmnkqmJw",
-              "video_type": "quiz_short_fr"
-            },
-            {
               "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #04",
               "video_id": "0gh2cqe64DY",
               "thumbnail": "https://img.youtube.com/vi/0gh2cqe64DY/hqdefault.jpg",
@@ -54458,6 +54497,45 @@
               "published_at": "2026-10-12T17:06:45.388+02:00",
               "state": "published",
               "release_date": "2026-10-12T17:06:45.388+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLa8TtmnkqmJw",
+              "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #11",
+              "video_id": "IYJ0RnjT1WM",
+              "thumbnail": "https://img.youtube.com/vi/IYJ0RnjT1WM/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-13T18:16:29.365+02:00",
+              "state": "published",
+              "release_date": "2026-10-13T18:16:29.365+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLa8TtmnkqmJw",
+              "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #05",
+              "video_id": "nYrX1zpWPF4",
+              "thumbnail": "https://img.youtube.com/vi/nYrX1zpWPF4/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-13T18:16:31.201+02:00",
+              "state": "published",
+              "release_date": "2026-10-13T18:16:31.201+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLa8TtmnkqmJw",
+              "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #02",
+              "video_id": "8ngNnPB_YO4",
+              "thumbnail": "https://img.youtube.com/vi/8ngNnPB_YO4/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "TBA",
+              "state": "SCHEDULED",
+              "release_date": null,
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLa8TtmnkqmJw",
@@ -57570,19 +57648,6 @@
           "video_type": "quiz_short_it"
         },
         {
-          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #06",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
           "title": "Biologia Superiori: Solo l'1% Prende 50/50 🧬 | Short #06",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -57658,6 +57723,19 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #02",
+          "video_id": "5XiQJPu1wWs",
+          "thumbnail": "https://img.youtube.com/vi/5XiQJPu1wWs/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "SCHEDULED",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLYc7xd8qJWPM",
           "video_type": "quiz_short_it"
         },
         {
@@ -57771,19 +57849,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
-          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #05",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -62510,6 +62575,32 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #06",
+          "video_id": "a8EsEdMjjqc",
+          "thumbnail": "https://img.youtube.com/vi/a8EsEdMjjqc/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-13T18:16:27.421+02:00",
+          "state": "published",
+          "release_date": "2026-10-13T18:16:27.421+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLYc7xd8qJWPM",
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #05",
+          "video_id": "smbTEwlCdB4",
+          "thumbnail": "https://img.youtube.com/vi/smbTEwlCdB4/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-13T18:16:23.821+02:00",
+          "state": "published",
+          "release_date": "2026-10-13T18:16:23.821+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLYc7xd8qJWPM",
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #10",
           "video_id": "SL5322pb_a8",
           "thumbnail": "https://img.youtube.com/vi/SL5322pb_a8/hqdefault.jpg",
@@ -62573,19 +62664,6 @@
           "sub_serie": "na",
           "playlist_id": "PLWYvHc36zC4o",
           "video_type": "versus_4k_it"
-        },
-        {
-          "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #02",
-          "video_id": "5XiQJPu1wWs",
-          "thumbnail": "https://img.youtube.com/vi/5XiQJPu1wWs/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "2026-10-09T16:52:35.911+02:00",
-          "state": "published",
-          "release_date": "2026-10-09T16:52:35.911+02:00",
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": "PLYc7xd8qJWPM",
-          "video_type": "quiz_short_it"
         },
         {
           "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #01",
@@ -64680,19 +64758,6 @@
               "video_type": "quiz_short_it"
             },
             {
-              "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #02",
-              "video_id": "5XiQJPu1wWs",
-              "thumbnail": "https://img.youtube.com/vi/5XiQJPu1wWs/hqdefault.jpg",
-              "duration": "00:00",
-              "published_at": "2026-10-09T16:52:35.911+02:00",
-              "state": "published",
-              "release_date": "2026-10-09T16:52:35.911+02:00",
-              "serie": "na",
-              "sub_serie": "na",
-              "playlist_id": "PLYc7xd8qJWPM",
-              "video_type": "quiz_short_it"
-            },
-            {
               "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #04",
               "video_id": "4gGl323Cex0",
               "thumbnail": "https://img.youtube.com/vi/4gGl323Cex0/hqdefault.jpg",
@@ -64739,6 +64804,45 @@
               "published_at": "2026-10-12T17:06:14.393+02:00",
               "state": "published",
               "release_date": "2026-10-12T17:06:14.393+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLYc7xd8qJWPM",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #05",
+              "video_id": "smbTEwlCdB4",
+              "thumbnail": "https://img.youtube.com/vi/smbTEwlCdB4/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-13T18:16:23.821+02:00",
+              "state": "published",
+              "release_date": "2026-10-13T18:16:23.821+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLYc7xd8qJWPM",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #06",
+              "video_id": "a8EsEdMjjqc",
+              "thumbnail": "https://img.youtube.com/vi/a8EsEdMjjqc/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-13T18:16:27.421+02:00",
+              "state": "published",
+              "release_date": "2026-10-13T18:16:27.421+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLYc7xd8qJWPM",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #02",
+              "video_id": "5XiQJPu1wWs",
+              "thumbnail": "https://img.youtube.com/vi/5XiQJPu1wWs/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "TBA",
+              "state": "SCHEDULED",
+              "release_date": null,
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLYc7xd8qJWPM",
