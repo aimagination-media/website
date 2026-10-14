@@ -22211,19 +22211,6 @@
           "video_type": "quiz_short_es"
         },
         {
-          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #11",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
           "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #15",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -22932,19 +22919,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "CONTENT_READY",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
-          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #09",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -26371,6 +26345,32 @@
           "video_type": "quiz_4k_es"
         },
         {
+          "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #11",
+          "video_id": "UPiuDEUDHW0",
+          "thumbnail": "https://img.youtube.com/vi/UPiuDEUDHW0/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:06:34.380+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:06:34.380+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf84Hmir1qGA",
+          "video_type": "quiz_short_es"
+        },
+        {
+          "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #09",
+          "video_id": "qxS_akrBw7w",
+          "thumbnail": "https://img.youtube.com/vi/qxS_akrBw7w/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:05:56.467+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:05:56.467+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #05",
           "video_id": "8Ssmzk_Qh7g",
           "thumbnail": "https://img.youtube.com/vi/8Ssmzk_Qh7g/hqdefault.jpg",
@@ -29711,6 +29711,19 @@
               "video_type": "quiz_short_es"
             },
             {
+              "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #11",
+              "video_id": "UPiuDEUDHW0",
+              "thumbnail": "https://img.youtube.com/vi/UPiuDEUDHW0/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:06:34.380+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:06:34.380+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf84Hmir1qGA",
+              "video_type": "quiz_short_es"
+            },
+            {
               "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #02",
               "video_id": "x-A8K8UbIvk",
               "thumbnail": "https://img.youtube.com/vi/x-A8K8UbIvk/hqdefault.jpg",
@@ -30724,6 +30737,19 @@
               "published_at": "2026-10-05T14:29:53.009+02:00",
               "state": "published",
               "release_date": "2026-10-05T14:29:53.009+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
+              "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Cultura general: ¿Se te CRUZAN 40 datos de cada día que das por ciertos? 🤯 | Short #09",
+              "video_id": "qxS_akrBw7w",
+              "thumbnail": "https://img.youtube.com/vi/qxS_akrBw7w/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:05:56.467+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:05:56.467+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
@@ -37462,19 +37488,6 @@
           "video_type": "quiz_short_de"
         },
         {
-          "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
           "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #05",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -37572,19 +37585,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
-          "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -41167,6 +41167,45 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Allgemeinwissen Quiz: 40 Alltagsfallen — schaffst DU wirklich 100%? 🍳",
+          "video_id": "XY8vuJwCeWw",
+          "thumbnail": "https://img.youtube.com/vi/XY8vuJwCeWw/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T17:30:20.040+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T17:30:20.040+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLz-GCke5VOi2s-McnYJ-gIyItPrhsGLFK",
+          "video_type": "quiz_4k_de"
+        },
+        {
+          "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #04",
+          "video_id": "_6oLAonvk5I",
+          "thumbnail": "https://img.youtube.com/vi/_6oLAonvk5I/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:06:16.304+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:06:16.304+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #04",
+          "video_id": "cTXfxqE9aQo",
+          "thumbnail": "https://img.youtube.com/vi/cTXfxqE9aQo/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:05:52.886+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:05:52.886+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #05",
           "video_id": "X_FRDyQCIXY",
           "thumbnail": "https://img.youtube.com/vi/X_FRDyQCIXY/hqdefault.jpg",
@@ -44442,6 +44481,32 @@
               "video_type": "quiz_short_de"
             },
             {
+              "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #04",
+              "video_id": "cTXfxqE9aQo",
+              "thumbnail": "https://img.youtube.com/vi/cTXfxqE9aQo/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:05:52.886+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:05:52.886+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #04",
+              "video_id": "_6oLAonvk5I",
+              "thumbnail": "https://img.youtube.com/vi/_6oLAonvk5I/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:06:16.304+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:06:16.304+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
+            },
+            {
               "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #02",
               "video_id": "SIvDn7br_m4",
               "thumbnail": "https://img.youtube.com/vi/SIvDn7br_m4/hqdefault.jpg",
@@ -45407,6 +45472,19 @@
               "sub_serie": "na",
               "playlist_id": "PLz-GCke5VOi2s-McnYJ-gIyItPrhsGLFK",
               "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Allgemeinwissen Quiz: 40 Alltagsfallen — schaffst DU wirklich 100%? 🍳",
+              "video_id": "XY8vuJwCeWw",
+              "thumbnail": "https://img.youtube.com/vi/XY8vuJwCeWw/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T17:30:20.040+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T17:30:20.040+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLz-GCke5VOi2s-McnYJ-gIyItPrhsGLFK",
+              "video_type": "quiz_4k_de"
             },
             {
               "title": "Allgemeinwissen Marathon: 100 Kneipenquiz Fragen – Schaffst du 100%? 🧠 | Short #21",
@@ -48660,19 +48738,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
-          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #11",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -51995,19 +52060,6 @@
           "video_type": "quiz_short_fr"
         },
         {
-          "title": "🍽️ Origine des plats : seuls 1% réussissent ce quiz — 50 questions | Short #12",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
           "title": "🍽️ Origine des plats : seuls 1% réussissent ce quiz — 50 questions | Short #08",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -52057,6 +52109,45 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Culture générale du quotidien : le toast vous JUGE — 40 questions 🍞",
+          "video_id": "cvCsBD765pU",
+          "thumbnail": "https://img.youtube.com/vi/cvCsBD765pU/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:57:04.457+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:57:04.457+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLVE4mdl-HN5E",
+          "video_type": "quiz_4k_fr"
+        },
+        {
+          "title": "🍽️ Origine des plats : seuls 1% réussissent ce quiz — 50 questions | Short #12",
+          "video_id": "lZVC8CZ-Mvo",
+          "thumbnail": "https://img.youtube.com/vi/lZVC8CZ-Mvo/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:07:06.172+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:07:06.172+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLW2IAwagcUEQ",
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #11",
+          "video_id": "k7PqSTVw49U",
+          "thumbnail": "https://img.youtube.com/vi/k7PqSTVw49U/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:06:15.182+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:06:15.182+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLVE4mdl-HN5E",
           "video_type": "quiz_short_fr"
         },
         {
@@ -56138,6 +56229,32 @@
               "video_type": "quiz_short_fr"
             },
             {
+              "title": "Quiz culture générale : tu CONFONDS encore ces 40 faits du quotidien ? 🔀 | Short #11",
+              "video_id": "k7PqSTVw49U",
+              "thumbnail": "https://img.youtube.com/vi/k7PqSTVw49U/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:06:15.182+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:06:15.182+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLVE4mdl-HN5E",
+              "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "Culture générale du quotidien : le toast vous JUGE — 40 questions 🍞",
+              "video_id": "cvCsBD765pU",
+              "thumbnail": "https://img.youtube.com/vi/cvCsBD765pU/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:57:04.457+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:57:04.457+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLVE4mdl-HN5E",
+              "video_type": "quiz_4k_fr"
+            },
+            {
               "title": "Marathon Culture Générale 100 Questions 🔥 Seul 1% Y Arrive !",
               "video_id": "dSjNxO9GXjM",
               "thumbnail": "https://img.youtube.com/vi/dSjNxO9GXjM/hqdefault.jpg",
@@ -56443,6 +56560,19 @@
               "published_at": "2026-09-27T20:55:17.671+02:00",
               "state": "published",
               "release_date": "2026-09-27T20:55:17.671+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLW2IAwagcUEQ",
+              "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "🍽️ Origine des plats : seuls 1% réussissent ce quiz — 50 questions | Short #12",
+              "video_id": "lZVC8CZ-Mvo",
+              "thumbnail": "https://img.youtube.com/vi/lZVC8CZ-Mvo/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:07:06.172+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:07:06.172+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLW2IAwagcUEQ",
@@ -63212,19 +63342,6 @@
           "video_type": "quiz_short_it"
         },
         {
-          "title": "🔥 Indovina il paese di questo piatto — Solo l'1% azzecca tutte le 50 | Short #12",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
           "title": "🔥 Indovina il paese di questo piatto — Solo l'1% azzecca tutte le 50 | Short #03",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -63251,19 +63368,6 @@
           "video_type": "quiz_short_it"
         },
         {
-          "title": "🔥 Indovina il paese di questo piatto — Solo l'1% azzecca tutte le 50 | Short #11",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "READY_FOR_UPLOAD",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
           "title": "🔥 Indovina il paese di questo piatto — Solo l'1% azzecca tutte le 50 | Short #08",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -63274,6 +63378,45 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Quiz Vita Quotidiana — 40 Domande: RIESCI a Spiegare il Pane Imburrato? 🍞",
+          "video_id": "XgWrd9fat2w",
+          "thumbnail": "https://img.youtube.com/vi/XgWrd9fat2w/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:55:40.703+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:55:40.703+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PL-8ccV13rzSvrNOUHBN72LkWYqfXGQENo",
+          "video_type": "quiz_4k_it"
+        },
+        {
+          "title": "🔥 Indovina il paese di questo piatto — Solo l'1% azzecca tutte le 50 | Short #11",
+          "video_id": "LjUCDWLv0Dw",
+          "thumbnail": "https://img.youtube.com/vi/LjUCDWLv0Dw/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:07:03.073+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:07:03.073+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLFrWThmJW8HI",
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "🔥 Indovina il paese di questo piatto — Solo l'1% azzecca tutte le 50 | Short #12",
+          "video_id": "PnSaXpH8Maw",
+          "thumbnail": "https://img.youtube.com/vi/PnSaXpH8Maw/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T16:06:27.656+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T16:06:27.656+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLFrWThmJW8HI",
           "video_type": "quiz_short_it"
         },
         {
@@ -66277,6 +66420,19 @@
               "video_type": "quiz_short_it"
             },
             {
+              "title": "Quiz Vita Quotidiana — 40 Domande: RIESCI a Spiegare il Pane Imburrato? 🍞",
+              "video_id": "XgWrd9fat2w",
+              "thumbnail": "https://img.youtube.com/vi/XgWrd9fat2w/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:55:40.703+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:55:40.703+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PL-8ccV13rzSvrNOUHBN72LkWYqfXGQENo",
+              "video_type": "quiz_4k_it"
+            },
+            {
               "title": "🔥 Cultura generale: 75 domande difficili — quanti ne sai davvero? | Short #21",
               "video_id": null,
               "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -66758,6 +66914,32 @@
               "published_at": "2026-09-27T20:56:02.389+02:00",
               "state": "published",
               "release_date": "2026-09-27T20:56:02.389+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLFrWThmJW8HI",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "🔥 Indovina il paese di questo piatto — Solo l'1% azzecca tutte le 50 | Short #12",
+              "video_id": "PnSaXpH8Maw",
+              "thumbnail": "https://img.youtube.com/vi/PnSaXpH8Maw/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:06:27.656+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:06:27.656+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLFrWThmJW8HI",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "🔥 Indovina il paese di questo piatto — Solo l'1% azzecca tutte le 50 | Short #11",
+              "video_id": "LjUCDWLv0Dw",
+              "thumbnail": "https://img.youtube.com/vi/LjUCDWLv0Dw/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T16:07:03.073+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T16:07:03.073+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLFrWThmJW8HI",
