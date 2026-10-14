@@ -6597,7 +6597,7 @@
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
           "published_at": "TBA",
-          "state": "content_ready",
+          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -26345,6 +26345,19 @@
           "video_type": "quiz_4k_es"
         },
         {
+          "title": "Quiz de cultura general — 40 de la vida diaria: ¿te crees experto? 🍳",
+          "video_id": "9e47JuyM3js",
+          "thumbnail": "https://img.youtube.com/vi/9e47JuyM3js/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-14T21:32:50.863+02:00",
+          "state": "published",
+          "release_date": "2026-10-14T21:32:50.863+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
+          "video_type": "quiz_4k_es"
+        },
+        {
           "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #11",
           "video_id": "UPiuDEUDHW0",
           "thumbnail": "https://img.youtube.com/vi/UPiuDEUDHW0/hqdefault.jpg",
@@ -30754,6 +30767,19 @@
               "sub_serie": "na",
               "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
               "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Quiz de cultura general — 40 de la vida diaria: ¿te crees experto? 🍳",
+              "video_id": "9e47JuyM3js",
+              "thumbnail": "https://img.youtube.com/vi/9e47JuyM3js/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-14T21:32:50.863+02:00",
+              "state": "published",
+              "release_date": "2026-10-14T21:32:50.863+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLwD1_9r4zsz_7mrrei-BZt434J4xtZjOF",
+              "video_type": "quiz_4k_es"
             },
             {
               "title": "Maratón de Cultura General 100 Preguntas — ¿Eres un Erudito? 🧠 | Short #32",
