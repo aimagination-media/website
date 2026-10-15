@@ -6891,19 +6891,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #11",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #09",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -7664,19 +7651,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
-          "title": "Everyday Tricky Questions Quiz — Only the Top 1% Outsmart All 35 Traps 🧠 | Short #10",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -11363,6 +11337,32 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #11",
+          "video_id": "bDWqYd-mtk8",
+          "thumbnail": "https://img.youtube.com/vi/bDWqYd-mtk8/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-15T14:29:48.804+02:00",
+          "state": "published",
+          "release_date": "2026-10-15T14:29:48.804+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLaE3B99WdzDc",
+          "video_type": "quiz_short_en"
+        },
+        {
+          "title": "Everyday Tricky Questions Quiz — Only the Top 1% Outsmart All 35 Traps 🧠 | Short #10",
+          "video_id": "flRRVjYzZ7o",
+          "thumbnail": "https://img.youtube.com/vi/flRRVjYzZ7o/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-15T14:29:48.728+02:00",
+          "state": "published",
+          "release_date": "2026-10-15T14:29:48.728+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
+          "video_type": "quiz_short_en"
+        },
+        {
           "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #07",
           "video_id": "uCwgzWe-HFo",
           "thumbnail": "https://img.youtube.com/vi/uCwgzWe-HFo/hqdefault.jpg",
@@ -14571,6 +14571,19 @@
               "sub_serie": "na",
               "playlist_id": "PLaE3B99WdzDc",
               "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #11",
+              "video_id": "bDWqYd-mtk8",
+              "thumbnail": "https://img.youtube.com/vi/bDWqYd-mtk8/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-15T14:29:48.804+02:00",
+              "state": "published",
+              "release_date": "2026-10-15T14:29:48.804+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLaE3B99WdzDc",
+              "video_type": "quiz_short_en"
             }
           ]
         },
@@ -15570,6 +15583,19 @@
               "sub_serie": "na",
               "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
               "video_type": "quiz_4k_en"
+            },
+            {
+              "title": "Everyday Tricky Questions Quiz — Only the Top 1% Outsmart All 35 Traps 🧠 | Short #10",
+              "video_id": "flRRVjYzZ7o",
+              "thumbnail": "https://img.youtube.com/vi/flRRVjYzZ7o/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-15T14:29:48.728+02:00",
+              "state": "published",
+              "release_date": "2026-10-15T14:29:48.728+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
+              "video_type": "quiz_short_en"
             },
             {
               "title": "General Knowledge Quiz — 100 Questions 🧠 Think You Know It All? | Short #33",
