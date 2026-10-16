@@ -7528,19 +7528,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯 | Short #02",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯 | Short #06",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -9341,19 +9328,6 @@
           "duration": 397.02,
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
-          "title": "Speed Trivia Marathon — 100 Questions Most Brains Just Can't Finish ⚡ | Short #26",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": 397.02,
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -11335,6 +11309,32 @@
           "sub_serie": "na",
           "playlist_id": null,
           "video_type": "quiz_4k_en"
+        },
+        {
+          "title": "Speed Trivia Marathon — 100 Questions Most Brains Just Can't Finish ⚡ | Short #26",
+          "video_id": "hkpSAmCqmw0",
+          "thumbnail": "https://img.youtube.com/vi/hkpSAmCqmw0/hqdefault.jpg",
+          "duration": 397.02,
+          "published_at": "2026-10-16T13:18:49.395+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T13:18:49.395+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLBHy3TfudTzA",
+          "video_type": "quiz_short_en"
+        },
+        {
+          "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯 | Short #02",
+          "video_id": "WLN-2bbg_Vk",
+          "thumbnail": "https://img.youtube.com/vi/WLN-2bbg_Vk/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-16T13:17:26.738+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T13:17:26.738+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
+          "video_type": "quiz_short_en"
         },
         {
           "title": "Human Biology Quiz — 35 Questions. Still Trust Those BODY MYTHS? 🦴 | Short #11",
@@ -15598,6 +15598,19 @@
               "video_type": "quiz_short_en"
             },
             {
+              "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯 | Short #02",
+              "video_id": "WLN-2bbg_Vk",
+              "thumbnail": "https://img.youtube.com/vi/WLN-2bbg_Vk/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-16T13:17:26.738+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T13:17:26.738+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
+              "video_type": "quiz_short_en"
+            },
+            {
               "title": "General Knowledge Quiz — 100 Questions 🧠 Think You Know It All? | Short #33",
               "video_id": null,
               "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -17299,6 +17312,19 @@
               "published_at": "2026-09-28T17:11:42.291+02:00",
               "state": "published",
               "release_date": "2026-09-28T17:11:42.291+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLBHy3TfudTzA",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Speed Trivia Marathon — 100 Questions Most Brains Just Can't Finish ⚡ | Short #26",
+              "video_id": "hkpSAmCqmw0",
+              "thumbnail": "https://img.youtube.com/vi/hkpSAmCqmw0/hqdefault.jpg",
+              "duration": 397.02,
+              "published_at": "2026-10-16T13:18:49.395+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T13:18:49.395+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLBHy3TfudTzA",
