@@ -22315,19 +22315,6 @@
           "video_type": "quiz_short_es"
         },
         {
-          "title": "Funciones de los órganos: ¿te crees MÉDICO ante estas 35 preguntas? 🫀 | Short #02",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
           "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #08",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -25396,19 +25383,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "Cultura general: 100 preguntas — ¿solo el top 1% llega al final? 🧠 | Short #11",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": 397.02,
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "Cultura general: 100 preguntas — ¿solo el top 1% llega al final? 🧠 | Short #14",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -26395,6 +26369,32 @@
           "sub_serie": "na",
           "playlist_id": null,
           "video_type": "quiz_4k_es"
+        },
+        {
+          "title": "Cultura general: 100 preguntas — ¿solo el top 1% llega al final? 🧠 | Short #11",
+          "video_id": "kWalyeR6Mcw",
+          "thumbnail": "https://img.youtube.com/vi/kWalyeR6Mcw/hqdefault.jpg",
+          "duration": 397.02,
+          "published_at": "2026-10-16T18:26:47.067+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T18:26:47.067+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLaM1A40I5V0o",
+          "video_type": "quiz_short_en"
+        },
+        {
+          "title": "Funciones de los órganos: ¿te crees MÉDICO ante estas 35 preguntas? 🫀 | Short #02",
+          "video_id": "kaSlvCt8C9Q",
+          "thumbnail": "https://img.youtube.com/vi/kaSlvCt8C9Q/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-16T18:25:43.490+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T18:25:43.490+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf84Hmir1qGA",
+          "video_type": "quiz_short_es"
         },
         {
           "title": "Quiz de cultura general — 40 de la vida diaria: ¿te crees experto? 🍳",
@@ -29789,6 +29789,19 @@
               "video_type": "quiz_short_es"
             },
             {
+              "title": "Funciones de los órganos: ¿te crees MÉDICO ante estas 35 preguntas? 🫀 | Short #02",
+              "video_id": "kaSlvCt8C9Q",
+              "thumbnail": "https://img.youtube.com/vi/kaSlvCt8C9Q/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-16T18:25:43.490+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T18:25:43.490+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf84Hmir1qGA",
+              "video_type": "quiz_short_es"
+            },
+            {
               "title": "Biología humana: 35 preguntas que casi TODOS contestan de oídas 🦴 | Short #02",
               "video_id": "x-A8K8UbIvk",
               "thumbnail": "https://img.youtube.com/vi/x-A8K8UbIvk/hqdefault.jpg",
@@ -32606,6 +32619,19 @@
               "published_at": "2026-09-28T17:14:33.874+02:00",
               "state": "published",
               "release_date": "2026-09-28T17:14:33.874+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLaM1A40I5V0o",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Cultura general: 100 preguntas — ¿solo el top 1% llega al final? 🧠 | Short #11",
+              "video_id": "kWalyeR6Mcw",
+              "thumbnail": "https://img.youtube.com/vi/kWalyeR6Mcw/hqdefault.jpg",
+              "duration": 397.02,
+              "published_at": "2026-10-16T18:26:47.067+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T18:26:47.067+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLaM1A40I5V0o",
@@ -37709,19 +37735,6 @@
           "video_type": "quiz_short_de"
         },
         {
-          "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #11",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
           "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #13",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -40023,19 +40036,6 @@
           "video_type": "quiz_short_de"
         },
         {
-          "title": "Schweres Allgemeinwissen Quiz – Nur 1% schaffen alle 30 Fragen! 🧠 | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": 397.02,
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
           "title": "Schweres Allgemeinwissen Quiz – Nur 1% schaffen alle 30 Fragen! 🧠 | Short #10",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -41242,6 +41242,32 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Schweres Allgemeinwissen Quiz – Nur 1% schaffen alle 30 Fragen! 🧠 | Short #07",
+          "video_id": "hL5KAsq4cns",
+          "thumbnail": "https://img.youtube.com/vi/hL5KAsq4cns/hqdefault.jpg",
+          "duration": 397.02,
+          "published_at": "2026-10-16T18:29:03.115+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T18:29:03.115+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLIYnzIGBKtio",
+          "video_type": "quiz_short_de"
+        },
+        {
+          "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #11",
+          "video_id": "LoYux02B2nQ",
+          "thumbnail": "https://img.youtube.com/vi/LoYux02B2nQ/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-16T18:28:19.189+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T18:28:19.189+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLajD0ihicykI",
           "video_type": "quiz_short_de"
         },
         {
@@ -44585,6 +44611,19 @@
               "video_type": "quiz_short_de"
             },
             {
+              "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #11",
+              "video_id": "LoYux02B2nQ",
+              "thumbnail": "https://img.youtube.com/vi/LoYux02B2nQ/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-16T18:28:19.189+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T18:28:19.189+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLajD0ihicykI",
+              "video_type": "quiz_short_de"
+            },
+            {
               "title": "Menschlicher Körper Quiz: 35 Fragen — dein STOLZ hält selten stand 🦴 | Short #02",
               "video_id": "SIvDn7br_m4",
               "thumbnail": "https://img.youtube.com/vi/SIvDn7br_m4/hqdefault.jpg",
@@ -47010,6 +47049,19 @@
               "sub_serie": "na",
               "playlist_id": "PLIYnzIGBKtio",
               "video_type": "quiz_short_de"
+            },
+            {
+              "title": "Schweres Allgemeinwissen Quiz – Nur 1% schaffen alle 30 Fragen! 🧠 | Short #07",
+              "video_id": "hL5KAsq4cns",
+              "thumbnail": "https://img.youtube.com/vi/hL5KAsq4cns/hqdefault.jpg",
+              "duration": 397.02,
+              "published_at": "2026-10-16T18:29:03.115+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T18:29:03.115+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLIYnzIGBKtio",
+              "video_type": "quiz_short_de"
             }
           ]
         },
@@ -48070,19 +48122,6 @@
         },
         {
           "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #06",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
-          "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #01",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -51436,19 +51475,6 @@
           "video_type": "quiz_short_fr"
         },
         {
-          "title": "Quiz Culture Générale : 50 Questions — Seul 1% Peut Vraiment Tout Réussir 🔥 | Short #05",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": 397.02,
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
           "title": "Quiz Culture Générale : 50 Questions — Seul 1% Peut Vraiment Tout Réussir 🔥 | Short #16",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -52187,6 +52213,32 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Quiz Culture Générale : 50 Questions — Seul 1% Peut Vraiment Tout Réussir 🔥 | Short #05",
+          "video_id": "Lr3LdTVTnng",
+          "thumbnail": "https://img.youtube.com/vi/Lr3LdTVTnng/hqdefault.jpg",
+          "duration": 397.02,
+          "published_at": "2026-10-16T18:31:21.706+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T18:31:21.706+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLTsa9EBHIagg",
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #01",
+          "video_id": "EcQ-OT8-yhI",
+          "thumbnail": "https://img.youtube.com/vi/EcQ-OT8-yhI/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-16T18:31:02.433+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T18:31:02.433+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLa8TtmnkqmJw",
           "video_type": "quiz_short_fr"
         },
         {
@@ -55231,6 +55283,19 @@
               "video_type": "quiz_short_fr"
             },
             {
+              "title": "Organes du corps : sauras-TU relier chaque fonction ? 35 questions 🫀 | Short #01",
+              "video_id": "EcQ-OT8-yhI",
+              "thumbnail": "https://img.youtube.com/vi/EcQ-OT8-yhI/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-16T18:31:02.433+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T18:31:02.433+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLa8TtmnkqmJw",
+              "video_type": "quiz_short_fr"
+            },
+            {
               "title": "Biologie humaine : es-tu vraiment INCOLLABLE sur 35 questions pièges ? 🧠 | Short #02",
               "video_id": "8ngNnPB_YO4",
               "thumbnail": "https://img.youtube.com/vi/8ngNnPB_YO4/hqdefault.jpg",
@@ -57628,6 +57693,19 @@
               "sub_serie": "na",
               "playlist_id": "PLTsa9EBHIagg",
               "video_type": "quiz_short_fr"
+            },
+            {
+              "title": "Quiz Culture Générale : 50 Questions — Seul 1% Peut Vraiment Tout Réussir 🔥 | Short #05",
+              "video_id": "Lr3LdTVTnng",
+              "thumbnail": "https://img.youtube.com/vi/Lr3LdTVTnng/hqdefault.jpg",
+              "duration": 397.02,
+              "published_at": "2026-10-16T18:31:21.706+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T18:31:21.706+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLTsa9EBHIagg",
+              "video_type": "quiz_short_fr"
             }
           ]
         },
@@ -58395,19 +58473,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
-          "title": "Funzioni degli Organi: Ce la fai a indovinarle tutte? — 35 Domande 🫀 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -62250,19 +62315,6 @@
           "video_type": "quiz_short_en"
         },
         {
-          "title": "Cultura Generale Quiz — 50 Domande, 10 Secondi Ciascuna: Ce la fai? ⚡ | Short #08",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": 397.02,
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
           "title": "🧠 Cultura generale: solo il top 1% sopravvive a queste 30 domande | Short #07",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -63457,6 +63509,32 @@
           "sub_serie": "na",
           "playlist_id": null,
           "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Funzioni degli Organi: Ce la fai a indovinarle tutte? — 35 Domande 🫀 | Short #04",
+          "video_id": "ERe3QAblx4s",
+          "thumbnail": "https://img.youtube.com/vi/ERe3QAblx4s/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-16T18:30:37.923+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T18:30:37.923+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLYc7xd8qJWPM",
+          "video_type": "quiz_short_it"
+        },
+        {
+          "title": "Cultura Generale Quiz — 50 Domande, 10 Secondi Ciascuna: Ce la fai? ⚡ | Short #08",
+          "video_id": "rghhQdkTd5A",
+          "thumbnail": "https://img.youtube.com/vi/rghhQdkTd5A/hqdefault.jpg",
+          "duration": 397.02,
+          "published_at": "2026-10-16T18:29:59.978+02:00",
+          "state": "published",
+          "release_date": "2026-10-16T18:29:59.978+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLOEOOdowWOa8",
+          "video_type": "quiz_short_en"
         },
         {
           "title": "Quiz Vita Quotidiana — 40 Domande: RIESCI a Spiegare il Pane Imburrato? 🍞",
@@ -65759,6 +65837,19 @@
               "video_type": "quiz_short_it"
             },
             {
+              "title": "Funzioni degli Organi: Ce la fai a indovinarle tutte? — 35 Domande 🫀 | Short #04",
+              "video_id": "ERe3QAblx4s",
+              "thumbnail": "https://img.youtube.com/vi/ERe3QAblx4s/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-16T18:30:37.923+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T18:30:37.923+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLYc7xd8qJWPM",
+              "video_type": "quiz_short_it"
+            },
+            {
               "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #02",
               "video_id": "5XiQJPu1wWs",
               "thumbnail": "https://img.youtube.com/vi/5XiQJPu1wWs/hqdefault.jpg",
@@ -67926,6 +68017,19 @@
               "published_at": "2026-09-29T15:47:29.841+02:00",
               "state": "published",
               "release_date": "2026-09-29T15:47:29.841+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLOEOOdowWOa8",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Cultura Generale Quiz — 50 Domande, 10 Secondi Ciascuna: Ce la fai? ⚡ | Short #08",
+              "video_id": "rghhQdkTd5A",
+              "thumbnail": "https://img.youtube.com/vi/rghhQdkTd5A/hqdefault.jpg",
+              "duration": 397.02,
+              "published_at": "2026-10-16T18:29:59.978+02:00",
+              "state": "published",
+              "release_date": "2026-10-16T18:29:59.978+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLOEOOdowWOa8",
