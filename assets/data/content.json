@@ -6592,19 +6592,6 @@
           "video_type": "versus_short_en"
         },
         {
-          "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #01",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_en"
-        },
-        {
           "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #11",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -7885,19 +7872,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
-          "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯 | Short #01",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "PRODUCED",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -11467,6 +11441,45 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯 | Short #01",
+          "video_id": "ORCzacSrZhE",
+          "thumbnail": "https://img.youtube.com/vi/ORCzacSrZhE/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-17T15:46:29.513+02:00",
+          "state": "published",
+          "release_date": "2026-10-17T15:46:29.513+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
+          "video_type": "quiz_short_en"
+        },
+        {
+          "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #01",
+          "video_id": "qLK2BD8y0TI",
+          "thumbnail": "https://img.youtube.com/vi/qLK2BD8y0TI/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-17T15:46:21.033+02:00",
+          "state": "published",
+          "release_date": "2026-10-17T15:46:21.033+02:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf5kOrMmgQlE",
+          "video_type": "versus_short_en"
+        },
+        {
+          "title": "Pluto vs the Moon: Which Is Bigger? Solar System Higher or Lower 🪐",
+          "video_id": "S_Wg51zTvLc",
+          "thumbnail": "https://img.youtube.com/vi/S_Wg51zTvLc/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-17 14:08:00",
+          "state": "published",
+          "release_date": "2026-10-17 14:08:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLcF41jszq7pI",
+          "video_type": "versus_4k_en"
+        },
+        {
           "title": "Speed Trivia Marathon — 100 Questions Most Brains Just Can't Finish ⚡ | Short #26",
           "video_id": "hkpSAmCqmw0",
           "thumbnail": "https://img.youtube.com/vi/hkpSAmCqmw0/hqdefault.jpg",
@@ -14253,6 +14266,38 @@
               "sub_serie": "na",
               "playlist_id": "PLf5kOrMmgQlE",
               "video_type": "versus_4k_en"
+            },
+            {
+              "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #01",
+              "video_id": "qLK2BD8y0TI",
+              "thumbnail": "https://img.youtube.com/vi/qLK2BD8y0TI/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-17T15:46:21.033+02:00",
+              "state": "published",
+              "release_date": "2026-10-17T15:46:21.033+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf5kOrMmgQlE",
+              "video_type": "versus_short_en"
+            }
+          ]
+        },
+        "PLcF41jszq7pI": {
+          "id": "PLcF41jszq7pI",
+          "title": "OMNIA VS: Nature",
+          "videos": [
+            {
+              "title": "Pluto vs the Moon: Which Is Bigger? Solar System Higher or Lower 🪐",
+              "video_id": "S_Wg51zTvLc",
+              "thumbnail": "https://img.youtube.com/vi/S_Wg51zTvLc/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-17 14:08:00",
+              "state": "published",
+              "release_date": "2026-10-17 14:08:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLcF41jszq7pI",
+              "video_type": "versus_4k_en"
             }
           ]
         },
@@ -15761,6 +15806,19 @@
               "published_at": "2026-10-16T13:17:26.738+02:00",
               "state": "published",
               "release_date": "2026-10-16T13:17:26.738+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯 | Short #01",
+              "video_id": "ORCzacSrZhE",
+              "thumbnail": "https://img.youtube.com/vi/ORCzacSrZhE/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-17T15:46:29.513+02:00",
+              "state": "published",
+              "release_date": "2026-10-17T15:46:29.513+02:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PL7Z0x08I2zpQd0gBQE_-BUVgbAKP1jFEX",
@@ -26670,6 +26728,19 @@
           "video_type": "quiz_4k_es"
         },
         {
+          "title": "🪐 Plutón vs Luna en el sistema solar: tamaño, distancia y descubrimiento",
+          "video_id": "bx9VsX464e8",
+          "thumbnail": "https://img.youtube.com/vi/bx9VsX464e8/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-17 20:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-17 20:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLIkK-2q_itRk",
+          "video_type": "versus_4k_es"
+        },
+        {
           "title": "Cultura general: 100 preguntas — ¿solo el top 1% llega al final? 🧠 | Short #11",
           "video_id": "kWalyeR6Mcw",
           "thumbnail": "https://img.youtube.com/vi/kWalyeR6Mcw/hqdefault.jpg",
@@ -29570,6 +29641,25 @@
         }
       ],
       "playlists": {
+        "PLIkK-2q_itRk": {
+          "id": "PLIkK-2q_itRk",
+          "title": "OMNIA VS: Naturaleza",
+          "videos": [
+            {
+              "title": "🪐 Plutón vs Luna en el sistema solar: tamaño, distancia y descubrimiento",
+              "video_id": "bx9VsX464e8",
+              "thumbnail": "https://img.youtube.com/vi/bx9VsX464e8/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-17 20:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-17 20:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLIkK-2q_itRk",
+              "video_type": "versus_4k_es"
+            }
+          ]
+        },
         "PLRF_iszu6qFA": {
           "id": "PLRF_iszu6qFA",
           "title": "OMNIA VS: Mundo Construido",
@@ -41687,6 +41777,19 @@
           "video_type": "quiz_short_de"
         },
         {
+          "title": "Was ist größer im Sonnensystem? Pluto gegen den Mond in 42 Runden 🪐",
+          "video_id": "WAB8rD8vSAg",
+          "thumbnail": "https://img.youtube.com/vi/WAB8rD8vSAg/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-17 17:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-17 17:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLeRFCLd3e5iM",
+          "video_type": "versus_4k_de"
+        },
+        {
           "title": "Schweres Allgemeinwissen Quiz – Nur 1% schaffen alle 30 Fragen! 🧠 | Short #07",
           "video_id": "hL5KAsq4cns",
           "thumbnail": "https://img.youtube.com/vi/hL5KAsq4cns/hqdefault.jpg",
@@ -44535,6 +44638,25 @@
         }
       ],
       "playlists": {
+        "PLeRFCLd3e5iM": {
+          "id": "PLeRFCLd3e5iM",
+          "title": "OMNIA VS: Natur",
+          "videos": [
+            {
+              "title": "Was ist größer im Sonnensystem? Pluto gegen den Mond in 42 Runden 🪐",
+              "video_id": "WAB8rD8vSAg",
+              "thumbnail": "https://img.youtube.com/vi/WAB8rD8vSAg/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-17 17:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-17 17:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLeRFCLd3e5iM",
+              "video_type": "versus_4k_de"
+            }
+          ]
+        },
         "PLe3Yt_uPw8dc": {
           "id": "PLe3Yt_uPw8dc",
           "title": "OMNIA VS: Gebaute Welt",
@@ -48330,6 +48452,149 @@
         },
         {
           "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️ | Short #10",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #08",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #07",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #10",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #01",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #02",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #09",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #06",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #05",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #11",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐 | Short #03",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -52658,6 +52923,19 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐",
+          "video_id": "OlHiB74U-Hc",
+          "thumbnail": "https://img.youtube.com/vi/OlHiB74U-Hc/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-17 17:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-17 17:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLddJLQLt5hQQ",
+          "video_type": "versus_4k_fr"
+        },
+        {
           "title": "Quiz Culture Générale : 50 Questions — Seul 1% Peut Vraiment Tout Réussir 🔥 | Short #05",
           "video_id": "Lr3LdTVTnng",
           "thumbnail": "https://img.youtube.com/vi/Lr3LdTVTnng/hqdefault.jpg",
@@ -55352,6 +55630,25 @@
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLR3AVUjUzAfk",
+              "video_type": "versus_4k_fr"
+            }
+          ]
+        },
+        "PLddJLQLt5hQQ": {
+          "id": "PLddJLQLt5hQQ",
+          "title": "OMNIA VS: Nature",
+          "videos": [
+            {
+              "title": "Pluton vs la Lune : quel astre a le plus grand diamètre ? 42 duels 🪐",
+              "video_id": "OlHiB74U-Hc",
+              "thumbnail": "https://img.youtube.com/vi/OlHiB74U-Hc/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-17 17:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-17 17:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLddJLQLt5hQQ",
               "video_type": "versus_4k_fr"
             }
           ]
@@ -58806,6 +59103,149 @@
         },
         {
           "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️ | Short #12",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #02",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #10",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #07",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #05",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #09",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #01",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #11",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #06",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #08",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "TBA",
+          "state": "content_ready",
+          "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐 | Short #03",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -63953,6 +64393,19 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐",
+          "video_id": "iR2cpU4eE1c",
+          "thumbnail": "https://img.youtube.com/vi/iR2cpU4eE1c/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-17 17:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-17 17:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLFIdosRM_0ns",
+          "video_type": "versus_4k_it"
+        },
+        {
           "title": "Funzioni degli Organi: Ce la fai a indovinarle tutte? — 35 Domande 🫀 | Short #04",
           "video_id": "ERe3QAblx4s",
           "thumbnail": "https://img.youtube.com/vi/ERe3QAblx4s/hqdefault.jpg",
@@ -66023,6 +66476,25 @@
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLWYvHc36zC4o",
+              "video_type": "versus_4k_it"
+            }
+          ]
+        },
+        "PLFIdosRM_0ns": {
+          "id": "PLFIdosRM_0ns",
+          "title": "OMNIA VS: Natura",
+          "videos": [
+            {
+              "title": "Plutone vs Luna: più grande o più piccolo? 15 corpi celesti, 42 duelli 🪐",
+              "video_id": "iR2cpU4eE1c",
+              "thumbnail": "https://img.youtube.com/vi/iR2cpU4eE1c/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-17 17:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-17 17:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLFIdosRM_0ns",
               "video_type": "versus_4k_it"
             }
           ]
