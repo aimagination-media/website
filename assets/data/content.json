@@ -6514,19 +6514,6 @@
           "video_type": "versus_short_en"
         },
         {
-          "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #05",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_en"
-        },
-        {
           "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #12",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -8461,19 +8448,6 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": "PLdlkZOMgGlPc",
-          "video_type": "quiz_short_en"
-        },
-        {
-          "title": "American Flags Quiz — Can YOU Name Flags Coast to Coast? 🌎 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
           "video_type": "quiz_short_en"
         },
         {
@@ -11441,6 +11415,32 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #05",
+          "video_id": "Nbw8B-VmN2Q",
+          "thumbnail": "https://img.youtube.com/vi/Nbw8B-VmN2Q/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 17:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-18 17:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf5kOrMmgQlE",
+          "video_type": "versus_short_en"
+        },
+        {
+          "title": "American Flags Quiz — Can YOU Name Flags Coast to Coast? 🌎 | Short #04",
+          "video_id": "cBxJM26Cd48",
+          "thumbnail": "https://img.youtube.com/vi/cBxJM26Cd48/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 14:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-18 14:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLdlkZOMgGlPc",
+          "video_type": "quiz_short_en"
+        },
+        {
           "title": "Everyday Mix-Ups Quiz — Can YOU Untangle These 40 Swapped Facts? 🤯 | Short #01",
           "video_id": "ORCzacSrZhE",
           "thumbnail": "https://img.youtube.com/vi/ORCzacSrZhE/hqdefault.jpg",
@@ -14292,6 +14292,19 @@
               "sub_serie": "na",
               "playlist_id": "PLf5kOrMmgQlE",
               "video_type": "versus_short_en"
+            },
+            {
+              "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #05",
+              "video_id": "Nbw8B-VmN2Q",
+              "thumbnail": "https://img.youtube.com/vi/Nbw8B-VmN2Q/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-18 17:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-18 17:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf5kOrMmgQlE",
+              "video_type": "versus_short_en"
             }
           ]
         },
@@ -16884,6 +16897,19 @@
               "published_at": "2026-09-30T16:18:56.182+02:00",
               "state": "published",
               "release_date": "2026-09-30T16:18:56.182+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLdlkZOMgGlPc",
+              "video_type": "quiz_short_en"
+            },
+            {
+              "title": "American Flags Quiz — Can YOU Name Flags Coast to Coast? 🌎 | Short #04",
+              "video_id": "cBxJM26Cd48",
+              "thumbnail": "https://img.youtube.com/vi/cBxJM26Cd48/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-18 14:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-18 14:00:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLdlkZOMgGlPc",
@@ -22542,19 +22568,6 @@
           "video_type": "versus_short_es"
         },
         {
-          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #01",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_es"
-        },
-        {
           "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #14",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -23986,19 +23999,6 @@
         },
         {
           "title": "Banderas de América Quiz — ¿Reconoces las 55 del continente? 🌎 | Short #17",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
-          "title": "Banderas de América Quiz — ¿Reconoces las 55 del continente? 🌎 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -26713,6 +26713,32 @@
           "sub_serie": "na",
           "playlist_id": null,
           "video_type": "quiz_4k_es"
+        },
+        {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #01",
+          "video_id": "Tn8tgX8vIxc",
+          "thumbnail": "https://img.youtube.com/vi/Tn8tgX8vIxc/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 23:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-18 23:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLRF_iszu6qFA",
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "Banderas de América Quiz — ¿Reconoces las 55 del continente? 🌎 | Short #04",
+          "video_id": "dD2sT6sPH_8",
+          "thumbnail": "https://img.youtube.com/vi/dD2sT6sPH_8/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 20:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-18 20:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLDqoC4-2E2kE",
+          "video_type": "quiz_short_es"
         },
         {
           "title": "Funciones de los órganos: ¿te crees MÉDICO ante estas 35 preguntas? 🫀 | Short #05",
@@ -29689,6 +29715,19 @@
               "sub_serie": "na",
               "playlist_id": "PLRF_iszu6qFA",
               "video_type": "versus_4k_es"
+            },
+            {
+              "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #01",
+              "video_id": "Tn8tgX8vIxc",
+              "thumbnail": "https://img.youtube.com/vi/Tn8tgX8vIxc/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-18 23:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-18 23:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLRF_iszu6qFA",
+              "video_type": "versus_short_es"
             }
           ]
         },
@@ -32340,6 +32379,19 @@
               "published_at": "2026-10-08T21:47:43.394+02:00",
               "state": "UPLOADED",
               "release_date": "2026-10-08T21:47:43.394+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLDqoC4-2E2kE",
+              "video_type": "quiz_short_es"
+            },
+            {
+              "title": "Banderas de América Quiz — ¿Reconoces las 55 del continente? 🌎 | Short #04",
+              "video_id": "dD2sT6sPH_8",
+              "thumbnail": "https://img.youtube.com/vi/dD2sT6sPH_8/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-18 20:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-18 20:00:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLDqoC4-2E2kE",
@@ -38007,19 +38059,6 @@
           "video_type": "versus_short_de"
         },
         {
-          "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️ | Short #01",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_de"
-        },
-        {
           "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️ | Short #06",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -39382,19 +39421,6 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": "PLeMDUCbGnDAE",
-          "video_type": "quiz_short_de"
-        },
-        {
-          "title": "Nord- & Südamerika Flaggen — Wetten, du verwechselst die Hälfte? 🌎 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
           "video_type": "quiz_short_de"
         },
         {
@@ -41788,6 +41814,32 @@
           "sub_serie": "na",
           "playlist_id": null,
           "video_type": "versus_short_de"
+        },
+        {
+          "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️ | Short #01",
+          "video_id": "W0Up_XPi17E",
+          "thumbnail": "https://img.youtube.com/vi/W0Up_XPi17E/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 18:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-18 18:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLe3Yt_uPw8dc",
+          "video_type": "versus_short_de"
+        },
+        {
+          "title": "Nord- & Südamerika Flaggen — Wetten, du verwechselst die Hälfte? 🌎 | Short #04",
+          "video_id": "XmJrzu3rIHo",
+          "thumbnail": "https://img.youtube.com/vi/XmJrzu3rIHo/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 15:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-18 15:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLeMDUCbGnDAE",
+          "video_type": "quiz_short_de"
         },
         {
           "title": "Organe Quiz — 35 Fragen: Schaffst du alle nur anhand der Funktion? 🫀 | Short #02",
@@ -44712,6 +44764,19 @@
               "sub_serie": "na",
               "playlist_id": "PLe3Yt_uPw8dc",
               "video_type": "versus_4k_de"
+            },
+            {
+              "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️ | Short #01",
+              "video_id": "W0Up_XPi17E",
+              "thumbnail": "https://img.youtube.com/vi/W0Up_XPi17E/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-18 18:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-18 18:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLe3Yt_uPw8dc",
+              "video_type": "versus_short_de"
             }
           ]
         },
@@ -47109,6 +47174,19 @@
               "video_type": "quiz_short_de"
             },
             {
+              "title": "Nord- & Südamerika Flaggen — Wetten, du verwechselst die Hälfte? 🌎 | Short #04",
+              "video_id": "XmJrzu3rIHo",
+              "thumbnail": "https://img.youtube.com/vi/XmJrzu3rIHo/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-18 15:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-18 15:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLeMDUCbGnDAE",
+              "video_type": "quiz_short_de"
+            },
+            {
               "title": "Asien Flaggen Quiz — Nur die Top 5% schaffen wirklich alle 51 Fahnen 🏯 | Short #01",
               "video_id": null,
               "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -48387,19 +48465,6 @@
         },
         {
           "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️ | Short #03",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_fr"
-        },
-        {
-          "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️ | Short #01",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -50619,19 +50684,6 @@
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": "PLbLJrSReExug",
-          "video_type": "quiz_short_fr"
-        },
-        {
-          "title": "Drapeaux d'Amérique — Seuls les experts cartonnent vraiment les 55 🌎 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
           "video_type": "quiz_short_fr"
         },
         {
@@ -52943,6 +52995,32 @@
           "published_at": "TBA",
           "state": "CONTENT_READY",
           "release_date": null,
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
+          "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️ | Short #01",
+          "video_id": "fBXIyq5vO9M",
+          "thumbnail": "https://img.youtube.com/vi/fBXIyq5vO9M/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 18:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-18 18:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLR3AVUjUzAfk",
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Drapeaux d'Amérique — Seuls les experts cartonnent vraiment les 55 🌎 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 15:00:00",
+          "state": "READY_FOR_UPLOAD",
+          "release_date": "2026-10-18 15:00:00",
           "serie": "na",
           "sub_serie": "na",
           "playlist_id": null,
@@ -55683,6 +55761,19 @@
               "sub_serie": "na",
               "playlist_id": "PLR3AVUjUzAfk",
               "video_type": "versus_4k_fr"
+            },
+            {
+              "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️ | Short #01",
+              "video_id": "fBXIyq5vO9M",
+              "thumbnail": "https://img.youtube.com/vi/fBXIyq5vO9M/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-18 18:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-18 18:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLR3AVUjUzAfk",
+              "video_type": "versus_short_fr"
             }
           ]
         },
@@ -59141,19 +59232,6 @@
           "video_type": "versus_short_it"
         },
         {
-          "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️ | Short #01",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_it"
-        },
-        {
           "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️ | Short #12",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -61305,19 +61383,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
-          "title": "Bandiere delle Americhe Test — 55 domande, solo l'1% le indovina 🌎 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -64432,6 +64497,32 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️ | Short #01",
+          "video_id": "xlbc_I2t_RQ",
+          "thumbnail": "https://img.youtube.com/vi/xlbc_I2t_RQ/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 17:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-18 17:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLWYvHc36zC4o",
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Bandiere delle Americhe Test — 55 domande, solo l'1% le indovina 🌎 | Short #04",
+          "video_id": "cBL2VfvUyEo",
+          "thumbnail": "https://img.youtube.com/vi/cBL2VfvUyEo/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-18 14:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-18 14:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLXld7KXBIyWg",
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "Biologia Umana Quiz — la maggior parte CI CASCA sui miti, 35 Domande 🧠 | Short #11",
           "video_id": "_cCTHvzdLS0",
           "thumbnail": "https://img.youtube.com/vi/_cCTHvzdLS0/hqdefault.jpg",
@@ -66542,6 +66633,19 @@
               "sub_serie": "na",
               "playlist_id": "PLWYvHc36zC4o",
               "video_type": "versus_4k_it"
+            },
+            {
+              "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️ | Short #01",
+              "video_id": "xlbc_I2t_RQ",
+              "thumbnail": "https://img.youtube.com/vi/xlbc_I2t_RQ/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-18 17:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-18 17:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLWYvHc36zC4o",
+              "video_type": "versus_short_it"
             }
           ]
         },
@@ -68341,6 +68445,19 @@
               "published_at": "2026-09-30T16:21:37.838+02:00",
               "state": "published",
               "release_date": "2026-09-30T16:21:37.838+02:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLXld7KXBIyWg",
+              "video_type": "quiz_short_it"
+            },
+            {
+              "title": "Bandiere delle Americhe Test — 55 domande, solo l'1% le indovina 🌎 | Short #04",
+              "video_id": "cBL2VfvUyEo",
+              "thumbnail": "https://img.youtube.com/vi/cBL2VfvUyEo/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-18 14:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-18 14:00:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLXld7KXBIyWg",
