@@ -6579,19 +6579,6 @@
           "video_type": "versus_short_en"
         },
         {
-          "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_en"
-        },
-        {
           "title": "Pluto vs the Moon: Which Is Bigger? Solar System Higher or Lower 🪐 | Short #12",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -6775,19 +6762,6 @@
         },
         {
           "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #08",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_en"
-        },
-        {
-          "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -11350,6 +11324,32 @@
           "video_type": "quiz_4k_en"
         },
         {
+          "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #07",
+          "video_id": "aeB4sMR1HkY",
+          "thumbnail": "https://img.youtube.com/vi/aeB4sMR1HkY/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 17:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-22 17:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLf5kOrMmgQlE",
+          "video_type": "versus_short_en"
+        },
+        {
+          "title": "🧬 High School Biology Quiz — Most Adults Fail All 50 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 14:00:00",
+          "state": "PRODUCED",
+          "release_date": "2026-10-22 14:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_en"
+        },
+        {
           "title": "Plant Biology Quiz — ONLY 1% Can Explain Where a Tree's Mass Comes From 🌿",
           "video_id": "1IU6-KN9Jq0",
           "thumbnail": "https://img.youtube.com/vi/1IU6-KN9Jq0/hqdefault.jpg",
@@ -14548,6 +14548,19 @@
               "published_at": "2026-10-20 17:00:00",
               "state": "published",
               "release_date": "2026-10-20 17:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLf5kOrMmgQlE",
+              "video_type": "versus_short_en"
+            },
+            {
+              "title": "World Monuments Higher or Lower: How Long Can Your Streak Last? 🏛️ | Short #07",
+              "video_id": "aeB4sMR1HkY",
+              "thumbnail": "https://img.youtube.com/vi/aeB4sMR1HkY/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-22 17:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-22 17:00:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLf5kOrMmgQlE",
@@ -22763,19 +22776,6 @@
           "video_type": "versus_short_es"
         },
         {
-          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_es"
-        },
-        {
           "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #12",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -23011,19 +23011,6 @@
         },
         {
           "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #06",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_es"
-        },
-        {
-          "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -26936,6 +26923,32 @@
           "video_type": "quiz_4k_es"
         },
         {
+          "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #07",
+          "video_id": "35f-xdNslO8",
+          "thumbnail": "https://img.youtube.com/vi/35f-xdNslO8/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 23:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-22 23:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLRF_iszu6qFA",
+          "video_type": "versus_short_es"
+        },
+        {
+          "title": "🧬 Biología de secundaria: ¿Solo el 1% aprueba las 50 preguntas? | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 20:00:00",
+          "state": "PRODUCED",
+          "release_date": "2026-10-22 20:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_es"
+        },
+        {
           "title": "Biología vegetal: ¿CUÁNTAS de estas 50 preguntas de plantas clavas? 🌱",
           "video_id": "pr8KMxp6nAM",
           "thumbnail": "https://img.youtube.com/vi/pr8KMxp6nAM/hqdefault.jpg",
@@ -30257,6 +30270,19 @@
               "published_at": "2026-10-20 23:00:00",
               "state": "published",
               "release_date": "2026-10-20 23:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLRF_iszu6qFA",
+              "video_type": "versus_short_es"
+            },
+            {
+              "title": "Monumentos del mundo: tú dices más alto o más bajo. ¿Aguanta la racha? 🏛️ | Short #07",
+              "video_id": "35f-xdNslO8",
+              "thumbnail": "https://img.youtube.com/vi/35f-xdNslO8/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-22 23:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-22 23:00:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLRF_iszu6qFA",
@@ -38540,19 +38566,6 @@
           "video_type": "versus_short_de"
         },
         {
-          "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️ | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_de"
-        },
-        {
           "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️ | Short #08",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -38780,19 +38793,6 @@
           "duration": "00:00",
           "published_at": "TBA",
           "state": "PRODUCED",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_de"
-        },
-        {
-          "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #04",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
           "release_date": null,
           "serie": "na",
           "sub_serie": "na",
@@ -42323,6 +42323,32 @@
           "video_type": "versus_short_de"
         },
         {
+          "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️ | Short #07",
+          "video_id": "VyPRnegxMKQ",
+          "thumbnail": "https://img.youtube.com/vi/VyPRnegxMKQ/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 18:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-22 18:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLe3Yt_uPw8dc",
+          "video_type": "versus_short_de"
+        },
+        {
+          "title": "Biologie-Quiz: Nur 1% knackt Zellen, DNA & Evolution — 50 Fragen 🧬 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 15:00:00",
+          "state": "PRODUCED",
+          "release_date": "2026-10-22 15:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_de"
+        },
+        {
           "title": "Pflanzenbiologie Quiz: Freches Unkraut weiß mehr als DU — 50 Fragen 🌿",
           "video_id": "GMNYaXo4H6w",
           "thumbnail": "https://img.youtube.com/vi/GMNYaXo4H6w/hqdefault.jpg",
@@ -45592,6 +45618,19 @@
               "published_at": "2026-10-20 18:00:00",
               "state": "published",
               "release_date": "2026-10-20 18:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLe3Yt_uPw8dc",
+              "video_type": "versus_short_de"
+            },
+            {
+              "title": "Monumente der Welt: Schaffst du die Höher-Niedriger-Serie bis zum Schluss? 🏛️ | Short #07",
+              "video_id": "VyPRnegxMKQ",
+              "thumbnail": "https://img.youtube.com/vi/VyPRnegxMKQ/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-22 18:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-22 18:00:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLe3Yt_uPw8dc",
@@ -49309,19 +49348,6 @@
           "video_type": "versus_short_fr"
         },
         {
-          "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️ | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_fr"
-        },
-        {
           "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️ | Short #09",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -49687,19 +49713,6 @@
         },
         {
           "title": "Biologie lycée : seuls 1 % cartonnent vraiment les 50 questions 🧬 | Short #05",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_fr"
-        },
-        {
-          "title": "Biologie lycée : seuls 1 % cartonnent vraiment les 50 questions 🧬 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -53794,6 +53807,32 @@
           "video_type": "quiz_short_fr"
         },
         {
+          "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️ | Short #07",
+          "video_id": "lxH8pra8l9Q",
+          "thumbnail": "https://img.youtube.com/vi/lxH8pra8l9Q/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 18:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-22 18:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLR3AVUjUzAfk",
+          "video_type": "versus_short_fr"
+        },
+        {
+          "title": "Biologie lycée : seuls 1 % cartonnent vraiment les 50 questions 🧬 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 15:00:00",
+          "state": "CONTENT_READY",
+          "release_date": "2026-10-22 15:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_fr"
+        },
+        {
           "title": "Biologie des plantes : 50 questions pour voir si tu photosynthétises 🌿",
           "video_id": "NSecU61NGPs",
           "thumbnail": "https://img.youtube.com/vi/NSecU61NGPs/hqdefault.jpg",
@@ -56875,6 +56914,19 @@
               "published_at": "2026-10-20 18:00:00",
               "state": "published",
               "release_date": "2026-10-20 18:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLR3AVUjUzAfk",
+              "video_type": "versus_short_fr"
+            },
+            {
+              "title": "Monuments du monde : plus haut ou plus bas, qui allonge sa série ? 🏛️ | Short #07",
+              "video_id": "lxH8pra8l9Q",
+              "thumbnail": "https://img.youtube.com/vi/lxH8pra8l9Q/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-22 18:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-22 18:00:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLR3AVUjUzAfk",
@@ -60337,19 +60389,6 @@
           "video_type": "versus_short_it"
         },
         {
-          "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️ | Short #07",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "versus_short_it"
-        },
-        {
           "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️ | Short #06",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
@@ -60611,19 +60650,6 @@
         },
         {
           "title": "Biologia Superiori: Solo l'1% Prende 50/50 🧬 | Short #08",
-          "video_id": null,
-          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
-          "duration": "00:00",
-          "published_at": "TBA",
-          "state": "content_ready",
-          "release_date": null,
-          "serie": "na",
-          "sub_serie": "na",
-          "playlist_id": null,
-          "video_type": "quiz_short_it"
-        },
-        {
-          "title": "Biologia Superiori: Solo l'1% Prende 50/50 🧬 | Short #04",
           "video_id": null,
           "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
           "duration": "00:00",
@@ -65589,6 +65615,32 @@
           "video_type": "quiz_short_it"
         },
         {
+          "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️ | Short #07",
+          "video_id": "27WpIFNjtNo",
+          "thumbnail": "https://img.youtube.com/vi/27WpIFNjtNo/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 17:00:00",
+          "state": "SCHEDULED",
+          "release_date": "2026-10-22 17:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": "PLWYvHc36zC4o",
+          "video_type": "versus_short_it"
+        },
+        {
+          "title": "Biologia Superiori: Solo l'1% Prende 50/50 🧬 | Short #04",
+          "video_id": null,
+          "thumbnail": "https://img.youtube.com/vi/None/hqdefault.jpg",
+          "duration": "00:00",
+          "published_at": "2026-10-22 14:00:00",
+          "state": "PRODUCED",
+          "release_date": "2026-10-22 14:00:00",
+          "serie": "na",
+          "sub_serie": "na",
+          "playlist_id": null,
+          "video_type": "quiz_short_it"
+        },
+        {
           "title": "Biologia Vegetale Quiz — 50 Domande che PUNGONO più di un cactus 🌵",
           "video_id": "ifkGdyjMit4",
           "thumbnail": "https://img.youtube.com/vi/ifkGdyjMit4/hqdefault.jpg",
@@ -68046,6 +68098,19 @@
               "published_at": "2026-10-20 17:00:00",
               "state": "published",
               "release_date": "2026-10-20 17:00:00",
+              "serie": "na",
+              "sub_serie": "na",
+              "playlist_id": "PLWYvHc36zC4o",
+              "video_type": "versus_short_it"
+            },
+            {
+              "title": "Monumenti del mondo: più alto o più basso, fin dove arriva la tua serie? 🏛️ | Short #07",
+              "video_id": "27WpIFNjtNo",
+              "thumbnail": "https://img.youtube.com/vi/27WpIFNjtNo/hqdefault.jpg",
+              "duration": "00:00",
+              "published_at": "2026-10-22 17:00:00",
+              "state": "SCHEDULED",
+              "release_date": "2026-10-22 17:00:00",
               "serie": "na",
               "sub_serie": "na",
               "playlist_id": "PLWYvHc36zC4o",
